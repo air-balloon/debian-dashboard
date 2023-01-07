@@ -74,6 +74,7 @@
                 <thead>
                     <tr>
                         <th scope="col">URL</th>
+                        <th scope="col">Score</th>
                         <th scope="col">In testing ?</th>
                         <th scope="col">Last CI date</th>
                         <th scope="col">Last Upload</th>
@@ -92,6 +93,7 @@
                     <tr>
                         <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}">{{ .source }}</a>
                         </th>
+                        <td>{{ .score }}</td>
                         <td>{{ .is_in_testing }}</td>
                         <td>{{ .last_ci_date }}</td>
                         <td>{{ .last_upload }}</td>

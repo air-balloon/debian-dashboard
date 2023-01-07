@@ -12,7 +12,9 @@ SELECT * FROM (
 	all_sources.maintainer_email, all_sources.uploaders,
 	all_sources.vcs_url,all_sources.vcs_browser,
 	all_sources.bin,
-    CASE WHEN p_testing.is_in_testing=1 THEN true ELSE false END as is_in_testing
+    CASE WHEN p_testing.is_in_testing=1 THEN true ELSE false END as is_in_testing,
+    CASE WHEN p_experimental.is_in_experimental=1 THEN true ELSE false END as is_in_experimental
+
 	from all_sources
 	-- Is orphan ?
 	LEFT JOIN orphaned_packages ON orphaned_packages.source = all_sources.source
@@ -45,16 +47,24 @@ SELECT * FROM (
 		SELECT COUNT(*) as is_in_testing, as2.source
 		FROM all_sources as2
 		WHERE as2.distribution = 'debian'
-	 	AND as2.release IN('bookworm')
+	 	AND as2.release = 'bookworm'
 		GROUP BY as2.source
 	) as p_testing ON p_testing.source = all_sources.source
+	-- Is in experimental ?
+	LEFT JOIN (
+		SELECT COUNT(*) as is_in_experimental, as2.source
+		FROM all_sources as2
+		WHERE as2.distribution = 'debian'
+	 	AND as2.release = 'experimental'
+		GROUP BY as2.source
+	) as p_experimental ON p_experimental.source = all_sources.source
 
 	WHERE distribution = 'debian' AND release IN('sid', 'bookworm')
 	-- Filter packages without a recent last_upload
 	AND uhl.last_upload < '2020-01-01'
-	--AND (all_sources.bin LIKE '%php%' OR all_sources.source LIKE '%php%')
+	--AND (all_sources.bin ILIKE '%php%' OR all_sources.source ILIKE '%php%')
 	-- Standards version are recent
-	AND all_sources.standards_version NOT LIKE '4.6._'
+	AND all_sources.standards_version NOT ILIKE '4.6._'
     -- Manual excludes
 	--AND source NOT IN ('phpldapadmin', 'phpsysinfo', 'php-fpdf')
 	-- Manual maintainer trust excludes
@@ -64,8 +74,8 @@ SELECT * FROM (
 
 	-- No Vcs Field
 	-- (vcs_url IS NULL OR vcs_browser IS NULL )
-	--vcs_url NOT LIKE '%salsa.debian.org%'
-	--AND vcs_url NOT LIKE 'code.launchpad.net'
+	--vcs_url NOT ILIKE '%salsa.debian.org%'
+	--AND vcs_url NOT ILIKE 'code.launchpad.net'
 	--AND (last_ci_date < '2022-01-01' OR last_ci_date IS NULL)
 --) AND is_in_testing = 1
 
@@ -83,5 +93,52 @@ $sth = $dbh->prepare($sql);
 $sth->execute();
 
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+$result = array_map(static function(array $e): array {
+    $e['score'] = 0;
+    if ($e['last_ci_date'] === null) {
+        $e['score'] -= 10;
+    }
+    if ($e['nbr_packages_maint_email'] < 10) {
+        $e['score'] -= 20;
+    }
+    if ($e['vcs_url'] === null) {
+        $e['score'] -= 20;
+    }
+    if ($e['vcs_browser'] === null) {
+        $e['score'] -= 20;
+    }
+    if (stripos('3.', $e['standards_version']) === 0) {
+        $e['score'] -= 20;
+    }
+    if (stripos('4.0', $e['standards_version']) === 0) {
+        $e['score'] -= 10;
+    }
+    if ($e['is_in_testing']) {
+        $e['score'] -= 20;
+    }
+    if ($e['is_in_experimental']) {
+        $e['score'] += 50;
+    }
+    $r = new DateTimeImmutable($e['last_upload']);
+    $lastUploadYear = (int) $r->format('Y');
+    if ($lastUploadYear === 2021) {
+        $e['score'] -= 10;
+    }
+    if ($lastUploadYear === 2020) {
+        $e['score'] -= 20;
+    }
+    if ($lastUploadYear === 2019) {
+        $e['score'] -= 30;
+    }
+    if ($lastUploadYear === 2018) {
+        $e['score'] -= 40;
+    }
+    if ($lastUploadYear < 2019) {
+        $e['score'] -= 50;
+    }
+    return $e;
+}, $result);
+
 $data = json_encode(['packages' => $result], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.long-term.support/data/udd.json', $data);
