@@ -1,0 +1,19 @@
+baseURL = "https://debian.long-term.support/"
+languageCode = "en"
+title = "Debian at Long Term Support"
+copyright = "2023 William Desportes"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+uglyURLs = true
+defaultContentLanguageInSubdir = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[languages]
+  [languages.en]
+    title = "Debian at Long Term Support"
+    description = "Debian at Long Term Support"
+    weight = 1
+  [languages.fr]
+    title = "Debian at Long Term Support"
+    description = "Debian at Long Term Support"
+    weight = 2

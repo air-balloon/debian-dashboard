@@ -1,0 +1,41 @@
+/* MaterialDesignIcons.com */
+
+@import "variables";
+$mdi-font-path: "{{ .Site.BaseURL }}assets/vendor/MaterialDesignIcons/fonts";
+
+$mdi-icons-allowed: (
+    'list': 1,
+    'home': 1,
+    'account': 1,
+    'code-tags': 1,
+    'github': 1,
+    'gitlab': 1,
+    'twitter': 1,
+    'linkedin': 1,
+    'stack-overflow': 1,
+    'email': 1,
+    'at': 1,
+    'domain': 1,
+    'web': 1,
+    'gavel': 1,
+    'chevron-up': 1,
+    'x': 1,
+    'chevron-right': 1,
+    'key-chain-variant': 1,
+    'newspaper': 1,
+    'key-link': 1,
+    'chevron-double-down': 1,
+);
+@import "functions";
+@import "path";
+@import "core";
+@each $key, $value in $mdi-icons {
+    @if(map-has-key($mdi-icons-allowed, $key)) {
+        .#{$mdi-css-prefix}-#{$key}::before {
+            content: char($value);
+        }
+    }
+}
+//@import "icons";
+//@import "extras";
+//@import "animated";
