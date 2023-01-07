@@ -79,7 +79,7 @@ SELECT * FROM (
 	--AND (last_ci_date < '2022-01-01' OR last_ci_date IS NULL)
 --) AND is_in_testing = 1
 
-ORDER BY last_upload ASC, nbr_packages_maint_email ASC, maintainer_email ASC;
+ORDER BY source ASC;
 
 SQL;
 
@@ -102,12 +102,17 @@ $result = array_map(static function(array $e): array {
     if ($e['nbr_packages_maint_email'] < 10) {
         $e['score'] -= 20;
     }
-    if ($e['vcs_url'] === null) {
+    if ($e['vcs_url'] === null || str_contains($e['vcs_url'], 'anonscm.debian.org')) {
         $e['score'] -= 20;
     }
     if ($e['vcs_browser'] === null) {
         $e['score'] -= 20;
     }
+
+    if (str_contains($e['vcs_url'], 'salsa.debian.org')) {
+        $e['score'] += 20;
+    }
+
     if (stripos('3.', $e['standards_version']) === 0) {
         $e['score'] -= 20;
     }
