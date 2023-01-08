@@ -24,7 +24,9 @@ SELECT * FROM (
 	INNER JOIN (
 		SELECT MAX(uh.date) as last_upload, uh.source
 		FROM upload_history uh
-		WHERE uh.distribution = 'unstable' AND (
+		WHERE (
+			uh.distribution = 'unstable' OR uh.distribution = 'sid' OR uh.distribution = 'experimental'
+		) AND (
 				-- Do not allow nmu from holger (because of uploads for buildinfo files)
 				uh.nmu = false OR (uh.nmu = true AND uh.signed_by_email != 'holger@layer-acht.org')
 			)
@@ -102,13 +104,15 @@ SQL;
 $user = 'udd-mirror';
 $password = 'udd-mirror';
 $dsn = 'pgsql:host=udd-mirror.debian.net;port=5432;dbname=udd;user=udd-mirror;password=udd-mirror';
+echo 'Connecting ...' . PHP_EOL;
 $dbh = new PDO($dsn, $user, $password);
 
 $sth = $dbh->prepare($sql);
+echo 'Querying ...' . PHP_EOL;
 $sth->execute();
-
+echo 'Fetching ...' . PHP_EOL;
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-
+echo 'Building ...' . PHP_EOL;
 $result = array_map(static function(array $e): array {
     $e['score'] = 0;
     if ($e['last_ci_date'] === null) {
@@ -159,6 +163,7 @@ $result = array_map(static function(array $e): array {
     }
     return $e;
 }, $result);
-
+echo 'Saving ...' . PHP_EOL;
 $data = json_encode(['packages' => $result], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-file_put_contents(__DIR__ . '/debian.long-term.support/data/udd.json', $data);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json', $data);
+echo 'Done.' . PHP_EOL;
