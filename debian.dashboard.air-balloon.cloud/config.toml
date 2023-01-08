@@ -1,0 +1,19 @@
+baseURL = "https://debian.dashboard.air-balloon.cloud/"
+languageCode = "en"
+title = "Debian dashboard - AirBalloon project"
+copyright = "2023 William Desportes"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+uglyURLs = true
+defaultContentLanguageInSubdir = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[languages]
+  [languages.en]
+    title = "Debian dashboard - AirBalloon project"
+    description = "Debian dashboard - AirBalloon project"
+    weight = 1
+  [languages.fr]
+    title = "Debian dashboard - AirBalloon project"
+    description = "Debian dashboard - AirBalloon project"
+    weight = 2

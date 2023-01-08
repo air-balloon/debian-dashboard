@@ -3,8 +3,8 @@ CONTAINER_USER="$(shell id -u):$(shell id -g)"
 
 IMAGE="klakegg/hugo:0.107.0-ext-alpine"
 
-CONTAINER_NAME="debian.long-term.support"
-PROJECT_NAME="debian.long-term.support"
+CONTAINER_NAME="debian.dashboard.air-balloon.cloud"
+PROJECT_NAME="debian.dashboard.air-balloon.cloud"
 
 version:
 	docker run --name ${CONTAINER_NAME} --rm -it ${IMAGE} --version
