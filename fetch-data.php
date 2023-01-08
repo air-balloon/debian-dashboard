@@ -13,7 +13,9 @@ SELECT * FROM (
 	all_sources.vcs_url,all_sources.vcs_browser,
 	all_sources.bin,
     CASE WHEN p_testing.is_in_testing=1 THEN true ELSE false END as is_in_testing,
-    CASE WHEN p_experimental.is_in_experimental=1 THEN true ELSE false END as is_in_experimental
+    CASE WHEN p_experimental.is_in_experimental=1 THEN true ELSE false END as is_in_experimental,
+    p_bugs.bugs_for_source as bugs,
+    p_bad_bugs.bugs_for_source as bad_bugs
 
 	from all_sources
 	-- Is orphan ?
@@ -33,7 +35,7 @@ SELECT * FROM (
 		SELECT COUNT(DISTINCT as1.source) as nbr_packages_maint_email, as1.maintainer_email
 		FROM all_sources as1
 	 	WHERE as1.distribution = 'debian'
-	 	AND as1.release IN('sid', 'bookworm')
+	 	AND (as1.release = 'sid' OR as1.release = 'bookworm')
 		GROUP BY as1.maintainer_email
 	) as pkg_cnt_maint ON pkg_cnt_maint.maintainer_email = all_sources.maintainer_email
 	-- select last CI date
@@ -58,17 +60,31 @@ SELECT * FROM (
 	 	AND as2.release = 'experimental'
 		GROUP BY as2.source
 	) as p_experimental ON p_experimental.source = all_sources.source
+	-- Source has bugs
+	LEFT JOIN (
+		SELECT COUNT(*) as bugs_for_source, b1.source
+		FROM bugs b1
+        WHERE b1.severity != 'fixed' AND b1.severity != 'wishlist'
+        AND b1.done = ''
+		GROUP BY b1.source
+	) as p_bugs ON p_bugs.source = all_sources.source
+    -- Source has bad bugs
+	LEFT JOIN (
+		SELECT COUNT(*) as bugs_for_source, b2.source
+		FROM bugs b2
+        WHERE (
+            b2.severity = 'critical' OR b2.severity = 'serious'
+            OR b2.severity = 'important' OR b2.severity = 'grave'
+        )
+        AND b2.done = ''
+		GROUP BY b2.source
+	) as p_bad_bugs ON p_bad_bugs.source = all_sources.source
 
-	WHERE distribution = 'debian' AND release IN('sid', 'bookworm')
+	WHERE distribution = 'debian' AND (release = 'sid' OR release = 'bookworm')
 	-- Filter packages without a recent last_upload
 	AND uhl.last_upload < '2020-01-01'
-	--AND (all_sources.bin ILIKE '%php%' OR all_sources.source ILIKE '%php%')
 	-- Standards version are recent
 	AND all_sources.standards_version NOT ILIKE '4.6._'
-    -- Manual excludes
-	--AND source NOT IN ('phpldapadmin', 'phpsysinfo', 'php-fpdf')
-	-- Manual maintainer trust excludes
-	AND all_sources.maintainer_email NOT IN ('team+php-pecl@tracker.debian.org')
 ) as data
 --WHERE (
 
@@ -78,8 +94,7 @@ SELECT * FROM (
 	--AND vcs_url NOT ILIKE 'code.launchpad.net'
 	--AND (last_ci_date < '2022-01-01' OR last_ci_date IS NULL)
 --) AND is_in_testing = 1
-
-ORDER BY source ASC;
+ORDER BY data.source ASC;
 
 SQL;
 

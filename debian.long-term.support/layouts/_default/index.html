@@ -75,6 +75,8 @@
                     <tr>
                         <th scope="col">URL</th>
                         <th scope="col">Score</th>
+                        <th scope="col">Bugs</th>
+                        <th scope="col">Bad bugs</th>
                         <th scope="col">In testing ?</th>
                         <th scope="col">Last CI date</th>
                         <th scope="col">Last Upload</th>
@@ -95,6 +97,8 @@
                         </th>
                         <td>{{ .score }}</td>
                         <td>{{ .is_in_testing }}</td>
+                        <td>{{ .bugs }}</td>
+                        <td>{{ .bad_bugs }}</td>
                         <td>{{ .last_ci_date }}</td>
                         <td>{{ .last_upload }}</td>
                         <td>{{ .wnpp_o }}</td>
