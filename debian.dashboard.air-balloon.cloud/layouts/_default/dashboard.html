@@ -117,7 +117,7 @@
                 <tbody>
                     {{ range $.Site.Data.udd.packages }}
                     <tr>
-                        <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}">{{ .source }}</a>
+                        <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}" target="_blank">{{ .source }}</a>
                         </th>
                         <td>{{ .score }}</td>
                         <td>{{ .is_in_testing }}</td>
