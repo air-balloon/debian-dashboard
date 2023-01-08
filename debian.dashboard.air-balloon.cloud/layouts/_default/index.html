@@ -10,7 +10,6 @@
     <meta name="keywords" content="{{ (delimit .Keywords " ,") | default .Site.Params.keywords }}">
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
 
     {{ $options := (dict "targetPath" "assets/vendor/bootstrap/css/bootstrap.css" "outputStyle" "compressed"
     "enableSourceMap" true) }}
@@ -69,71 +68,17 @@
 
 <body>
     <main id="main">
-        <div class="m-4 col-12">
-            <table class="table table-hover" id="packages">
-                <thead>
-                    <tr>
-                        <th scope="col">URL</th>
-                        <th scope="col">Score</th>
-                        <th scope="col">In testing ?</th>
-                        <th scope="col">Bugs</th>
-                        <th scope="col">Bad bugs</th>
-                        <th scope="col">Last CI date</th>
-                        <th scope="col">Last Upload</th>
-                        <th scope="col">WNPP (:0) ?</th>
-                        <th scope="col">Total maintainer packages</th>
-                        <th scope="col">Standards-version</th>
-                        <th scope="col">Maintainer e-mail</th>
-                        <th scope="col">Uploaders</th>
-                        <th scope="col">Vcs-Url</th>
-                        <th scope="col">Vcs-Browse</th>
-                        <th scope="col">Binaries</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{ range $.Site.Data.udd.packages }}
-                    <tr>
-                        <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}">{{ .source }}</a>
-                        </th>
-                        <td>{{ .score }}</td>
-                        <td>{{ .is_in_testing }}</td>
-                        <td>{{ .bugs }}</td>
-                        <td>{{ .bad_bugs }}</td>
-                        <td>{{ .last_ci_date }}</td>
-                        <td>{{ .last_upload }}</td>
-                        <td>{{ .wnpp_o }}</td>
-                        <td>{{ .nbr_packages_maint_email }}</td>
-                        <td>{{ .standards_version }}</td>
-                        <td>{{ .maintainer_email }}</td>
-                        <td>{{ .uploaders }}</td>
-                        <td>{{ .vcs_url }}</td>
-                        <td>{{ .vcs_browser }}</td>
-                        <td>{{ .bin }}</td>
-                    </tr>
-                    {{ end }}
-                </tbody>
-            </table>
+        <div class="d-flex justify-content-center">
+            <a href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard.html">Dashboard</href>
         </div>
     </main>
 
     <!-- Vendor JS Files -->
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
     {{ $bootstrapLibJs := resources.Get "vendor/bootstrap/js/bootstrap.bundle.js"
     | fingerprint "sha512"
     }}
     <script src="{{ $bootstrapLibJs.Permalink }}" integrity="{{ $bootstrapLibJs.Data.Integrity }}"
         crossorigin="anonymous"></script>
-    <!-- Template Main JS File -->
-    {{ $options := (dict "targetPath" "assets/js/main.js" "enableSourceMap" true) }}
-    {{ $mainJs := resources.Get "js/main.js"
-    | js.Build $options
-    | minify
-    | fingerprint "sha512"
-    }}
-    <script src="{{ $mainJs.Permalink }}" integrity="{{ $mainJs.Data.Integrity }}" crossorigin="anonymous"></script>
 
 </body>
 
