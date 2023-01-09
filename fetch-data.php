@@ -6,6 +6,7 @@ $sql = <<<'SQL'
 SELECT * FROM (
 	select DISTINCT
     all_sources.source,
+    all_sources.section,
 	lci.last_ci_date, uhl.last_upload,orphaned_packages.bug as wnpp_O,
 	pkg_cnt_maint.nbr_packages_maint_email,
 	all_sources.standards_version,
