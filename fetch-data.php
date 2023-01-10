@@ -1,5 +1,6 @@
 <?php
 
+// SELECT CONCAT('- #', id, ' (', title, ')') FROM bugs WHERE source = 'rtpg'
 
 $sql = <<<'SQL'
 
@@ -18,7 +19,12 @@ SELECT * FROM (
     p_bugs.bugs_for_source as bugs,
     p_bad_bugs.bugs_for_source as bad_bugs,
     last_upload_maint.last_upload as last_upload_maint,
-    last_signed_upload_maint.last_upload as last_signed_upload_maint
+    last_signed_upload_maint.last_upload as last_signed_upload_maint,
+    popcon_src.insts as popcon_installs,
+    popcon_src.vote as popcon_votes,
+    popcon_src.recent as popcon_recent,
+    popcon_src.nofiles as popcon_nofiles,
+    popcon_src.source as popcon_source
 
 	from all_sources
 	-- Is orphan ?
@@ -96,6 +102,11 @@ SELECT * FROM (
             FROM upload_history uh2
             GROUP BY uh2.signed_by_email
 	) as last_signed_upload_maint ON last_signed_upload_maint.email = all_sources.maintainer_email
+    -- Popcon
+	LEFT JOIN (
+        SELECT ppcs.insts, ppcs.vote, ppcs.recent, ppcs.nofiles, ppcs.source
+        FROM popcon_src ppcs
+	) as popcon_src ON popcon_src.source = all_sources.source
 
 	WHERE distribution = 'debian' AND (release = 'sid' OR release = 'bookworm')
 	-- Filter packages without a recent last_upload
