@@ -109,6 +109,8 @@
                         <th scope="col">Total maintainer packages</th>
                         <th scope="col">Standards-version</th>
                         <th scope="col">Maintainer e-mail</th>
+                        <th scope="col">Last maintainer upload</th>
+                        <th scope="col">Last maintainer signed upload</th>
                         <th scope="col">Uploaders</th>
                         <th scope="col">Vcs-Url</th>
                         <th scope="col">Vcs-Browse</th>
@@ -131,6 +133,8 @@
                         <td>{{ .nbr_packages_maint_email }}</td>
                         <td>{{ .standards_version }}</td>
                         <td>{{ .maintainer_email }}</td>
+                        <td>{{ .last_upload_maint }}</td>
+                        <td>{{ .last_signed_upload_maint }}</td>
                         <td>{{ .uploaders }}</td>
                         <td>{{ .vcs_url }}</td>
                         <td>{{ .vcs_browser }}</td>

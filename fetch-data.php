@@ -16,7 +16,9 @@ SELECT * FROM (
     CASE WHEN p_testing.is_in_testing=1 THEN true ELSE false END as is_in_testing,
     CASE WHEN p_experimental.is_in_experimental=1 THEN true ELSE false END as is_in_experimental,
     p_bugs.bugs_for_source as bugs,
-    p_bad_bugs.bugs_for_source as bad_bugs
+    p_bad_bugs.bugs_for_source as bad_bugs,
+    last_upload_maint.last_upload as last_upload_maint,
+    last_signed_upload_maint.last_upload as last_signed_upload_maint
 
 	from all_sources
 	-- Is orphan ?
@@ -82,6 +84,18 @@ SELECT * FROM (
         AND b2.done = ''
 		GROUP BY b2.source
 	) as p_bad_bugs ON p_bad_bugs.source = all_sources.source
+    -- Last upload of maintainer
+	LEFT JOIN (
+        SELECT MAX(uh1.date) as last_upload, uh1.changed_by_email as email
+            FROM upload_history uh1
+            GROUP BY uh1.changed_by_email
+	) as last_upload_maint ON last_upload_maint.email = all_sources.maintainer_email
+    -- Last signed upload of maintainer
+	LEFT JOIN (
+        SELECT MAX(uh2.date) as last_upload, uh2.signed_by_email as email
+            FROM upload_history uh2
+            GROUP BY uh2.signed_by_email
+	) as last_signed_upload_maint ON last_signed_upload_maint.email = all_sources.maintainer_email
 
 	WHERE distribution = 'debian' AND (release = 'sid' OR release = 'bookworm')
 	-- Filter packages without a recent last_upload
