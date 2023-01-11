@@ -5,6 +5,19 @@ $result = json_decode($result, true, JSON_THROW_ON_ERROR);
 
 echo 'Building ...' . PHP_EOL;
 $result['packages'] = array_map(static function(array $e): array {
+    $e['is_team_maintained'] = false;
+    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@lists.alioth.debian.org')) {
+        $e['is_team_maintained'] = true;
+    }
+    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@tracker.debian.org')) {
+        $e['is_team_maintained'] = true;
+    }
+    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@lists.debian.org')) {
+        $e['is_team_maintained'] = true;
+    }
+    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@qa.debian.org')) {
+        $e['is_team_maintained'] = true;
+    }
     $e['score'] = 0;
     if ($e['last_ci_date'] === null) {
         $e['score'] -= 10;
