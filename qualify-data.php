@@ -9,6 +9,16 @@ echo 'Reading ...' . PHP_EOL;
 $result = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json');
 $result = json_decode($result, true, JSON_THROW_ON_ERROR);
 
+echo 'Re-building source ...' . PHP_EOL;
+$result['packages'] = array_map(static function(array $e): array {
+    ksort($e);
+    return $e;
+}, $result['packages']);
+
+echo 'Saving ...' . PHP_EOL;
+$data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json', $data);
+
 function is_team_email(string $email): bool {
     if (str_contains($email, '@lists.alioth.debian.org')) {
         return true;
@@ -91,5 +101,21 @@ $result['packages'] = array_map(static function(array $e): array {
 
 echo 'Saving ...' . PHP_EOL;
 $data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json', $data);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddWeb.json', $data);
+echo 'Done.' . PHP_EOL;
+
+echo 'Building RM candidates ...' . PHP_EOL;
+$result['packages'] = array_filter($result['packages'], static function(array $p): bool {
+    $r = new DateTimeImmutable($p['last_upload']);
+    $lastUploadYear = (int) $r->format('Y');
+    return $lastUploadYear < 2016
+        && $p['popcon_votes'] < 30
+        && $p['release_count'] <= 3;
+});
+
+$result['packages'] = array_values($result['packages']);
+
+echo 'Saving ...' . PHP_EOL;
+$data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddFtpRmCandidates.json', $data);
 echo 'Done.' . PHP_EOL;

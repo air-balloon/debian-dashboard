@@ -10,7 +10,13 @@
     <meta name="keywords" content="{{ (delimit .Keywords " ,") | default .Site.Params.keywords }}">
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+    {{ $jqueryDataTablesStyle := resources.Get "css/jquery.dataTables.css"
+    | minify
+    | fingerprint "sha512" }}
+    <link href="{{ $jqueryDataTablesStyle.Permalink }}" rel="stylesheet" integrity="{{ $jqueryDataTablesStyle.Data.Integrity }}"
+        crossorigin="anonymous">
+    <link rel="preload" href="{{ $jqueryDataTablesStyle.Permalink }}" as="style"
+        integrity="{{ $jqueryDataTablesStyle.Data.Integrity }}" crossorigin="anonymous">
 
     {{ $options := (dict "targetPath" "assets/vendor/bootstrap/css/bootstrap.css" "outputStyle" "compressed"
     "enableSourceMap" true) }}
@@ -85,6 +91,10 @@
                             href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard-ftp-rm-candidates.html">Dashboard (FTP RM candidates)</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://github.com/air-balloon/debian-dashboard">GitHub (source
                             code)</a>
                     </li>
@@ -125,7 +135,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{ range $.Site.Data.udd.packages }}
+                    {{ range $.Site.Data.uddWeb.packages }}
                     <tr>
                         <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}" target="_blank">{{ .source }}</a>
                         </th>
@@ -190,10 +200,18 @@
     </main>
 
     <!-- Vendor JS Files -->
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+    {{ $jqueryMinScript := resources.Get "js/jquery-3.6.3.slim.js"
+    | minify
+    | fingerprint "sha512" }}
+    <script src="{{ $jqueryMinScript.Permalink }}" integrity="{{ $jqueryMinScript.Data.Integrity }}"
+        crossorigin="anonymous"></script>
+
+    {{ $jqueryDataTablesScript := resources.Get "js/jquery.dataTables.js"
+    | minify
+    | fingerprint "sha512" }}
+    <script src="{{ $jqueryDataTablesScript.Permalink }}" integrity="{{ $jqueryDataTablesScript.Data.Integrity }}"
+        crossorigin="anonymous"></script>
+
     {{ $bootstrapLibJs := resources.Get "vendor/bootstrap/js/bootstrap.bundle.js"
     | fingerprint "sha512"
     }}
