@@ -110,7 +110,8 @@ $result['packages'] = array_filter($result['packages'], static function(array $p
     $lastUploadYear = (int) $r->format('Y');
     return $lastUploadYear < 2016
         && $p['popcon_votes'] < 30
-        && $p['release_count'] <= 3;
+        && $p['release_count'] <= 3
+        && $p['is_team_maintained'] === false;
 });
 
 $result['packages'] = array_values($result['packages']);
