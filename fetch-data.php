@@ -24,7 +24,8 @@ SELECT * FROM (
     popcon_src.vote as popcon_votes,
     popcon_src.recent as popcon_recent,
     popcon_src.nofiles as popcon_nofiles,
-    popcon_src.source as popcon_source
+    popcon_src.source as popcon_source,
+    CASE WHEN p_other_suites.release_count IS NULL THEN 0 ELSE p_other_suites.release_count END as release_count
 
 	from all_sources
 	-- Is orphan ?
@@ -55,6 +56,14 @@ SELECT * FROM (
 		FROM ci
 		GROUP BY ci.source
 	) as lci ON lci.source = all_sources.source
+    -- Is in other releases than unstable ?
+	LEFT JOIN (
+		SELECT COUNT(*) as release_count, as2.source
+		FROM all_sources as2
+		WHERE as2.distribution = 'debian'
+	 	AND as2.release != 'sid'
+		GROUP BY as2.source
+	) as p_other_suites ON p_other_suites.source = all_sources.source
 	-- Is in testing ?
 	LEFT JOIN (
 		SELECT COUNT(*) as is_in_testing, as2.source
