@@ -1,21 +1,41 @@
 <?php
+
+if (! extension_loaded('mailparse')) {
+    echo 'Missing ext-mailparse. Hint: apt install php-mailparse';
+    exit(1);
+}
+
 echo 'Reading ...' . PHP_EOL;
 $result = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json');
 $result = json_decode($result, true, JSON_THROW_ON_ERROR);
 
+function is_team_email(string $email): bool {
+    if (str_contains($email, '@lists.alioth.debian.org')) {
+        return true;
+    }
+    if (str_contains($email, '@tracker.debian.org')) {
+        return true;
+    }
+    if (str_contains($email, '@lists.debian.org')) {
+        return true;
+    }
+    if (str_contains($email, '@qa.debian.org')) {
+        return true;
+    }
+    return false;
+}
+
 echo 'Building ...' . PHP_EOL;
 $result['packages'] = array_map(static function(array $e): array {
     $e['is_team_maintained'] = false;
-    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@lists.alioth.debian.org')) {
-        $e['is_team_maintained'] = true;
+    $uploaders = mailparse_rfc822_parse_addresses($e['uploaders']);
+    foreach ($uploaders as $uploader) {
+        if (is_team_email($uploader['address'])) {
+            $e['is_team_maintained'] = true;
+            break;
+        }
     }
-    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@tracker.debian.org')) {
-        $e['is_team_maintained'] = true;
-    }
-    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@lists.debian.org')) {
-        $e['is_team_maintained'] = true;
-    }
-    if ($e['maintainer_email'] !== null && str_contains($e['maintainer_email'], '@qa.debian.org')) {
+    if ($e['maintainer_email'] !== null && is_team_email($e['maintainer_email'])) {
         $e['is_team_maintained'] = true;
     }
     $e['score'] = 0;

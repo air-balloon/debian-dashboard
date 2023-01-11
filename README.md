@@ -3,7 +3,7 @@
 ## How to update the data
 
 ```sh
-# it needs php8.1 php8.1-pdo-pgsql
+# it needs php8.1 php8.1-pdo-pgsql php8.1-mailparse
 php -f fetch-data.php
 ```
 
