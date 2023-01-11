@@ -85,6 +85,7 @@ $result['packages'] = array_map(static function(array $e): array {
     if ($lastUploadYear < 2019) {
         $e['score'] -= 50;
     }
+    ksort($e);
     return $e;
 }, $result['packages']);
 
