@@ -1,0 +1,37 @@
+name: Run sudo-bot to update files
+
+permissions:
+    contents: read
+
+on:
+    repository_dispatch:
+        types: run-cron
+    workflow_dispatch:
+
+jobs:
+    run-sudo-bot-cron:
+        environment:
+            name: sudo-bot
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use php 8.1
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: 8.1
+
+            - name: Update data
+              run: php -f fetch-data.php
+            - name: Qualify data
+              run: php -f qualify-data.php
+            - name: Install sudo-bot
+              run: yarn global add sudo-bot
+            - name: Run sudo-bot
+              env:
+                  INSTALLATION_ID: ${{ secrets.INSTALLATION_ID }}
+                  GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+                  GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+                  GH_APP_JWT_PRIV_PEM_CONTENTS: ${{ secrets.GH_APP_JWT_PRIV_PEM_CONTENTS }}
+                  TARGET_BRANCH: "main"
+                  SKIP_DOCS_STEPS: "yes"
+                  TEMPLATE_FILE: "template.js"
