@@ -260,7 +260,7 @@ class UDD {
         $lastUpload = $this->lastUpload($package);
         echo 'Last upload: ' . $lastUpload->format('Y-m-d') . PHP_EOL;
         echo '' . PHP_EOL;
-        echo 'List of checks (source code: https://github.com/air-balloon/debian-dashboard#qa-report):' . PHP_EOL;
+        echo 'List of checks (source code: https://github.com/air-balloon/debian-dashboard#qa-report ):' . PHP_EOL;
         echo '' . PHP_EOL;
 
         [$checks, $texts, $criteria] = $this->checkList($package);
