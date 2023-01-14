@@ -18,6 +18,7 @@ SELECT * FROM (
     CASE WHEN p_experimental.is_in_experimental=1 THEN true ELSE false END as is_in_experimental,
     p_bugs.bugs_for_source as bugs,
     p_bad_bugs.bugs_for_source as bad_bugs,
+    p_old_bugs.bugs_for_source as old_bugs,
     last_upload_maint.last_upload as last_upload_maint,
     last_signed_upload_maint.last_upload as last_signed_upload_maint,
     popcon_src.insts as popcon_installs,
@@ -99,6 +100,13 @@ SELECT * FROM (
         AND b2.done = ''
 		GROUP BY b2.source
 	) as p_bad_bugs ON p_bad_bugs.source = all_sources.source
+    -- Source has very old bugs
+	LEFT JOIN (
+		SELECT COUNT(*) as bugs_for_source, b3.source
+		FROM bugs b3
+        WHERE b3.done = '' AND b3.id < 800000
+		GROUP BY b3.source
+	) as p_old_bugs ON p_old_bugs.source = all_sources.source
     -- Last upload of maintainer
 	LEFT JOIN (
         SELECT MAX(uh1.date) as last_upload, uh1.changed_by_email as email
