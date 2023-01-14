@@ -117,7 +117,7 @@ SELECT * FROM (
         FROM popcon_src ppcs
 	) as popcon_src ON popcon_src.source = all_sources.source
 
-	WHERE distribution = 'debian' AND (release = 'sid' OR release = 'bookworm')
+	WHERE distribution = 'debian' AND (release = 'sid' OR release = 'bookworm' OR release = 'experimental')
 	-- Filter packages without a recent last_upload
 	AND uhl.last_upload < '2020-01-01'
 	-- Standards version are recent
