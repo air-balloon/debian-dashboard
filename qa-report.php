@@ -153,6 +153,11 @@ class UDD {
         $checks['No d/watch file'] = empty($watchContents);
         $checks['No d/copyright file'] = empty($copyrightContents);
         $dependents = $this->getDependents($package);
+
+        $dependents = array_filter($dependents, static function ($p) use ($package): bool {
+            return $p['source'] !== $package;
+        });
+
         $checks['No reverse dependencies'] = count($dependents) === 0;
         if ($checks['No reverse dependencies']) {
             $criteria[] = 'no rdeps';
