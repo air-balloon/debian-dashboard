@@ -204,8 +204,24 @@ class UDD {
         $checks['Missing Debian Vcs-* fields'] = $sourceInfo['vcs_url'] === null && $sourceInfo['vcs_browser'] === null;
         $checks['Broken Vcs target'] = '?';
 
-        if (str_contains($sourceInfo['vcs_url'], 'anonscm.debian.org')){
-            $checks['Broken Vcs target'] = true;
+        if (! $checks['Missing Debian Vcs-* fields']) {
+            $vcsWatch = self::fetch(
+                'https://qa.debian.org/cgi-bin/vcswatch?json=on&package=' . $package
+            );
+            $vcsWatch = json_decode($vcsWatch, true);
+
+            if ($vcsWatch['status'] === 'ERROR') {
+                $checks['Broken Vcs target'] = true;
+                $texts[] = 'Vcs error: ' . $vcsWatch['error'];
+            }
+
+            if ($vcsWatch['status'] === 'COMMITS') {
+                $checks['Broken Vcs target'] = false;
+            }
+
+            if (! in_array($vcsWatch['status'], ['COMMITS', 'ERROR'])) {
+                $checks['Broken Vcs target'] = $vcsWatch['status'];
+            }
         }
 
         // No fields, so not broken
