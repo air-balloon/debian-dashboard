@@ -19,6 +19,11 @@ It is mainly from Debian's [UDD database](https://udd-mirror.debian.net/)
 
 ## QA report
 
+The source code is written in plain PHP with no dependencies.
+You can find it at [qa-report.php](./qa-report.php).
+
+There is some discussion about the project and the script at: https://github.com/air-balloon/debian-dashboard/discussions/1
+
 ```sh
 GITLAB_TOKEN="glpat-xxx-xx" ./qa-report.php -p angband-audio
 ```
