@@ -230,7 +230,6 @@ class UDD {
         }
 
         $checks['Not maintained'] = '?';
-        $checks['Upstream provides tests'] = '?';
 
         $checks['Found on GitLab salsa'] = '?';
         if (getenv('GITLAB_TOKEN') !== false) {
