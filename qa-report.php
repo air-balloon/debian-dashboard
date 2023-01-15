@@ -160,6 +160,11 @@ class UDD {
         $criteria = [];
 
         $qci['d/copyright uses DEP-5'] = str_contains($copyrightContents, '/packaging-manuals/copyright-format/1.0/');
+        $qci['d/copyright uses early DEP-5 Format-Specification'] = str_contains($copyrightContents, 'Format-Specification: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn');
+
+        if ($qci['d/copyright uses early DEP-5 Format-Specification'] === false) {
+            unset($qci['d/copyright uses early DEP-5 Format-Specification']);
+        }
 
         $FTBFSBugs = $this->getFTBFSBugs($package);
 
@@ -190,9 +195,8 @@ class UDD {
         }
 
         $qci['Has autopkgtests'] = $sourceInfo['testsuite'] !== null;
-        $standardsUpToDate = str_contains($sourceInfo['standards_version'], '4.6')
-                            || str_contains($sourceInfo['standards_version'], '4.5');
-        $qci['Standards are up-to-date'] = $standardsUpToDate;
+        $standardsUpToDate = str_contains($sourceInfo['standards_version'], '4.');
+        $qci['Standards are somewhat up-to-date'] = $standardsUpToDate;
 
         $prc['Up to date with upstream'] = '?';
         $upstreamStatus = $this->upstreamStatus($package);
