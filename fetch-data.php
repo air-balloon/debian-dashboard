@@ -1,5 +1,10 @@
 <?php
 
+if (! extension_loaded('pgsql')) {
+	echo 'Missing ext-pdo-pgsql. Hint: apt install php-pdo-pgsql' . PHP_EOL;
+	exit(1);
+}
+
 // SELECT CONCAT('- #', id, ' (', title, ')') FROM bugs WHERE source = 'rtpg'
 
 $sql = <<<'SQL'

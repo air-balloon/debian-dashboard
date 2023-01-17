@@ -1,7 +1,7 @@
 <?php
 
 if (! extension_loaded('mailparse')) {
-    echo 'Missing ext-mailparse. Hint: apt install php-mailparse';
+    echo 'Missing ext-mailparse. Hint: apt install php-mailparse' . PHP_EOL;
     exit(1);
 }
 
