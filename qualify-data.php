@@ -99,13 +99,15 @@ $result['packages'] = array_map(static function(array $e): array {
     return $e;
 }, $result['packages']);
 
+$originalPackagesList = $result['packages'];
+
 echo 'Saving ...' . PHP_EOL;
 $data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddWeb.json', $data);
 echo 'Done.' . PHP_EOL;
 
 echo 'Building RM candidates ...' . PHP_EOL;
-$result['packages'] = array_filter($result['packages'], static function(array $p): bool {
+$result['packages'] = array_filter($originalPackagesList, static function(array $p): bool {
     $r = new DateTimeImmutable($p['last_upload']);
     $lastUploadYear = (int) $r->format('Y');
     return $lastUploadYear < 2016
@@ -119,4 +121,19 @@ $result['packages'] = array_values($result['packages']);
 echo 'Saving ...' . PHP_EOL;
 $data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddFtpRmCandidates.json', $data);
+echo 'Done.' . PHP_EOL;
+
+echo 'Building neglected packages ...' . PHP_EOL;
+$result['packages'] = array_filter($originalPackagesList, static function(array $p): bool {
+    $r = new DateTimeImmutable($p['last_upload']);
+    $lastUploadYear = (int) $r->format('Y');
+    return $lastUploadYear < 2017
+        && $p['popcon_votes'] > 30;
+});
+
+$result['packages'] = array_values($result['packages']);
+
+echo 'Saving ...' . PHP_EOL;
+$data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddNeglected.json', $data);
 echo 'Done.' . PHP_EOL;

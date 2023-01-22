@@ -87,7 +87,7 @@
                         <a class="nav-link" href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
+                        <a class="nav-link"
                             href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
@@ -95,7 +95,7 @@
                             href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard-ftp-rm-candidates.html">Dashboard (FTP RM candidates)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
+                        <a class="nav-link active" aria-current="page"
                             href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard-neglected.html">Dashboard (neglected packages)</a>
                     </li>
                     <li class="nav-item">
@@ -108,6 +108,7 @@
     </nav>
     <main id="main">
         <div class="m-4 col-12">
+        Last upload is before 2017 and popcon is > 30
             <table class="table table-hover" id="packages">
                 <thead>
                     <tr>
@@ -140,7 +141,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{ range $.Site.Data.uddWeb.packages }}
+                    {{ range $.Site.Data.uddNeglected.packages }}
                     <tr>
                         <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}" target="_blank">{{ .source }}</a>
                         </th>
