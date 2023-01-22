@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
+    <meta name="keywords" content="{{ (delimit .Keywords " ,") | default .Site.Params.keywords }}">
+
+    <!-- Vendor CSS Files -->
+    {{ $jqueryDataTablesStyle := resources.Get "css/jquery.dataTables.css"
+    | minify
+    | fingerprint "sha512" }}
+    <link href="{{ $jqueryDataTablesStyle.Permalink }}" rel="stylesheet" integrity="{{ $jqueryDataTablesStyle.Data.Integrity }}"
+        crossorigin="anonymous">
+    <link rel="preload" href="{{ $jqueryDataTablesStyle.Permalink }}" as="style"
+        integrity="{{ $jqueryDataTablesStyle.Data.Integrity }}" crossorigin="anonymous">
+
+    {{ $options := (dict "targetPath" "assets/vendor/bootstrap/css/bootstrap.css" "outputStyle" "compressed"
+    "enableSourceMap" true) }}
+    {{ $bootstrapStyle := resources.Get "vendor/bootstrap/scss/bootstrap.scss"
+    | resources.ExecuteAsTemplate "vendor/bootstrap/scss/bootstrap.scss" .
+    | resources.ToCSS $options
+    | minify
+    | fingerprint "sha512" }}
+    <link href="{{ $bootstrapStyle.Permalink }}" rel="stylesheet" integrity="{{ $bootstrapStyle.Data.Integrity }}"
+        crossorigin="anonymous">
+    <link rel="preload" href="{{ $bootstrapStyle.Permalink }}" as="style"
+        integrity="{{ $bootstrapStyle.Data.Integrity }}" crossorigin="anonymous">
+
+    <!-- Template Main CSS File -->
+    {{ $options := (dict "targetPath" "assets/css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $mainStyle := resources.Get "css/style.scss"
+    | resources.ExecuteAsTemplate "css/style.scss" .
+    | resources.ToCSS $options
+    | minify
+    | fingerprint "sha512" }}
+    <link href="{{ $mainStyle.Permalink }}" rel="stylesheet" integrity="{{ $mainStyle.Data.Integrity }}"
+        crossorigin="anonymous">
+    <link rel="preload" href="{{ $mainStyle.Permalink }}" as="style" integrity="{{ $mainStyle.Data.Integrity }}"
+        crossorigin="anonymous">
+
+    {{ $options := (dict "targetPath" "assets/vendor/MaterialDesignIcons/css/materialdesignicons.min.css" "outputStyle"
+    "compressed" "enableSourceMap" true) }}
+    {{ $mdiStyle := resources.Get "vendor/MaterialDesignIcons/scss/materialdesignicons.scss"
+    | resources.ExecuteAsTemplate "vendor/MaterialDesignIcons/scss/materialdesignicons.scss" .
+    | resources.ToCSS $options
+    | minify
+    | fingerprint "sha512" }}
+    <link href="{{ $mdiStyle.Permalink }}" rel="stylesheet" integrity="{{ $mdiStyle.Data.Integrity }}"
+        crossorigin="anonymous">
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//analytics.datacenters.network/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '4']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript>
+        <p><img src="//analytics.datacenters.network/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+    <!-- End Matomo Code -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://github.com/air-balloon">Debian dashboard - AirBalloon project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard-ftp-rm-candidates.html">Dashboard (FTP RM candidates)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard-neglected.html">Dashboard (neglected packages)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/dashboard-abandoned.html">Dashboard (abandoned packages)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/air-balloon/debian-dashboard">GitHub (source
+                            code)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <div class="m-4 col-12">
+        Last upload is before 2017 and last maintainer upload is before 2019
+            <table class="table table-hover" id="packages">
+                <thead>
+                    <tr>
+                        <th scope="col">URL</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Section</th>
+                        <th scope="col">In testing ?</th>
+                        <th scope="col">In releases count</th>
+                        <th scope="col">Bugs</th>
+                        <th scope="col">Bad bugs</th>
+                        <th scope="col">Old bugs</th>
+                        <th scope="col">Popcon installs</th>
+                        <th scope="col">Popcon votes</th>
+                        <th scope="col">Popcon recent</th>
+                        <th scope="col">Popcon nofiles</th>
+                        <th scope="col">Popcon source</th>
+                        <th scope="col">Last CI date</th>
+                        <th scope="col">Last Upload</th>
+                        <th scope="col">WNPP (:0) ?</th>
+                        <th scope="col">In team maintained ?</th>
+                        <th scope="col">Total maintainer packages</th>
+                        <th scope="col">Standards-version</th>
+                        <th scope="col">Maintainer e-mail</th>
+                        <th scope="col">Last maintainer upload</th>
+                        <th scope="col">Last maintainer signed upload</th>
+                        <th scope="col">Uploaders</th>
+                        <th scope="col">Vcs-Url</th>
+                        <th scope="col">Vcs-Browse</th>
+                        <th scope="col">Binaries</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range $.Site.Data.uddAbandoned.packages }}
+                    <tr>
+                        <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}" target="_blank">{{ .source }}</a>
+                        </th>
+                        <td>{{ .score }}</td>
+                        <td>{{ .section }}</td>
+                        <td>{{ .is_in_testing }}</td>
+                        <td>{{ .release_count }}</td>
+                        <td>{{ .bugs }}</td>
+                        <td>{{ .bad_bugs }}</td>
+                        <td>{{ .old_bugs }}</td>
+                        <td>{{ .popcon_installs }}</td>
+                        <td>{{ .popcon_votes }}</td>
+                        <td>{{ .popcon_recent }}</td>
+                        <td>{{ .popcon_nofiles }}</td>
+                        <td>{{ .popcon_source }}</td>
+                        <td>{{ .last_ci_date }}</td>
+                        <td>{{ .last_upload }}</td>
+                        <td>{{ .wnpp_o }}</td>
+                        <td>{{ .is_team_maintained }}</td>
+                        <td>{{ .nbr_packages_maint_email }}</td>
+                        <td>{{ .standards_version }}</td>
+                        <td>{{ .maintainer_email }}</td>
+                        <td>{{ .last_upload_maint }}</td>
+                        <td>{{ .last_signed_upload_maint }}</td>
+                        <td>{{ .uploaders }}</td>
+                        <td>{{ .vcs_url }}</td>
+                        <td>{{ .vcs_browser }}</td>
+                        <td>{{ .bin }}</td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="col">URL</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Section</th>
+                        <th scope="col">In testing ?</th>
+                        <th scope="col">In releases count</th>
+                        <th scope="col">Bugs</th>
+                        <th scope="col">Bad bugs</th>
+                        <th scope="col">Old bugs</th>
+                        <th scope="col">Popcon installs</th>
+                        <th scope="col">Popcon votes</th>
+                        <th scope="col">Popcon recent</th>
+                        <th scope="col">Popcon nofiles</th>
+                        <th scope="col">Popcon source</th>
+                        <th scope="col">Last CI date</th>
+                        <th scope="col">Last Upload</th>
+                        <th scope="col">WNPP (:0) ?</th>
+                        <th scope="col">In team maintained ?</th>
+                        <th scope="col">Total maintainer packages</th>
+                        <th scope="col">Standards-version</th>
+                        <th scope="col">Maintainer e-mail</th>
+                        <th scope="col">Last maintainer upload</th>
+                        <th scope="col">Last maintainer signed upload</th>
+                        <th scope="col">Uploaders</th>
+                        <th scope="col">Vcs-Url</th>
+                        <th scope="col">Vcs-Browse</th>
+                        <th scope="col">Binaries</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <!-- Vendor JS Files -->
+    {{ $jqueryMinScript := resources.Get "js/jquery-3.6.3.slim.js"
+    | minify
+    | fingerprint "sha512" }}
+    <script src="{{ $jqueryMinScript.Permalink }}" integrity="{{ $jqueryMinScript.Data.Integrity }}"
+        crossorigin="anonymous"></script>
+
+    {{ $jqueryDataTablesScript := resources.Get "js/jquery.dataTables.js"
+    | minify
+    | fingerprint "sha512" }}
+    <script src="{{ $jqueryDataTablesScript.Permalink }}" integrity="{{ $jqueryDataTablesScript.Data.Integrity }}"
+        crossorigin="anonymous"></script>
+
+    {{ $bootstrapLibJs := resources.Get "vendor/bootstrap/js/bootstrap.bundle.js"
+    | fingerprint "sha512"
+    }}
+    <script src="{{ $bootstrapLibJs.Permalink }}" integrity="{{ $bootstrapLibJs.Data.Integrity }}"
+        crossorigin="anonymous"></script>
+    <!-- Template Main JS File -->
+    {{ $options := (dict "targetPath" "assets/js/main.js" "enableSourceMap" true) }}
+    {{ $mainJs := resources.Get "js/main.js"
+    | js.Build $options
+    | minify
+    | fingerprint "sha512"
+    }}
+    <script src="{{ $mainJs.Permalink }}" integrity="{{ $mainJs.Data.Integrity }}" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

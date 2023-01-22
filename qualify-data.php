@@ -137,3 +137,20 @@ echo 'Saving ...' . PHP_EOL;
 $data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddNeglected.json', $data);
 echo 'Done.' . PHP_EOL;
+
+echo 'Building abandoned packages ...' . PHP_EOL;
+$result['packages'] = array_filter($originalPackagesList, static function(array $p): bool {
+    $r = new DateTimeImmutable($p['last_upload']);
+    $lastUploadYear = (int) $r->format('Y');
+    $lum = new DateTimeImmutable($p['last_upload_maint']);
+    $lastMaintainerUploadYear = (int) $lum->format('Y');
+    return $lastUploadYear < 2017
+        && $lastMaintainerUploadYear < 2019;
+});
+
+$result['packages'] = array_values($result['packages']);
+
+echo 'Saving ...' . PHP_EOL;
+$data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddAbandoned.json', $data);
+echo 'Done.' . PHP_EOL;
