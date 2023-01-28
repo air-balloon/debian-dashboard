@@ -15,3 +15,10 @@ echo 'Saving ...' . PHP_EOL;
 $data = json_encode(['packages' => $result], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json', $data);
 echo 'Done.' . PHP_EOL;
+
+echo 'Querying PHP/WEB ...' . PHP_EOL;
+$result = $udd->getPHPWebDashboardData();
+echo 'Saving ...' . PHP_EOL;
+$data = json_encode(['packages' => $result], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd-php-web.json', $data);
+echo 'Done.' . PHP_EOL;

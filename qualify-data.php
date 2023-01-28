@@ -9,6 +9,10 @@ echo 'Reading ...' . PHP_EOL;
 $result = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json');
 $result = json_decode($result, true, JSON_THROW_ON_ERROR);
 
+echo 'Reading php/web...' . PHP_EOL;
+$resultWebPhp = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd-php-web.json');
+$resultWebPhp = json_decode($resultWebPhp, true, JSON_THROW_ON_ERROR);
+
 echo 'Re-building source ...' . PHP_EOL;
 $result['packages'] = array_map(static function(array $e): array {
     ksort($e);
@@ -35,8 +39,7 @@ function is_team_email(string $email): bool {
     return false;
 }
 
-echo 'Building ...' . PHP_EOL;
-$result['packages'] = array_map(static function(array $e): array {
+$qualifyPackage = static function(array $e): array {
     $e['is_team_maintained'] = false;
     $uploaders = mailparse_rfc822_parse_addresses($e['uploaders']);
     foreach ($uploaders as $uploader) {
@@ -97,7 +100,10 @@ $result['packages'] = array_map(static function(array $e): array {
     }
     ksort($e);
     return $e;
-}, $result['packages']);
+};
+
+echo 'Building ...' . PHP_EOL;
+$result['packages'] = array_map($qualifyPackage, $result['packages']);
 
 $originalPackagesList = $result['packages'];
 
@@ -105,6 +111,16 @@ echo 'Saving ...' . PHP_EOL;
 $data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddWeb.json', $data);
 echo 'Done.' . PHP_EOL;
+
+
+echo 'Building web/php...' . PHP_EOL;
+$resultWebPhp['packages'] = array_map($qualifyPackage, $resultWebPhp['packages']);
+
+echo 'Saving ...' . PHP_EOL;
+$data = json_encode($resultWebPhp, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddWebPhp.json', $data);
+echo 'Done.' . PHP_EOL;
+
 
 echo 'Building RM candidates ...' . PHP_EOL;
 $result['packages'] = array_filter($originalPackagesList, static function(array $p): bool {
