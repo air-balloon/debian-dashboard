@@ -45,6 +45,7 @@ jobs:
                     --gpg-private-key-file="${HOME}/.private-key.asc" \
                     --gpg-private-key-passphrase="${{ secrets.GPG_PASSPHRASE }}"
             - name: Purge secrets
+              if: always()
               run: |
                   rm -v ${HOME}/.secret_jwt.pem
                   rm -v ${HOME}/.private-key.asc
