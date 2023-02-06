@@ -15,10 +15,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - name: Use php 8.1
+            - name: Use php 8.2
               uses: shivammathur/setup-php@v2
               with:
-                  php-version: 8.1
+                  php-version: 8.2
 
             - name: Update data
               run: php -f fetch-data.php
@@ -26,12 +26,24 @@ jobs:
               run: php -f qualify-data.php
             - name: Install sudo-bot
               run: yarn global add sudo-bot
+            - name: Extract secrets
+              run: |
+                  printf '%s' "${{ secrets.GH_APP_JWT_PRIV_PEM_CONTENTS }}" > ${HOME}/.secret_jwt.pem
+                  printf '%s' "${{ secrets.GPG_PRIVATE_KEY }}" > ${HOME}/.private-key.asc
             - name: Run sudo-bot
-              env:
-                  INSTALLATION_ID: ${{ secrets.INSTALLATION_ID }}
-                  GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-                  GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-                  GH_APP_JWT_PRIV_PEM_CONTENTS: ${{ secrets.GH_APP_JWT_PRIV_PEM_CONTENTS }}
-                  TARGET_BRANCH: "main"
-                  SKIP_DOCS_STEPS: "yes"
-                  TEMPLATE_FILE: "template.js"
+              run: |
+                  sudo-bot --verbose \
+                    --jwt-file="${HOME}/.secret_jwt.pem" \
+                    --gh-app-id='17453' \
+                    --installation-id="${{ secrets.INSTALLATION_ID }}" \
+                    --repository-slug='air-balloon/debian-dashboard' \
+                    --target-branch='main' \
+                    --assign='williamdes' \
+                    --commit-author-email='sudo-bot@wdes.fr' \
+                    --commit-author-name='Sudo Bot' \
+                    --gpg-private-key-file="${HOME}/.private-key.asc" \
+                    --gpg-private-key-passphrase="${{ secrets.GPG_PASSPHRASE }}"
+            - name: Purge secrets
+              run: |
+                  rm -v ${HOME}/.secret_jwt.pem
+                  rm -v ${HOME}/.private-key.asc
