@@ -2,3 +2,4 @@
 /debian.dashboard.air-balloon.cloud/resources/_gen
 .hugo_build.lock
 /upstream-status.json
+/src/upstream-status.json
