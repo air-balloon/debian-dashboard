@@ -9,6 +9,14 @@ echo 'Reading ...' . PHP_EOL;
 $result = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd.json');
 $result = json_decode($result, true, JSON_THROW_ON_ERROR);
 
+echo 'Reading popcons ...' . PHP_EOL;
+$popcons = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddPopcons.json');
+$popcons = json_decode($popcons, true, JSON_THROW_ON_ERROR)['popcons'];
+
+echo 'Reading maintainers ...' . PHP_EOL;
+$maintainers = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddMaintainers.json');
+$maintainers = json_decode($maintainers, true, JSON_THROW_ON_ERROR)['maintainers'];
+
 echo 'Reading php/web...' . PHP_EOL;
 $resultWebPhp = file_get_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/udd-php-web.json');
 $resultWebPhp = json_decode($resultWebPhp, true, JSON_THROW_ON_ERROR);
@@ -39,7 +47,7 @@ function is_team_email(string $email): bool {
     return false;
 }
 
-$qualifyPackage = static function(array $e): array {
+$qualifyPackage = static function(array $e) use ($maintainers): array {
     $e['is_team_maintained'] = false;
     $uploaders = mailparse_rfc822_parse_addresses($e['uploaders']);
     foreach ($uploaders as $uploader) {
@@ -55,7 +63,8 @@ $qualifyPackage = static function(array $e): array {
     if ($e['last_ci_date'] === null) {
         $e['score'] -= 10;
     }
-    if ($e['nbr_packages_maint_email'] < 10) {
+
+    if ($maintainers[$e['maintainer_email']]['nbr_packages_maint_email'] < 10) {
         $e['score'] -= 20;
     }
     if ($e['vcs_url'] === null || str_contains($e['vcs_url'], 'anonscm.debian.org')) {
@@ -102,10 +111,19 @@ $qualifyPackage = static function(array $e): array {
     return $e;
 };
 
+$injectData = static function(array $p) use ($popcons, $maintainers): array {
+    $p = array_merge($p, $popcons[$p['source']]);
+    $p = array_merge($p, $maintainers[$p['maintainer_email']]);
+    ksort($p);
+    return $p;
+};
+
 echo 'Building ...' . PHP_EOL;
 $result['packages'] = array_map($qualifyPackage, $result['packages']);
 
 $originalPackagesList = $result['packages'];
+
+$result['packages'] = array_map($injectData, $result['packages']);
 
 echo 'Saving ...' . PHP_EOL;
 $data = json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
@@ -115,6 +133,7 @@ echo 'Done.' . PHP_EOL;
 
 echo 'Building web/php...' . PHP_EOL;
 $resultWebPhp['packages'] = array_map($qualifyPackage, $resultWebPhp['packages']);
+$resultWebPhp['packages'] = array_map($injectData, $resultWebPhp['packages']);
 
 echo 'Saving ...' . PHP_EOL;
 $data = json_encode($resultWebPhp, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
@@ -123,15 +142,16 @@ echo 'Done.' . PHP_EOL;
 
 
 echo 'Building RM candidates ...' . PHP_EOL;
-$result['packages'] = array_filter($originalPackagesList, static function(array $p): bool {
+$result['packages'] = array_filter($originalPackagesList, static function(array $p) use ($popcons): bool {
     $r = new DateTimeImmutable($p['last_upload']);
     $lastUploadYear = (int) $r->format('Y');
     return $lastUploadYear < 2016
-        && $p['popcon_votes'] < 30
+        && $popcons[$p['source']]['popcon_votes'] < 30
         && $p['release_count'] <= 3
         && $p['is_team_maintained'] === false;
 });
 
+$result['packages'] = array_map($injectData, $result['packages']);
 $result['packages'] = array_values($result['packages']);
 
 echo 'Saving ...' . PHP_EOL;
@@ -140,13 +160,14 @@ file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddFtpRmCa
 echo 'Done.' . PHP_EOL;
 
 echo 'Building neglected packages ...' . PHP_EOL;
-$result['packages'] = array_filter($originalPackagesList, static function(array $p): bool {
+$result['packages'] = array_filter($originalPackagesList, static function(array $p) use ($popcons): bool {
     $r = new DateTimeImmutable($p['last_upload']);
     $lastUploadYear = (int) $r->format('Y');
     return $lastUploadYear < 2017
-        && $p['popcon_votes'] > 30;
+        && $popcons[$p['source']]['popcon_votes'] > 30;
 });
 
+$result['packages'] = array_map($injectData, $result['packages']);
 $result['packages'] = array_values($result['packages']);
 
 echo 'Saving ...' . PHP_EOL;
@@ -155,15 +176,16 @@ file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/uddNeglect
 echo 'Done.' . PHP_EOL;
 
 echo 'Building abandoned packages ...' . PHP_EOL;
-$result['packages'] = array_filter($originalPackagesList, static function(array $p): bool {
+$result['packages'] = array_filter($originalPackagesList, static function(array $p) use ($maintainers): bool {
     $r = new DateTimeImmutable($p['last_upload']);
     $lastUploadYear = (int) $r->format('Y');
-    $lum = new DateTimeImmutable($p['last_upload_maint']);
+    $lum = new DateTimeImmutable($maintainers[$p['maintainer_email']]['last_upload_maint']);
     $lastMaintainerUploadYear = (int) $lum->format('Y');
     return $lastUploadYear < 2017
         && $lastMaintainerUploadYear < 2019;
 });
 
+$result['packages'] = array_map($injectData, $result['packages']);
 $result['packages'] = array_values($result['packages']);
 
 echo 'Saving ...' . PHP_EOL;
