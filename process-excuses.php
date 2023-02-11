@@ -80,10 +80,32 @@ foreach ($excusesYaml['sources'] as $item) {
 
     if (in_array('autopkgtest', $item['reason'])) {
         echo 'Missing tests: ' . $item['source'] . PHP_EOL;
+        $extra = '';
+        if (isset($item['policy_info']) && isset($item['policy_info']['autopkgtest'])) {
+            foreach ($item['policy_info']['autopkgtest'] as $pkg => $ciItem) {
+                if ($pkg === 'verdict') {
+                    continue;
+                }
+                $archs = [];
+                foreach ($ciItem as $arch => $ciInfo) {
+                    if (in_array($ciInfo[0], ['PASS', 'NEUTRAL', 'ALWAYSFAIL', 'IGNORE-FAIL'])) {
+                        continue;
+                    }
+                    $archs[] = '' . $arch . ':' . $ciInfo[0];
+                }
+                if (count($item['policy_info']['autopkgtest']) > 1 && count($archs) > 0) {
+                    $extra .= '[' . $pkg . '] ';
+                    $extra .= implode(', ', $archs) . PHP_EOL;
+                }
+            }
+        }
+
         $dashboardData[] = [
             'state' => 'MISSING_TESTS',
             'source' => $item['source'],
+            'extra' => $extra,
         ];
+
         continue;
     }
 

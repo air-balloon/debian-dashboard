@@ -126,6 +126,7 @@
                     <tr>
                         <th scope="col">Package</th>
                         <th scope="col">Excuse</th>
+                        <th scope="col">Extra data</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -147,6 +148,11 @@
                                 <span title="{{ .state }}" class="text-danger">{{ .state }}</span>
                             {{ end }}
                         </td>
+                        <td>
+                            <pre>
+                                {{- .extra -}}
+                            </pre>
+                        </td>
                     </tr>
                     {{ end }}
                 </tbody>
@@ -154,6 +160,7 @@
                     <tr>
                         <th scope="col">Package</th>
                         <th scope="col">Excuse</th>
+                        <th scope="col">Extra data</th>
                     </tr>
                 </tfoot>
             </table>
