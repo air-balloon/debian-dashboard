@@ -19,12 +19,14 @@ jobs:
               uses: shivammathur/setup-php@v2
               with:
                   php-version: 8.2
-                  extensions: mailparse, pdo_pgsql
+                  extensions: mailparse, pdo_pgsql, yaml
 
             - name: Update data
               run: php -f fetch-data.php
             - name: Qualify data
               run: php -f qualify-data.php
+            - name: Update excuses
+              run: php -f process-excuses.php
             - name: Install sudo-bot
               run: yarn global add sudo-bot
             - name: Extract secrets

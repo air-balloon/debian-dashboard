@@ -1,0 +1,3666 @@
+[
+    {
+        "state": "PENDING_REMOVAL",
+        "source": "equinox-framework"
+    },
+    {
+        "state": "PENDING_REMOVAL",
+        "source": "python3.10"
+    },
+    {
+        "state": "PENDING_REMOVAL",
+        "source": "ruby-coffee-rails"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ocaml-odoc"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "openjdk-11"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "rust-glutin"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "rust-sctk-adwaita"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "rust-winit"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "shim-helpers-amd64-signed"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "shim-helpers-arm64-signed"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "shim-helpers-i386-signed"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "shim"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "abcmidi"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "aom"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "aspic"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "breezy-debian"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "cattle-1.0"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "clonezilla"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "conmon"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "cpuid"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "dialog"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "drbl"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "elektroid"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fbzx"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "geophar"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "gfs2-utils"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "google-auth-httplib2"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "keyman"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "khronos-opencl-headers"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libfile-findlib-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libpath-class-uri-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "linux-signed-amd64"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "linux-signed-arm64"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "linux-signed-i386"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "logcheck"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "media-types"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "nutcracker"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "obs-studio"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ognibuild"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "partclone"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "patiencediff"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "py-libzfs"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-cogent"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "python-discord"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-fastbencode"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "python-pynndescent"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "recode"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "ring"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ruby-xmlhash"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "swirc"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "taglib"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "trapperkeeper-metrics-clojure"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "trapperkeeper-status-clojure"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "vvmd"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "wxwidgets3.2"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ansible-lint"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "appstream"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "azure-cli"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "b4"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "black"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "bluez-alsa"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "budgie-control-center"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "budgie-desktop-view"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "composer"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "containerd"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "debian-history"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "diffoscope"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "doublecmd"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "facter"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "fuse3"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "ghdl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "glib-networking"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gnome-software"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "intel-mkl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "jdupes"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "jruby-utils-clojure"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "klayout"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "kworkflow"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libaacs"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libamazon-s3-perl"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libbdplus"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libcdk-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libcompress-raw-bzip2-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libcompress-raw-lzma-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libcompress-raw-zlib-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libcrypt-argon2-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libdancer-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libdancer2-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libio-compress-lzma-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libio-compress-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libsearch-elasticsearch-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libsereal-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libstring-tagged-terminal-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libsystem-command-perl"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "m17n-docs"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "memtest86+"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "microsoft-authentication-library-for-python"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "nala"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "neovim"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "network-manager"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ngraph-gtk"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "obs-source-copy"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "opensnitch"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "packagekit"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "packer"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "phosh-tour"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-doctrine-dbal"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-phpstan-phpdoc-parser"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-twig"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "prometheus-postfix-exporter"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "puppet-agent"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "puppet-module-puppetlabs-concat"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pystemd"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-markdown-include"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-pantomime"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-scripttest"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python3-openid"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "r-cran-rcpparmadillo"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "redmine"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "remind"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rspamd"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-foreman"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-oj"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-omniauth-google-oauth2"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-rack"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-sinatra"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-configparser"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-isahc"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-lewton"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-libsodium-sys"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-ogg"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "rust-r2d2"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rust-ripasso-cursive"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-rmp-serde"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-roff-0.1"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rust-sequoia-keyring-linter"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-test-dir"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rust-trust-dns-client"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-webbrowser"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "s-nail"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "scapy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "snd"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "speechpy-fast"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "sphinxcontrib-autoprogram"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "synaptic"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "torsocks"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "trapperkeeper-clojure"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "trapperkeeper-webserver-jetty9-clojure"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "tzdata"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "umap-learn"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "upstream-ontologist"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "xdp-tools"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "yuzu"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "aiofiles"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ansible"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "asymptote"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "bcnc"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "budgie-desktop"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "certspotter"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "codelite"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "cryptsetup"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "cwltool"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "dask.distributed"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "debian-astro"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "debvm"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "developers-reference"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "devscripts"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "django-rq"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "dogtag-pki"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "dropwatch"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "dvhtool"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "eclipse-equinox"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "elpa-snakemake"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "evolution"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "evolution-data-server"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "evolution-ews"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "feed2exec"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "flexbar"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "forensics-all"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "game-data-packager"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "gatos"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "gcc-9"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gdb"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gdb-doc"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gdnsd"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ghex"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gnome-contacts"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gnutls28"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "gobuster"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-azure-azure-sdk-for-go"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-tombuildsstuff-giovanni"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-gonum-v1-gonum"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "google-android-installers"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "grub-efi-amd64-signed"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "grub-efi-arm64-signed"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "grub-efi-ia32-signed"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "icmake"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ipyparallel"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "irqbalance"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "jss"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "kcm-fcitx"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libcatmandu-identifier-perl"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libcode-tidyall-plugin-clangformat-perl"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libfreemarker-java"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libgrokj2k"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libhx"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libibtk"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "liblocale-maketext-extract-dbi-perl"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libmarc-mir-perl"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libperl-critic-toomuchcode-perl"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "librarian-puppet"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libsereal-decoder-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libsereal-encoder-perl"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libtemplate-plugin-gettext-perl"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libxfce4ui"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "linux"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "linuxcnc"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "mariadb"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "mesa"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "mmdebstrap"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "monitoring-plugins"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "motion"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "mptcpd"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "mumble"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ncurses-hexedit"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "nvidia-cuda-samples"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "nvidia-graphics-drivers-tesla"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "nvidia-settings"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "nvidia-settings-tesla"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-horde-wicked"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-monolog"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "posixsignalmanager"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "postgresql-15"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "pppoeconf"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "protection-domain-mapper"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pubpaste"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "puma"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "puppetdb"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "puppetserver"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-click-option-group"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-django-treebeard"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-pefile"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-pytest-random-order"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "python-recipe-scrapers"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python3.11"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pytorch-audio"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "q4wine"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "qcom-phone-utils"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "qemu"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "qpxtool"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "r-cran-rms"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r10k"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "reuse"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rime-cantonese"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rime-emoji"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rime-luna-pinyin"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rime-stroke"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rime-terra-pinyin"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-celluloid"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-oauth2"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ruby-soap4r"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ruby-sprockets"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-diesel"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-diesel-derives"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "rust-diesel-migrations"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rust-droid-juicer"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-migrations-internals"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-migrations-macros"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-parsec-interface"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-tiny-skia"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-tiny-skia-path"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-tracing-subscriber"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "rust-trust-dns-proto"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "samizdat"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "scipy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "searx"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "selint"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "setcd"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "simplejson"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "skorch"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "starlette"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "stressant"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "sword-comm-scofield"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "tapecalc"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "thin"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "tightvnc"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "tomcatjss"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "tqftpserv"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "trousers"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "update-inetd"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "vienna-rna"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "vim-youcompleteme"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "xpra"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "xrootd"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "adv-17v35x"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "apktool"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "apt"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "archlinux-keyring"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "aseba"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "audit"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "borgmatic"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "chkrootkit"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "chromium"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "crun"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "davix"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "dbus"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "debuerreotype"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "django-js-reverse"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "easyssh"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "ejabberd"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ejabberd-contrib"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-acme"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-cache-tab"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-eimp"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-iconv"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-mqtree"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-mysql"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-oauth2"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-pam"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-pgsql"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-pkix"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-sip"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-sqlite3"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-stringprep"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-stun"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-tls"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-utils"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-xml"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-xmpp"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-yaml"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-yconf"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-p1-zlib"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fcitx-rime"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fcitx5-rime"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fdutils"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "findpython"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fonts-elstob"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fonts-femkeklaver"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fonts-leckerli-one"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "forkstat"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gfal2"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ginac"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gnulib"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "greetd"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "groonga"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "grub2"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "hmisc"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ibus-rime"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "intelrdfpmath"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "invesalius"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libdecor-0"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libkdumpfile"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libpgjava"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "librime"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libsdl2-image"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libsmali-java"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libswe"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "mu-editor"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "munin"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "nginx"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "nheko"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "numpy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "nvidia-graphics-drivers"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "nvidia-persistenced"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "nvidia-xconfig"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "optuna"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pasystray"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "poppler-data"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "postgresql-common"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "purity"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "pymatgen"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-django-postgres-extra"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-djantic"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "python-nox"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r-cran-ade4"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r-cran-av"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r-cran-batchtools"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r-cran-epir"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "r-cran-ggalluvial"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r-cran-ggrepel"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "r-cran-readxl"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r-cran-shapes"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "r-cran-tm"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rapiddisk"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "rhonabwy"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rime-essay"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rocrand"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ruby-jekyll-github-metadata"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ruby-jekyll-relative-links"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "ruby-jekyll-remote-theme"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-webrick"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rust-sequoia-sq"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-serde"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "rust-sys-mount"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "rust-trust-dns-resolver"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "smenu"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "sphinx-rtd-theme"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "spyder-unittest"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "srm-ifce"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "thunderbird"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "virtuoso-opensource"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "apt-setup"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "bacula"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "bambootracker"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "camv-rnd"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "connectagram"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "cpustat"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "debian-installer"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "debian-med"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "dh-virtualenv"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "dino-im"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "dkms"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "dxvk"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "erlang-jose"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "eventstat"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "faultstat"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "flare-engine"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "flare-game"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fnotifystat"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "fort-validator"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "freespace2-launcher-wxlauncher"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gfxreconstruct"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "glmark2"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gnome-bluetooth"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gnome-bluetooth3"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "gnumeric"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "goldendict-webengine"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "graphite-web"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "grml2usb"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "haskell-raaz"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "homebank"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "human-icon-theme"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "intel-gpu-tools"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "kbibtex"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "keepassxc-browser"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "kodi-game-libretro"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "lazy"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libdisplay-info"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libjs-sdp"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libmemcached"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libmspack"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libpam-chroot"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "libs3"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "libvcflib"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "lomiri"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "maildir-utils"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "malcontent"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "mplayer"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "node-terser"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "nvidia-cuda-toolkit"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "obs-gradient-source"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ocaml-reins"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "openjfx"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "openldap"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "openssh"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "openssl"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "openstack-debian-images"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "padatious"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pagemon"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "pcb-rnd"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pdm-pep517"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "perlrdf"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "picolisp"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "poldi"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "popa3d"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "precious"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "projectcenter.app"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pulsemixer"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pyqt5"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pyqt6"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-confection"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-cooler"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "python-lua"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-qrcode"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "python-thinc"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python3-dmm"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pytorch-text"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "pytorch-vision"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "qtmir"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "quilt"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "r-bioc-mofa"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "rbac-client-clojure"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "reproject"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "resfinder"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ruby-jekyll-avatar"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ruby-jekyll-test-plugin"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ruby-net-ntp"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "ruby-oj-introspect"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "ruby-pgplot"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "rust-serde-derive"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "sch-rnd"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "scite"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "shell-utils-clojure"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "sleef"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "slurm-wlm"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "slurm-wlm-contrib"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "smex"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "spirv-cross"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "swe-data"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "syncplay"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "tangerine-icon-theme"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "tetzle"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "trapperkeeper-authorization-clojure"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "trapperkeeper-scheduler-clojure"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "unicode-idna"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "verilator"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "vim-eblook"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "vip-manager2"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "vulkan-volk"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "yaws"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "adduser"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "alien-arena"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ansifilter"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "asmtools"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "auto-multiple-choice"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "bacula-doc"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "bazel-bootstrap"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "biojava6-live"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "bootstrap-html"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "c-vtapi"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "cadabra2"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "carburetor"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "cegui-mk2"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "cmus"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "consult-el"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "dcontainers"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "deal.ii"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "dmarcts-report-parser"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "dpkg"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "droidlysis"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "eric"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "fakeroot"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "firmware-microbit-micropython"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "flask-flatpages"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "flatpak"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "fonts-bajaderka"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "fonts-dejavu"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "fonts-havana"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "glslang"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "gnote"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "gosa"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "gosa-plugins-ldapmanager"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "gosa-plugins-systems"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "grml-debootstrap"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "helpviewer.app"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "hexcurse"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "hyperspy"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "iceoryx"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "intel-cmt-cat"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libcec"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libervia-backend"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libgd2"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libnginx-mod-http-lua"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libsolv"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "libvbz-hdf-plugin"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "lomiri-indicator-transfer"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "lomiri-system-settings"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "lomiri-ui-toolkit"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "lomiri-wallpapers"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "lua-resty-core"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "make-dynpart-mappings"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "mdnsd"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "mercurial-evolve"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "metadata-cleaner"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "morph-browser"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "multipath-tools"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "node-jose"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "numix-icon-theme"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "obs-ashmanix-countdown"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "obs-source-clone"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "openems"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "opennds"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "php-igbinary"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php8.2"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "phpunit"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ps2eps"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "puppetlabs-ring-middleware-clojure"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "pyequihash"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "python-emmet-core"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "python-inotify"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "python-langdetect"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "python-mp-api"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "python-pangolearn"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "qqc2-suru-style"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "qt6-base"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ruby-kramdown-rfc2629"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ruby-spamcheck"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ruby-turbolinks"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "servefile"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "setools"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "sip6"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "smarty-gettext"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "sqlmap"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "taoframework"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "telegram-desktop"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "trapperkeeper-filesystem-watcher-clojure"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "txdbus"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "udm"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "usbredir"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "vokoscreen-ng"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "vulkan-tools"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "vulkan-validationlayers"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "xen"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "xorg-server"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "xwayland"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "django-sass-processor"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "galera-4"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "goffice"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gourmand"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "icewm"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "last-align"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "lsb"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "recoll"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "silver-platter"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "spirv-tools"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "xchm"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "dnsmasq"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "godot"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-addressable"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "tiledb-py"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gap-browse"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libgeo-distance-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libio-socket-ssl-perl"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "libmongocrypt"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "lintian-brush"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "rinse"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rt-extension-resetpassword"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-criterion"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "tuiwidgets"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "bind-dyndb-ldap"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "jaxb"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "metaeuk"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ocaml-odoc-parser"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "python-gbulb"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "r-cran-dplyr"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-ahash"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-ureq"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "shim-helpers-amd64-signed"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "shim-helpers-arm64-signed"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "shim-helpers-i386-signed"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "simde"
+    },
+    {
+        "state": "IS_WAITING",
+        "source": "xosview"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "diamond-aligner"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "logdata-anomaly-miner"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mps-youtube"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "xtrx-dkms"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "fnfx"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-sushy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "redis"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-moneta"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "shim"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "clinfo"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "lsp-plugins"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "qt6-tools"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "refpolicy"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gsad"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gvm"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "openvas-scanner"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rar"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "symfit"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "findent"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gvm-tools"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ospd-openvas"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-riddle"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gvmd"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "python-gvm"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "mysql-8.0"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "sepp"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "virtualbox"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "irony-mode"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pocl"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "goverlay"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "pg-gvm"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-xarray"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "r-cran-rstan"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "rocm-hipamd"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "python-seqcluster"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "scrcpy"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "libreswan"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pywebdav"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "spaghetti"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "firefox"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mozjs78"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "sc-im"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "llvm-toolchain-15"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-av1-grain"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "dogecoin"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mlpack"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "guestfs-tools"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-typenum"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "fish"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "gcc-snapshot"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "wine-development"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-libtest-mimic"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "syncthingtray"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "nvidia-settings-legacy-390xx"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "nvidia-settings-tesla-418"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "nvidia-settings-tesla-450"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "mintpy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-google-cel-go"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "libapp-perlrdf-command-query-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "elementpath"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "multiplex"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "openjdk-20"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "stockfish"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "octave-database"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "pynfft"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-sethvargo-go-fastly"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "vuls"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "shunit2"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "funguloids"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-performancecopilot-speed"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "cpptraj"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pgagroal"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-leanovate-gopter"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-fxprof-processed-profile"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "rust-transmission-client"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "tar"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "tipp"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "genparse"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "haskell-lambdabot-haskell-plugins"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "lambdabot"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "x-loader"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-rack-session"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-rackup"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "obexpushd"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "salt"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "libjpeg6b"
+    },
+    {
+        "state": "REJECTED_NEEDS_APPROVAL",
+        "source": "libjpeg9"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pytest-services"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-cborg-json"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-serialise"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-cborg"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "dhcpcanon"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "fsprotect"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "networking-mlnx"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "openscap-daemon"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "bcbio"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "ddnet"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mozillavpn"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "golang-github-go-enry-go-license-detector"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "crossbar"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "rust-kvm-bindings"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-bsm-go-vlq"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "rust-tree-magic"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "radare2-cutter"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "siridb-server"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "s3ql"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "smlsharp"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-dhall"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "haskell-hoogle"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "haskell-hopenpgp-tools"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-termonad"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-classy-prelude-conduit"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-classy-prelude"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "micropython"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "openlibm"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "node-bash-color"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "haskell-inline-c"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "python-streamz"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "python-libguess"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libapache2-authcassimple-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-ioctl-sys"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-bsm-redeo"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-bkt"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "beancounter"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-lunny-nodb"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-siddontang-goredis"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-hdrhistogram"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-vmm-sys-util"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "puppet-beaker"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "openjdk-11-jre-dcevm"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "psychopy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ensmallen"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "cgreen"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "android-platform-dalvik"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "rapache"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "node-lockfile"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "python-uflash"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "tomogui"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-proc-quote"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "growlight"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mlton"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "tiledarray"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mlucas"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "opentsne"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ruby-kitchen-docker"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ruby-kitchen-salt"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libguess"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "epigrass"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libcallstats-java"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "test-kitchen"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "netopeer2"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ruby-diaspora-federation-rails"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-hhatto-gorst"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "lxmusic"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "node-solid-keychain"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-terrapin"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-intel-go-cpuid"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-go-macaron-i18n"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "perceptualdiff"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-uber-go-tally"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-hdrhistogram-hdrhistogram-go"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "nvchecker"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "go-exploitdb"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "diaspora-installer"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "goval-dictionary"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rt-extension-assetautoname"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rt-extension-elapsedbusinesstime"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rt-extension-mergeusers"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "go-cve-dictionary"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "smuxi"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "mplayer-blue"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "scmail"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "consulfs"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "plaso"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "ruby-gitlab-pg-query"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "bzr-loom"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-alicebob-miniredis"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "pantomime-clojure"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-doctrine-bundle"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libscout"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "python-dugong"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-manyminds-api2go"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gauche-c-wrapper"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "khronos-opencl-man"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "dnscrypt-proxy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-ajg-form"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gost"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "smtpprox-loopprevent"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "wims-moodle"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "jwchat"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "wiliki"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "pysolfc-cardsets"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "adabrowse"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "spyder-reports"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gitlab"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "clippoly"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "hy"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gitaly"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "chibi-scheme"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ams.lv2"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "paw"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "effcee"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "eclipse-remote"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-alangpierce-go-forceexport"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-powerman-check"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "breezy-loom"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "wmxmms2"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "rust-librespot-protocol"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "sparkleshare"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "libkqueue"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ruby-thinking-sphinx"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "nant"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "pysolfc"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "pdfmod"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-google-cloud-translate"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "vagrant-bindfs"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-throttled-throttled"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "golang-github-ulule-limiter"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "golang-github-getlantern-errors"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "jsunit"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gandi-cli"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "socket-activate"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libodb-qt"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "python-arrayfire"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "hydroffice.bag"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "dmtcp"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "librevisa"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mailavenger"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "hipspy"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "pluginhook"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "averell"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libodb-mysql"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "diaspora"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "yorick-full"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "vorbis-java"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "tangerine"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gauche-gl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "bdfproxy"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libapache2-sitecontrol-perl"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "ruby-codemirror-rails"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "vowpal-wabbit"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "debbugs"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "debirf"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "khronos-opengl-man4"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-enum"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "quickroute-gps"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "yorick-mira"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "gli"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "tasque"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "haskell-doc"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "arrayfire"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "grip"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "ctfutils"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-sabre-xml"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-sabre-uri"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-sabre-http"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "php-sabre-event"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "yorick-ynfft"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "fsharp"
+    },
+    {
+        "state": "MISSING_TESTS",
+        "source": "libcolor-calc-perl"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libodb-boost"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libodb-pgsql"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "libodb-sqlite"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "vish"
+    },
+    {
+        "state": "MISSING_BUILD",
+        "source": "mutextrace"
+    },
+    {
+        "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
+        "source": "gxmms2"
+    }
+]
