@@ -244,35 +244,35 @@
     {
         "state": "MISSING_TESTS",
         "source": "linux-signed-amd64",
-        "extra": "[apparmor-profiles-extra/1.35] s390x:RUNNING\n[apparmor/3.0.8-2] s390x:RUNNING\n[cryptsetup/2:2.6.0-2] i386:RUNNING, s390x:RUNNING\n[debvm/0.2.6] s390x:RUNNING-ALWAYSFAIL\n[diffoscope/234] armel:RUNNING, s390x:RUNNING\n[genext2fs/1.5.0-3] s390x:RUNNING\n[initramfs-tools/0.142] s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] s390x:RUNNING-ALWAYSFAIL\n[multipath-tools/0.9.4-2] s390x:RUNNING\n[open-iscsi/2.1.8-1] s390x:RUNNING\n[sbuild/0.85.0] s390x:RUNNING\n[wireguard/1.0.20210914-1] s390x:RUNNING\n[zfs-linux/2.1.9-1] ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[apparmor-profiles-extra/1.35] s390x:RUNNING\n[apparmor/3.0.8-2] s390x:RUNNING\n[cryptsetup/2:2.6.0-2] i386:RUNNING, s390x:RUNNING\n[debvm/0.2.6] s390x:RUNNING-ALWAYSFAIL\n[diffoscope/234] s390x:RUNNING\n[genext2fs/1.5.0-3] s390x:RUNNING\n[initramfs-tools/0.142] s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] s390x:RUNNING-ALWAYSFAIL\n[multipath-tools/0.9.4-2] s390x:RUNNING\n[open-iscsi/2.1.8-1] s390x:RUNNING\n[sbuild/0.85.0] s390x:RUNNING\n[wireguard/1.0.20210914-1] s390x:RUNNING\n[zfs-linux/2.1.9-1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "linux-signed-arm64",
-        "extra": "[cryptsetup/2:2.6.0-2] i386:RUNNING, s390x:RUNNING\n[debvm/0.2.6] s390x:RUNNING-ALWAYSFAIL\n[genext2fs/1.5.0-3] s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] armel:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[multipath-tools/0.9.4-2] s390x:RUNNING\n[nvidia-graphics-drivers-tesla-460/460.106.00-9] ppc64el:RUNNING\n[nvidia-graphics-drivers-tesla-470/470.161.03-1] ppc64el:RUNNING\n[open-iscsi/2.1.8-1] s390x:RUNNING\n[wireguard/1.0.20210914-1] s390x:RUNNING\n[zfs-linux/2.1.9-1] armel:RUNNING-ALWAYSFAIL, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[cryptsetup/2:2.6.0-2] i386:RUNNING, s390x:RUNNING\n[debvm/0.2.6] s390x:RUNNING-ALWAYSFAIL\n[genext2fs/1.5.0-3] s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] s390x:RUNNING-ALWAYSFAIL\n[multipath-tools/0.9.4-2] s390x:RUNNING\n[open-iscsi/2.1.8-1] s390x:RUNNING\n[wireguard/1.0.20210914-1] s390x:RUNNING\n[zfs-linux/2.1.9-1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "linux-signed-i386",
-        "extra": "[cryptsetup/2:2.6.0-2] i386:RUNNING, s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] armel:RUNNING-ALWAYSFAIL, ppc64el:RUNNING, s390x:RUNNING-ALWAYSFAIL\n[multipath-tools/0.9.4-2] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[nvidia-graphics-drivers-tesla-460/460.106.00-9] ppc64el:RUNNING\n[nvidia-graphics-drivers-tesla-470/470.161.03-1] ppc64el:RUNNING\n[open-iscsi/2.1.8-1] ppc64el:RUNNING, s390x:RUNNING\n[wireguard/1.0.20210914-1] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[zfs-linux/2.1.9-1] armel:RUNNING-ALWAYSFAIL, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[cryptsetup/2:2.6.0-2] i386:RUNNING, s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] s390x:RUNNING-ALWAYSFAIL\n[multipath-tools/0.9.4-2] s390x:RUNNING\n[open-iscsi/2.1.8-1] s390x:RUNNING\n[wireguard/1.0.20210914-1] s390x:RUNNING\n[zfs-linux/2.1.9-1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "logcheck",
-        "extra": "[logcheck/1.4.1] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[logcheck/1.4.1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "TESTS_FAIL",
         "source": "media-types",
-        "extra": "[apache2/2.4.55-1] armel:RUNNING-ALWAYSFAIL, ppc64el:RUNNING, s390x:RUNNING\n[caddy/2.6.2-4] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[ceph/16.2.11+ds-1] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[debian-edu-config/2.12.28] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[golang-github-google-go-github/48.1.0-2] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[golang-github-google-martian/3.3.2-2] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[lighttpd/1.4.67-1] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[mmdebstrap] amd64:RUNNING-ALWAYSFAIL, arm64:RUNNING-ALWAYSFAIL, armel:RUNNING-ALWAYSFAIL, armhf:RUNNING, i386:RUNNING-ALWAYSFAIL, ppc64el:RUNNING, s390x:RUNNING-ALWAYSFAIL\n[php8.2/8.2.2-1] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[python3.10] amd64:RUNNING, arm64:RUNNING, armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[python3.11] amd64:RUNNING, arm64:RUNNING, armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[apache2/2.4.55-1] s390x:RUNNING\n[caddy/2.6.2-4] s390x:RUNNING\n[ceph/16.2.11+ds-1] s390x:RUNNING\n[debian-edu-config/2.12.28] s390x:RUNNING\n[golang-github-google-go-github/48.1.0-2] s390x:RUNNING\n[golang-github-google-martian/3.3.2-2] s390x:RUNNING\n[lighttpd/1.4.67-1] s390x:RUNNING\n[mmdebstrap/1.3.1-2] armel:RUNNING-ALWAYSFAIL, armhf:REGRESSION, ppc64el:RUNNING, s390x:RUNNING-ALWAYSFAIL\n[php8.2/8.2.2-1] s390x:RUNNING\n[python3.10/3.10.9-1] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[python3.11/3.11.1-2] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
@@ -285,14 +285,14 @@
     {
         "state": "MISSING_TESTS",
         "source": "obs-studio",
-        "extra": "[obs-advanced-scene-switcher/1.20.4-1] armel:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[obs-downstream-keyer/0.2.6-3] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[obs-gradient-source/0.3.1-2] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[obs-move-transition/2.8.1-3] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[obs-scene-collection-manager/0.0.8-3] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[obs-scene-notes-dock/0.1.1-3] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[obs-source-clone/0.1.1-4] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[obs-transition-table/0.2.6-2] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[obs-advanced-scene-switcher/1.20.4-1] s390x:RUNNING\n[obs-downstream-keyer/0.2.6-3] s390x:RUNNING\n[obs-gradient-source/0.3.1-2] s390x:RUNNING\n[obs-move-transition/2.8.1-3] s390x:RUNNING\n[obs-scene-collection-manager/0.0.8-3] s390x:RUNNING\n[obs-scene-notes-dock/0.1.1-3] s390x:RUNNING\n[obs-source-clone/0.1.1-4] s390x:RUNNING\n[obs-transition-table/0.2.6-2] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "ognibuild",
-        "extra": "[ognibuild/0.0.18+git20230208.1.9b890a2-1] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[ognibuild/0.0.18+git20230208.1.9b890a2-1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -305,21 +305,21 @@
     {
         "state": "MISSING_TESTS",
         "source": "patiencediff",
-        "extra": "[breezy/3.3.2-2] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[patiencediff/0.2.13-1] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[breezy/3.3.2-2] s390x:RUNNING\n[patiencediff/0.2.13-1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "py-libzfs",
-        "extra": "[py-libzfs/0.0+git20230207.c1bd4a0-1] armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[py-libzfs/0.0+git20230207.c1bd4a0-1] ppc64el:RUNNING, s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "python-cogent",
-        "extra": "[python-cogent/2022.10.31a1+dfsg-3] armel:RUNNING-ALWAYSFAIL, i386:RUNNING-ALWAYSFAIL, ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING\n",
+        "extra": "[python-cogent/2022.10.31a1+dfsg-3] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
@@ -332,7 +332,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "python-fastbencode",
-        "extra": "[breezy/3.3.2-2] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[python-fastbencode/0.2-1] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[breezy/3.3.2-2] s390x:RUNNING\n[python-fastbencode/0.2-1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -345,7 +345,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "recode",
-        "extra": "[ipolish/20220301-1] armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[ipolish/20220301-1] s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
@@ -376,14 +376,14 @@
     {
         "state": "MISSING_TESTS",
         "source": "trapperkeeper-metrics-clojure",
-        "extra": "[puppetdb] armel:RUNNING-ALWAYSFAIL, armhf:RUNNING-ALWAYSFAIL, i386:RUNNING-ALWAYSFAIL, ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[puppetserver] armel:RUNNING-ALWAYSFAIL, armhf:RUNNING-ALWAYSFAIL, i386:RUNNING-ALWAYSFAIL, ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[trapperkeeper-metrics-clojure/1.5.0-5] armel:RUNNING-ALWAYSFAIL, armhf:RUNNING-ALWAYSFAIL, i386:RUNNING-ALWAYSFAIL, ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING\n",
+        "extra": "[puppetdb] ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[puppetserver] ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[trapperkeeper-metrics-clojure/1.5.0-5] ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "trapperkeeper-status-clojure",
-        "extra": "[puppetdb] armel:RUNNING-ALWAYSFAIL, armhf:RUNNING-ALWAYSFAIL, i386:RUNNING-ALWAYSFAIL, ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[puppetserver] armel:RUNNING-ALWAYSFAIL, armhf:RUNNING-ALWAYSFAIL, i386:RUNNING-ALWAYSFAIL, ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[trapperkeeper-status-clojure/1.1.1-4] armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[puppetdb] ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[puppetserver] ppc64el:RUNNING-ALWAYSFAIL, s390x:RUNNING-ALWAYSFAIL\n[trapperkeeper-status-clojure/1.1.1-4] ppc64el:RUNNING, s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 5
     },
@@ -696,7 +696,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "network-manager",
-        "extra": "[budgie-extras/1.5.0-1] s390x:RUNNING\n[cinnamon-control-center/5.6.1-1] s390x:RUNNING\n[cockpit/284-1] s390x:RUNNING\n[dnssec-trigger/0.17+repack-5] s390x:RUNNING-ALWAYSFAIL\n[firewalld/1.3.0-1] s390x:RUNNING\n[freedombox/23.3] s390x:RUNNING\n[netplan.io/0.105-3] armel:OLD_PASS, armhf:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS\n[netplan.io/0.106-1] s390x:RUNNING\n[networkmanager-qt/5.102.0-1] s390x:RUNNING\n[phog/0.1.3-1] s390x:RUNNING\n[phosh/0.24.0-1] s390x:RUNNING\n[python-dbusmock/0.28.7-1] s390x:RUNNING\n[strongswan/5.9.8-3] s390x:RUNNING\n[sublime-music/0.11.16-4] s390x:RUNNING\n[systemd/252.5-2] s390x:RUNNING\n",
+        "extra": "[budgie-extras/1.5.0-1] s390x:RUNNING\n[cinnamon-control-center/5.6.1-1] s390x:RUNNING\n[cockpit/284-1] s390x:RUNNING\n[dnssec-trigger/0.17+repack-5] s390x:RUNNING-ALWAYSFAIL\n[firewalld/1.3.0-1] s390x:RUNNING\n[freedombox/23.3] s390x:RUNNING\n[netplan.io/0.105-3] ppc64el:OLD_PASS\n[netplan.io/0.106-1] s390x:RUNNING\n[networkmanager-qt/5.102.0-1] s390x:RUNNING\n[phog/0.1.3-1] s390x:RUNNING\n[phosh/0.24.0-1] s390x:RUNNING\n[python-dbusmock/0.28.7-1] s390x:RUNNING\n[strongswan/5.9.8-3] s390x:RUNNING\n[sublime-music/0.11.16-4] s390x:RUNNING\n[systemd/252.5-2] s390x:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 5
     },
@@ -757,7 +757,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "php-twig",
-        "extra": "[cacti/1.2.23+ds1-2] s390x:RUNNING\n[php-symfony-mercure/0.6.2-1] s390x:RUNNING\n[php-twig/3.5.1-1] s390x:RUNNING\n[phpmyadmin/4:5.2.0+dfsg1-2] armel:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS\n[phpmyadmin/4:5.2.1+dfsg-1] s390x:RUNNING\n[symfony/5.4.20+dfsg-1] s390x:RUNNING-ALWAYSFAIL\n[twig-i18n-extension/4.0.1-2] s390x:RUNNING\n",
+        "extra": "[cacti/1.2.23+ds1-2] s390x:RUNNING\n[php-symfony-mercure/0.6.2-1] s390x:RUNNING\n[php-twig/3.5.1-1] s390x:RUNNING\n[phpmyadmin/4:5.2.1+dfsg-1] s390x:RUNNING\n[symfony/5.4.20+dfsg-1] s390x:RUNNING-ALWAYSFAIL\n[twig-i18n-extension/4.0.1-2] s390x:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 5
     },
@@ -868,7 +868,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "ruby-rack",
-        "extra": "[auto-apt-proxy/14] s390x:RUNNING\n[camping/2.3-1] s390x:RUNNING\n[passenger/6.0.17+ds-1] s390x:RUNNING\n[rails/2:6.1.7+dfsg-3] s390x:RUNNING\n[redmine/5.0.4-2] s390x:RUNNING\n[ruby-acts-as-api/1.0.1-2.1] s390x:RUNNING\n[ruby-adsf/1.4.6+dfsg1-1] s390x:RUNNING\n[ruby-capybara/3.36.0+ds-2] s390x:RUNNING\n[ruby-derailed-benchmarks/1.7.0-2] s390x:RUNNING\n[ruby-faye/1.4.0-1] s390x:RUNNING\n[ruby-grack/2.0.2-3] s390x:RUNNING\n[ruby-grape/1.6.2-3] s390x:RUNNING\n[ruby-moneta/1.0.0-9] s390x:RUNNING\n[ruby-oauth2/1.4.4-1] s390x:RUNNING\n[ruby-omniauth-twitter/1.4.0-1] s390x:RUNNING\n[ruby-omniauth/2.1.1-1] s390x:RUNNING\n[ruby-rack-accept/0.4.5-3.1] s390x:RUNNING\n[ruby-rack-attack/6.6.1-1] s390x:RUNNING\n[ruby-rack-cors/1.1.1-1] s390x:RUNNING\n[ruby-rack-flash3/1.0.5-2.1] s390x:RUNNING\n[ruby-rack-livereload/0.3.17+dfsg-2] s390x:RUNNING\n[ruby-rack-oauth2/1.21.3-1] s390x:RUNNING\n[ruby-rack-openid/1.4.2-2] s390x:RUNNING\n[ruby-rack-parser/0.7.0-2] s390x:RUNNING\n[ruby-rack-proxy/0.7.4-1] s390x:RUNNING\n[ruby-rack-test/2.0.2-2] s390x:RUNNING\n[ruby-rack/2.2.4-3] s390x:RUNNING\n[ruby-redis-rack/2.1.2-4] s390x:RUNNING\n[ruby-request-store/1.5.1-1] s390x:RUNNING\n[ruby-sham-rack/1.4.1-3] s390x:RUNNING\n[ruby-sidekiq/6.4.1+dfsg-1] s390x:RUNNING\n[ruby-sinatra] s390x:RUNNING\n[ruby-sprockets/3.7.2-3] s390x:RUNNING\n[ruby-upr/0.3.0-3] s390x:RUNNING\n[ruby-voight-kampff/1.1.3-4] s390x:RUNNING\n[ruby-warden/1.2.8-1] s390x:RUNNING\n[tdiary/5.2.3-1] armel:OLD_PASS, armhf:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS\n[tdiary/5.2.3-2] s390x:RUNNING\n[thin/1.8.0-2] s390x:RUNNING\n[unicorn/6.0.0-2] s390x:RUNNING\n",
+        "extra": "[auto-apt-proxy/14] s390x:RUNNING\n[camping/2.3-1] s390x:RUNNING\n[passenger/6.0.17+ds-1] s390x:RUNNING\n[rails/2:6.1.7+dfsg-3] s390x:RUNNING\n[redmine/5.0.4-2] s390x:RUNNING\n[ruby-acts-as-api/1.0.1-2.1] s390x:RUNNING\n[ruby-adsf/1.4.6+dfsg1-1] s390x:RUNNING\n[ruby-capybara/3.36.0+ds-2] s390x:RUNNING\n[ruby-derailed-benchmarks/1.7.0-2] s390x:RUNNING\n[ruby-faye/1.4.0-1] s390x:RUNNING\n[ruby-grack/2.0.2-3] s390x:RUNNING\n[ruby-grape/1.6.2-3] s390x:RUNNING\n[ruby-moneta/1.0.0-9] s390x:RUNNING\n[ruby-oauth2/1.4.4-1] s390x:RUNNING\n[ruby-omniauth-twitter/1.4.0-1] s390x:RUNNING\n[ruby-omniauth/2.1.1-1] s390x:RUNNING\n[ruby-rack-accept/0.4.5-3.1] s390x:RUNNING\n[ruby-rack-attack/6.6.1-1] s390x:RUNNING\n[ruby-rack-cors/1.1.1-1] s390x:RUNNING\n[ruby-rack-flash3/1.0.5-2.1] s390x:RUNNING\n[ruby-rack-livereload/0.3.17+dfsg-2] s390x:RUNNING\n[ruby-rack-oauth2/1.21.3-1] s390x:RUNNING\n[ruby-rack-openid/1.4.2-2] s390x:RUNNING\n[ruby-rack-parser/0.7.0-2] s390x:RUNNING\n[ruby-rack-proxy/0.7.4-1] s390x:RUNNING\n[ruby-rack-test/2.0.2-2] s390x:RUNNING\n[ruby-rack/2.2.4-3] s390x:RUNNING\n[ruby-redis-rack/2.1.2-4] s390x:RUNNING\n[ruby-request-store/1.5.1-1] s390x:RUNNING\n[ruby-sham-rack/1.4.1-3] s390x:RUNNING\n[ruby-sidekiq/6.4.1+dfsg-1] s390x:RUNNING\n[ruby-sinatra] s390x:RUNNING\n[ruby-sprockets/3.7.2-3] s390x:RUNNING\n[ruby-upr/0.3.0-3] s390x:RUNNING\n[ruby-voight-kampff/1.1.3-4] s390x:RUNNING\n[ruby-warden/1.2.8-1] s390x:RUNNING\n[tdiary/5.2.3-1] ppc64el:OLD_PASS\n[tdiary/5.2.3-2] s390x:RUNNING\n[thin/1.8.0-2] s390x:RUNNING\n[unicorn/6.0.0-2] s390x:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 2
     },
@@ -1016,14 +1016,14 @@
     {
         "state": "MISSING_TESTS",
         "source": "trapperkeeper-clojure",
-        "extra": "[jruby-utils-clojure/4.0.3-2] s390x:RUNNING\n[puppetdb] s390x:RUNNING-ALWAYSFAIL\n[puppetlabs-http-client-clojure/2.1.1-1] s390x:RUNNING\n[puppetserver] s390x:RUNNING-ALWAYSFAIL\n[rbac-client-clojure/1.1.4-2] s390x:RUNNING\n[shell-utils-clojure/1.0.2-2] s390x:RUNNING\n[trapperkeeper-authorization-clojure/1.0.0-2] s390x:RUNNING\n[trapperkeeper-clojure/3.2.0-4] s390x:RUNNING-ALWAYSFAIL\n[trapperkeeper-filesystem-watcher-clojure/1.2.2-2] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-3] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-4] armel:OLD_PASS, armhf:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS\n[trapperkeeper-webserver-jetty9-clojure/4.4.1-2] s390x:RUNNING\n",
+        "extra": "[jruby-utils-clojure/4.0.3-2] s390x:RUNNING\n[puppetdb] s390x:RUNNING-ALWAYSFAIL\n[puppetlabs-http-client-clojure/2.1.1-1] s390x:RUNNING\n[puppetserver] s390x:RUNNING-ALWAYSFAIL\n[rbac-client-clojure/1.1.4-2] s390x:RUNNING\n[shell-utils-clojure/1.0.2-2] s390x:RUNNING\n[trapperkeeper-authorization-clojure/1.0.0-2] s390x:RUNNING\n[trapperkeeper-clojure/3.2.0-4] s390x:RUNNING-ALWAYSFAIL\n[trapperkeeper-filesystem-watcher-clojure/1.2.2-2] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-3] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-4] ppc64el:OLD_PASS\n[trapperkeeper-webserver-jetty9-clojure/4.4.1-2] s390x:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "trapperkeeper-webserver-jetty9-clojure",
-        "extra": "[puppetdb] s390x:RUNNING-ALWAYSFAIL\n[puppetlabs-http-client-clojure/2.1.1-1] s390x:RUNNING\n[puppetlabs-ring-middleware-clojure/1.3.1-2] s390x:RUNNING-ALWAYSFAIL\n[puppetserver] s390x:RUNNING-ALWAYSFAIL\n[rbac-client-clojure/1.1.4-2] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-3] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-4] armel:OLD_PASS, armhf:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS\n[trapperkeeper-webserver-jetty9-clojure/4.4.1-5] s390x:RUNNING\n",
+        "extra": "[puppetdb] s390x:RUNNING-ALWAYSFAIL\n[puppetlabs-http-client-clojure/2.1.1-1] s390x:RUNNING\n[puppetlabs-ring-middleware-clojure/1.3.1-2] s390x:RUNNING-ALWAYSFAIL\n[puppetserver] s390x:RUNNING-ALWAYSFAIL\n[rbac-client-clojure/1.1.4-2] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-3] s390x:RUNNING\n[trapperkeeper-metrics-clojure/1.5.0-4] ppc64el:OLD_PASS\n[trapperkeeper-webserver-jetty9-clojure/4.4.1-5] s390x:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 5
     },
@@ -1044,7 +1044,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "upstream-ontologist",
-        "extra": "[lintian-brush/0.146] amd64:REGRESSION, arm64:REGRESSION, armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[silver-platter/0.5.3-1] armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[upstream-ontologist/0.1.35-1] armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n",
+        "extra": "[lintian-brush/0.146] amd64:REGRESSION, arm64:REGRESSION, armel:REGRESSION, armhf:REGRESSION, i386:REGRESSION, ppc64el:RUNNING, s390x:RUNNING\n[silver-platter/0.5.3-1] ppc64el:RUNNING, s390x:RUNNING\n[upstream-ontologist/0.1.35-1] ppc64el:RUNNING, s390x:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 5
     },
@@ -1468,7 +1468,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "mariadb",
-        "extra": "[bacula/9.6.7-5] s390x:REGRESSION\n[cacti/1.2.23+ds1-2] amd64:REGRESSION, arm64:REGRESSION, armel:REGRESSION, armhf:REGRESSION, i386:REGRESSION, ppc64el:REGRESSION, s390x:REGRESSION\n[dbconfig-common/2.0.23] s390x:REGRESSION\n[django-reversion/5.0.4-1] s390x:REGRESSION\n[libdbd-mariadb-perl/1.22-1] s390x:RUNNING\n[libdbd-mysql-perl/4.050-5] s390x:RUNNING\n[mariadb-10.6/1:10.6.11-2] s390x:RUNNING\n[mariadb-connector-odbc/3.1.15-3] s390x:RUNNING\n[mariadb/1:10.11.1-4] s390x:RUNNING\n[mediawiki-extension-codemirror/4.0.0~git20221204.b897975-1] s390x:RUNNING\n[mediawiki-extension-youtube/1.9.3~git20221020.e005c0b-1] s390x:RUNNING\n[mediawiki-skin-greystuff/1.2.5~git20220922.60bda8c-2] s390x:RUNNING\n[mediawiki/1:1.39.1-2] s390x:RUNNING\n[motion/4.5.1-1] s390x:RUNNING\n[mysql-connector-c++/1.1.12-4] s390x:RUNNING\n[neko/2.3.0-1] s390x:RUNNING\n[net-snmp/5.9.3+dfsg-2] s390x:RUNNING\n[ora2pg/23.2-1] s390x:RUNNING\n[pam-mysql/0.8.2-2] s390x:RUNNING\n[pdns/4.7.3-2] s390x:RUNNING\n[php-sabredav/1.8.12-10] s390x:RUNNING\n[postfix/3.7.4-2] s390x:RUNNING\n[python-testing.mysqld/1.4.0-6] s390x:RUNNING\n[redmine/5.0.4-2] s390x:RUNNING\n[roundcube/1.6.1+dfsg-1] s390x:RUNNING\n[ruby-dataobjects-mysql/0.10.17-4] s390x:RUNNING\n[ruby-moneta] s390x:RUNNING\n[ruby-mysql2/0.5.3-4] s390x:RUNNING\n[slurm-wlm] s390x:RUNNING\n[soci/4.0.3-1] s390x:RUNNING\n[sqitch/1.3.1-1] s390x:RUNNING\n[sysbench/1.0.20+ds-5] s390x:RUNNING\n[trojan/1.16.0-1] s390x:RUNNING\n[vtk7/7.1.1+dfsg2-10.2] s390x:RUNNING\n[w1retap/1.4.6-1.1] s390x:RUNNING\n",
+        "extra": "[bacula/9.6.7-5] s390x:REGRESSION\n[cacti/1.2.23+ds1-2] amd64:REGRESSION, arm64:REGRESSION, armel:REGRESSION, armhf:REGRESSION, i386:REGRESSION, ppc64el:REGRESSION, s390x:REGRESSION\n[dbconfig-common/2.0.23] s390x:REGRESSION\n[django-reversion/5.0.4-1] s390x:REGRESSION\n[libdbd-mariadb-perl/1.22-1] s390x:RUNNING\n[libdbd-mysql-perl/4.050-5] s390x:RUNNING\n[mariadb-10.6/1:10.6.11-2] s390x:RUNNING\n[mariadb-connector-odbc/3.1.15-3] s390x:RUNNING\n[mariadb/1:10.11.1-4] s390x:RUNNING\n[mediawiki-extension-codemirror/4.0.0~git20221204.b897975-1] s390x:RUNNING\n[mediawiki-extension-youtube/1.9.3~git20221020.e005c0b-1] s390x:RUNNING\n[mediawiki-skin-greystuff/1.2.5~git20220922.60bda8c-2] s390x:RUNNING\n[mediawiki/1:1.39.1-2] s390x:RUNNING\n[mysql-connector-c++/1.1.12-4] s390x:RUNNING\n[pam-mysql/0.8.2-2] s390x:RUNNING\n[pdns/4.7.3-2] s390x:RUNNING\n[php-sabredav/1.8.12-10] s390x:RUNNING\n[postfix/3.7.4-2] s390x:RUNNING\n[python-testing.mysqld/1.4.0-6] s390x:RUNNING\n[redmine/5.0.4-2] s390x:RUNNING\n[roundcube/1.6.1+dfsg-1] s390x:RUNNING\n[ruby-dataobjects-mysql/0.10.17-4] s390x:RUNNING\n[ruby-moneta] s390x:RUNNING\n[ruby-mysql2/0.5.3-4] s390x:RUNNING\n[slurm-wlm] s390x:RUNNING\n[soci/4.0.3-1] s390x:RUNNING\n[sqitch/1.3.1-1] s390x:RUNNING\n[sysbench/1.0.20+ds-5] s390x:RUNNING\n[trojan/1.16.0-1] s390x:RUNNING\n[vtk7/7.1.1+dfsg2-10.2] s390x:RUNNING\n[w1retap/1.4.6-1.1] s390x:RUNNING\n",
         "currentAge": 2,
         "requiredAge": 5
     },
@@ -1667,7 +1667,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "qemu",
-        "extra": "[cloud-utils/0.33-1] s390x:RUNNING\n[cryptsetup/2:2.6.0-2] s390x:RUNNING\n[debomatic/0.26-1] armhf:RUNNING, s390x:RUNNING\n[debvm/0.2.6] s390x:RUNNING-ALWAYSFAIL\n[dropbear/2022.83-1] s390x:RUNNING\n[edk2/2022.11-2] ppc64el:REGRESSION, s390x:RUNNING-ALWAYSFAIL\n[fai/6.0] s390x:RUNNING\n[freedom-maker/0.32] s390x:RUNNING\n[ganeti/3.0.2-2] armhf:RUNNING, s390x:RUNNING-ALWAYSFAIL\n[genimage/16-2] s390x:RUNNING\n[glance/2:25.0.0-2] armhf:RUNNING, s390x:RUNNING-ALWAYSFAIL\n[initramfs-tools/0.142] s390x:RUNNING\n[ironic/1:21.1.0-2] armhf:RUNNING, s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] armhf:RUNNING, s390x:RUNNING-ALWAYSFAIL\n[libvirt/9.0.0-1] armhf:RUNNING, s390x:RUNNING\n[multipath-tools/0.9.4-2] armhf:RUNNING, s390x:RUNNING\n[nova/2:26.1.0-1] armhf:RUNNING, s390x:RUNNING\n[open-iscsi/2.1.8-1] armhf:RUNNING, s390x:RUNNING\n[osk-sdl/0.67.1-1] armhf:RUNNING, s390x:RUNNING\n[qemu/1:7.2+dfsg-3] armhf:RUNNING, s390x:RUNNING\n[sbuild/0.85.0] armhf:RUNNING, s390x:RUNNING\n[snek/1.9-1] armhf:RUNNING, s390x:RUNNING\n[systemd/252.5-2] armhf:RUNNING-ALWAYSFAIL, s390x:RUNNING\n[vagrant-mutate/1.2.0-4.1] armhf:RUNNING, s390x:RUNNING\n[vagrant/2.3.4+dfsg-1] armhf:RUNNING, s390x:RUNNING\n[vmdb2/0.26-2] armhf:RUNNING, s390x:RUNNING\n",
+        "extra": "[cloud-utils/0.33-1] s390x:RUNNING\n[cryptsetup/2:2.6.0-2] s390x:RUNNING\n[debomatic/0.26-1] s390x:RUNNING\n[debvm/0.2.6] s390x:RUNNING-ALWAYSFAIL\n[dropbear/2022.83-1] s390x:RUNNING\n[edk2/2022.11-2] ppc64el:REGRESSION, s390x:RUNNING-ALWAYSFAIL\n[fai/6.0] s390x:RUNNING\n[freedom-maker/0.32] s390x:RUNNING\n[ganeti/3.0.2-2] s390x:RUNNING-ALWAYSFAIL\n[genimage/16-2] s390x:RUNNING\n[glance/2:25.0.0-2] s390x:RUNNING-ALWAYSFAIL\n[initramfs-tools/0.142] s390x:RUNNING\n[ironic/1:21.1.0-2] s390x:RUNNING\n[lava/2023.01-2] s390x:RUNNING\n[libguestfs/1:1.48.6-1] s390x:RUNNING-ALWAYSFAIL\n[libvirt/9.0.0-1] s390x:RUNNING\n[multipath-tools/0.9.4-2] s390x:RUNNING\n[nova/2:26.1.0-1] s390x:RUNNING\n[open-iscsi/2.1.8-1] s390x:RUNNING\n[osk-sdl/0.67.1-1] s390x:RUNNING\n[qemu/1:7.2+dfsg-3] s390x:RUNNING\n[sbuild/0.85.0] s390x:RUNNING\n[snek/1.9-1] s390x:RUNNING\n[systemd/252.5-2] s390x:RUNNING\n[vagrant-mutate/1.2.0-4.1] s390x:RUNNING\n[vagrant/2.3.4+dfsg-1] s390x:RUNNING\n[vmdb2/0.26-2] s390x:RUNNING\n",
         "currentAge": 2,
         "requiredAge": 5
     },
@@ -2548,7 +2548,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "ruby-webrick",
-        "extra": "[ruby-rack/2.2.4-2] s390x:REGRESSION\n[tdiary/5.2.3-1] armel:OLD_PASS, armhf:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS, s390x:OLD_PASS\n",
+        "extra": "[ruby-rack/2.2.4-2] s390x:REGRESSION\n[tdiary/5.2.3-1] ppc64el:OLD_PASS, s390x:OLD_PASS\n",
         "currentAge": 3,
         "requiredAge": 5
     },
@@ -2945,7 +2945,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "openssl",
-        "extra": "[bacula/9.6.7-5] s390x:REGRESSION\n[lasso/2.8.0-4] armel:RUNNING, i386:RUNNING, ppc64el:RUNNING, s390x:RUNNING\n[librdkafka/1.9.2-1] s390x:OLD_PASS\n[mariadb-10.6/1:10.6.11-2] s390x:REGRESSION\n[opendht/2.4.10-1] s390x:OLD_PASS\n[pam-mysql/0.8.2-2] s390x:REGRESSION\n[pdns/4.7.3-2] s390x:RUNNING\n[puppetlabs-http-client-clojure/2.1.0-3] s390x:OLD_PASS\n[resource-agents/1:4.12.0-1] s390x:REGRESSION\n",
+        "extra": "[bacula/9.6.7-5] s390x:REGRESSION\n[lasso/2.8.0-4] s390x:RUNNING\n[librdkafka/1.9.2-1] s390x:OLD_PASS\n[mariadb-10.6/1:10.6.11-2] s390x:REGRESSION\n[opendht/2.4.10-1] s390x:OLD_PASS\n[pam-mysql/0.8.2-2] s390x:REGRESSION\n[pdns/4.7.3-2] s390x:RUNNING\n[puppetlabs-http-client-clojure/2.1.0-3] s390x:OLD_PASS\n[resource-agents/1:4.12.0-1] s390x:REGRESSION\n",
         "currentAge": 4,
         "requiredAge": 5
     },
@@ -3092,7 +3092,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "quilt",
-        "extra": "[ruby-moneta/1.0.0-9] s390x:RUNNING\n[tdiary/5.2.3-1] armel:OLD_PASS, armhf:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS, s390x:OLD_PASS\n",
+        "extra": "[ruby-moneta/1.0.0-9] s390x:RUNNING\n[tdiary/5.2.3-1] s390x:OLD_PASS\n",
         "currentAge": 4,
         "requiredAge": 5
     },
@@ -3232,7 +3232,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "trapperkeeper-authorization-clojure",
-        "extra": "[puppetdb/7.12.1-2] amd64:REGRESSION, arm64:REGRESSION\n[puppetserver/7.9.4-1] amd64:REGRESSION, arm64:REGRESSION\n[trapperkeeper-metrics-clojure/1.5.0-4] armel:OLD_PASS, armhf:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS, s390x:OLD_PASS\n",
+        "extra": "[puppetdb/7.12.1-2] amd64:REGRESSION, arm64:REGRESSION\n[puppetserver/7.9.4-1] amd64:REGRESSION, arm64:REGRESSION\n[trapperkeeper-metrics-clojure/1.5.0-4] ppc64el:OLD_PASS, s390x:OLD_PASS\n",
         "currentAge": 4,
         "requiredAge": 5
     },
@@ -3666,14 +3666,14 @@
     {
         "state": "MISSING_TESTS",
         "source": "php8.2",
-        "extra": "[cacti/1.2.23+ds1-2] s390x:RUNNING\n[mediawiki/1:1.39.1-2] s390x:RUNNING\n[phing/2.17.4-1] s390x:RUNNING\n[php-dompdf/2.0.2+dfsg-2] s390x:OLD_PASS\n[php-sabredav/1.8.12-10] s390x:RUNNING\n[phpmyadmin/4:5.2.0+dfsg1-2] armel:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS, s390x:OLD_PASS\n[phpsysinfo/3.4.2-2] s390x:OLD_NEUTRAL\n[roundcube/1.6.1+dfsg-1] s390x:RUNNING\n",
+        "extra": "[cacti/1.2.23+ds1-2] s390x:RUNNING\n[mediawiki/1:1.39.1-2] s390x:RUNNING\n[phing/2.17.4-1] s390x:RUNNING\n[php-dompdf/2.0.2+dfsg-2] s390x:OLD_PASS\n[php-sabredav/1.8.12-10] s390x:RUNNING\n[phpmyadmin/4:5.2.0+dfsg1-2] s390x:OLD_PASS\n[phpsysinfo/3.4.2-2] s390x:OLD_NEUTRAL\n[roundcube/1.6.1+dfsg-1] s390x:RUNNING\n",
         "currentAge": 5,
         "requiredAge": 5
     },
     {
         "state": "MISSING_TESTS",
         "source": "phpunit",
-        "extra": "[php-dompdf/2.0.2+dfsg-2] s390x:OLD_PASS\n[php-sabredav/1.8.12-10] s390x:RUNNING\n[phpmyadmin/4:5.2.0+dfsg1-2] armel:OLD_PASS, i386:OLD_PASS, ppc64el:OLD_PASS, s390x:OLD_PASS\n[phpsysinfo/3.4.2-2] s390x:OLD_NEUTRAL\n[roundcube/1.6.1+dfsg-1] s390x:RUNNING\n",
+        "extra": "[php-dompdf/2.0.2+dfsg-2] s390x:OLD_PASS\n[php-sabredav/1.8.12-10] s390x:RUNNING\n[phpmyadmin/4:5.2.0+dfsg1-2] s390x:OLD_PASS\n[phpsysinfo/3.4.2-2] s390x:OLD_NEUTRAL\n[roundcube/1.6.1+dfsg-1] s390x:RUNNING\n",
         "currentAge": 5,
         "requiredAge": 5
     },
