@@ -133,7 +133,7 @@
                     {{ range $.Site.Data.packageExcuses }}
                     <tr>
                         <th scope="row">
-                            <a title="{{ .source }}" href="https://tracker.debian.org/pkg/{{ .source }}" target="_blank">{{ .source }}</a>
+                            <a title="{{ .source }}" href="https://qa.debian.org/excuses.php?package={{ .source }}" target="_blank">{{ .source }}</a>
                         </th>
                         <td>
                             {{ if eq .state "PENDING_REMOVAL" }}
