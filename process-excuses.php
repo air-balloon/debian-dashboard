@@ -19,11 +19,20 @@ $dashboardData = [];
 
 foreach ($excusesYaml['sources'] as $item) {
 
+    $requiredAge = null;
+    $currentAge = null;
+    if (isset($item['policy_info']) && isset($item['policy_info']['age'])) {
+        $currentAge = $item['policy_info']['age']['current-age'];
+        $requiredAge = $item['policy_info']['age']['age-requirement'];
+    }
+
     if ($item['migration-policy-verdict'] === 'PASS' && $item['is-candidate'] && $item['new-version'] === '-') {
         echo 'Will be removed: ' . $item['source'] . PHP_EOL;
         $dashboardData[] = [
             'state' => 'PENDING_REMOVAL',
             'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
         continue;
     }
@@ -33,6 +42,8 @@ foreach ($excusesYaml['sources'] as $item) {
         $dashboardData[] = [
             'state' => 'WILL_MIGRATE',
             'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
         continue;
     }
@@ -42,6 +53,8 @@ foreach ($excusesYaml['sources'] as $item) {
         $dashboardData[] = [
             'state' => 'REJECTED_NEEDS_APPROVAL',
             'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
         continue;
     }
@@ -51,6 +64,8 @@ foreach ($excusesYaml['sources'] as $item) {
         $dashboardData[] = [
             'state' => 'REJECTED_BLOCKED_BY_ANOTHER_ITEM',
             'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
         continue;
     }
@@ -60,6 +75,8 @@ foreach ($excusesYaml['sources'] as $item) {
         $dashboardData[] = [
             'state' => 'REJECTED_WAITING_FOR_ANOTHER_ITEM',
             'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
         continue;
     }
@@ -74,6 +91,8 @@ foreach ($excusesYaml['sources'] as $item) {
         $dashboardData[] = [
             'state' => 'MISSING_BUILD',
             'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
         continue;
     }
@@ -104,6 +123,8 @@ foreach ($excusesYaml['sources'] as $item) {
             'state' => 'MISSING_TESTS',
             'source' => $item['source'],
             'extra' => $extra,
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
 
         continue;
@@ -114,6 +135,8 @@ foreach ($excusesYaml['sources'] as $item) {
         $dashboardData[] = [
             'state' => 'IS_WAITING',
             'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
         ];
         continue;
     }

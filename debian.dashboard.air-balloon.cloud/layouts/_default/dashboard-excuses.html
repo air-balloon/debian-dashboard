@@ -125,8 +125,10 @@
                 <thead>
                     <tr>
                         <th scope="col">Package</th>
+                        <th scope="col">Current age</th>
                         <th scope="col">Excuse</th>
                         <th scope="col">Extra data</th>
+                        <th scope="col">Required age</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -135,6 +137,9 @@
                         <th scope="row">
                             <a title="{{ .source }}" href="https://qa.debian.org/excuses.php?package={{ .source }}" target="_blank">{{ .source }}</a>
                         </th>
+                        <td>
+                            {{- .currentAge -}}
+                        </td>
                         <td>
                             {{ if eq .state "PENDING_REMOVAL" }}
                                 <span title="Pending removal" class="text-info">[RM]</span>
@@ -153,14 +158,19 @@
                                 {{- .extra -}}
                             </pre>
                         </td>
+                        <td>
+                            {{- .requiredAge -}}
+                        </td>
                     </tr>
                     {{ end }}
                 </tbody>
                 <tfoot>
                     <tr>
                         <th scope="col">Package</th>
+                        <th scope="col">Current age</th>
                         <th scope="col">Excuse</th>
                         <th scope="col">Extra data</th>
+                        <th scope="col">Required age</th>
                     </tr>
                 </tfoot>
             </table>
