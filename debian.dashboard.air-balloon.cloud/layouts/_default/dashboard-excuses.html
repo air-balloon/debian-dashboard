@@ -149,6 +149,12 @@
                                 <span title="Waiting for time to pass" class="text-secondary">[WAIT]</span>
                             {{ else if eq .state "MISSING_TESTS" }}
                                 <span title="Missing tests" class="text-warning">[TESTS]</span>
+                            {{ else if eq .state "TESTS_FAIL" }}
+                                <span title="Failed tests" class="text-danger">[FAIL]</span>
+                            {{ else if eq .state "UNSAT_DEPENDS" }}
+                                <span title="Unsatisfiable depends" class="text-danger">[UNSAT]</span>
+                            {{ else if eq .state "MISSING_BUILD" }}
+                                <span title="Missing build" class="text-danger">[BUILD]</span>
                             {{ else }}
                                 <span title="{{ .state }}" class="text-danger">{{ .state }}</span>
                             {{ end }}

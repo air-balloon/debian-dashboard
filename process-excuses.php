@@ -97,18 +97,36 @@ foreach ($excusesYaml['sources'] as $item) {
         continue;
     }
 
+    if (in_array('depends', $item['reason'])) {
+        echo 'UNSAT depends: ' . $item['source'] . PHP_EOL;
+        $dashboardData[] = [
+            'state' => 'UNSAT_DEPENDS',
+            'source' => $item['source'],
+            'currentAge' => $currentAge,
+            'requiredAge' => $requiredAge,
+        ];
+        continue;
+    }
+
     if (in_array('autopkgtest', $item['reason'])) {
         echo 'Missing tests: ' . $item['source'] . PHP_EOL;
         $extra = '';
+        $state = 'MISSING_TESTS';
         if (isset($item['policy_info']) && isset($item['policy_info']['autopkgtest'])) {
             foreach ($item['policy_info']['autopkgtest'] as $pkg => $ciItem) {
                 if ($pkg === 'verdict') {
+                    if ($ciItem === 'REJECTED_PERMANENTLY') {
+                        $state = 'TESTS_FAIL';
+                    }
                     continue;
                 }
                 $archs = [];
                 foreach ($ciItem as $arch => $ciInfo) {
                     if (in_array($ciInfo[0], ['PASS', 'NEUTRAL', 'ALWAYSFAIL', 'IGNORE-FAIL'])) {
                         continue;
+                    }
+                    if ($ciInfo[0] === 'REGRESSION') {
+                        $state = 'TESTS_FAIL';
                     }
                     $archs[] = '' . $arch . ':' . $ciInfo[0];
                 }
@@ -120,7 +138,7 @@ foreach ($excusesYaml['sources'] as $item) {
         }
 
         $dashboardData[] = [
-            'state' => 'MISSING_TESTS',
+            'state' => $state,
             'source' => $item['source'],
             'extra' => $extra,
             'currentAge' => $currentAge,
