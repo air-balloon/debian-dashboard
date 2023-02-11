@@ -77,7 +77,7 @@ class UDD {
         $sql = <<<'SQL'
 
         SELECT * FROM (
-            select DISTINCT
+            select DISTINCT ON (all_sources.source)
             all_sources.source,
             all_sources.section,
             lci.last_ci_date, uhl.last_upload,orphaned_packages.bug as wnpp_O,
@@ -86,8 +86,10 @@ class UDD {
             all_sources.maintainer_email, all_sources.uploaders,
             all_sources.vcs_url,all_sources.vcs_browser,
             all_sources.bin,
-            CASE WHEN p_testing.is_in_testing=1 THEN true ELSE false END as is_in_testing,
-            CASE WHEN p_experimental.is_in_experimental=1 THEN true ELSE false END as is_in_experimental,
+            all_sources.testsuite,
+            all_sources.autobuild,
+            CASE WHEN p_testing.is_in_testing>=1 THEN true ELSE false END as is_in_testing,
+            CASE WHEN p_experimental.is_in_experimental>=1 THEN true ELSE false END as is_in_experimental,
             p_bugs.bugs_for_source as bugs,
             p_bad_bugs.bugs_for_source as bad_bugs,
             p_old_bugs.bugs_for_source as old_bugs,
@@ -119,7 +121,7 @@ class UDD {
             INNER JOIN (
                 SELECT COUNT(DISTINCT as1.source) as nbr_packages_maint_email, as1.maintainer_email
                 FROM all_sources as1
-                WHERE as1.distribution = 'debian'
+                WHERE as1.distribution = 'debian' AND as1.extra_source_only IS NULL
                 AND (as1.release = 'sid' OR as1.release = 'bookworm')
                 GROUP BY as1.maintainer_email
             ) as pkg_cnt_maint ON pkg_cnt_maint.maintainer_email = all_sources.maintainer_email
@@ -133,7 +135,7 @@ class UDD {
             LEFT JOIN (
                 SELECT COUNT(*) as release_count, as2.source
                 FROM all_sources as2
-                WHERE as2.distribution = 'debian'
+                WHERE as2.distribution = 'debian' AND as2.extra_source_only IS NULL
                 AND as2.release != 'sid'
                 GROUP BY as2.source
             ) as p_other_suites ON p_other_suites.source = all_sources.source
@@ -141,7 +143,7 @@ class UDD {
             LEFT JOIN (
                 SELECT COUNT(*) as is_in_testing, as2.source
                 FROM all_sources as2
-                WHERE as2.distribution = 'debian'
+                WHERE as2.distribution = 'debian' AND as2.extra_source_only IS NULL
                 AND as2.release = 'bookworm'
                 GROUP BY as2.source
             ) as p_testing ON p_testing.source = all_sources.source
@@ -149,7 +151,7 @@ class UDD {
             LEFT JOIN (
                 SELECT COUNT(*) as is_in_experimental, as2.source
                 FROM all_sources as2
-                WHERE as2.distribution = 'debian'
+                WHERE as2.distribution = 'debian' AND as2.extra_source_only IS NULL
                 AND as2.release = 'experimental'
                 GROUP BY as2.source
             ) as p_experimental ON p_experimental.source = all_sources.source
@@ -197,9 +199,10 @@ class UDD {
                 FROM popcon_src ppcs
             ) as popcon_src ON popcon_src.source = all_sources.source
 
-            WHERE distribution = 'debian' AND (release = 'sid' OR release = 'bookworm' OR release = 'experimental')
+            WHERE distribution = 'debian' AND extra_source_only IS NULL AND (release = 'sid' OR release = 'bookworm' OR release = 'experimental')
             -- Standards version are recent
             AND all_sources.section IN ('web', 'php')
+            ORDER BY all_sources.source ASC, all_sources.version DESC
         ) as data
         ORDER BY data.source ASC;
 
@@ -214,7 +217,7 @@ class UDD {
         $sql = <<<'SQL'
 
         SELECT * FROM (
-            select DISTINCT
+            select DISTINCT ON (all_sources.source)
             all_sources.source,
             all_sources.section,
             lci.last_ci_date, uhl.last_upload,orphaned_packages.bug as wnpp_O,
@@ -223,8 +226,10 @@ class UDD {
             all_sources.maintainer_email, all_sources.uploaders,
             all_sources.vcs_url,all_sources.vcs_browser,
             all_sources.bin,
-            CASE WHEN p_testing.is_in_testing=1 THEN true ELSE false END as is_in_testing,
-            CASE WHEN p_experimental.is_in_experimental=1 THEN true ELSE false END as is_in_experimental,
+            all_sources.testsuite,
+            all_sources.autobuild,
+            CASE WHEN p_testing.is_in_testing>=1 THEN true ELSE false END as is_in_testing,
+            CASE WHEN p_experimental.is_in_experimental>=1 THEN true ELSE false END as is_in_experimental,
             p_bugs.bugs_for_source as bugs,
             p_bad_bugs.bugs_for_source as bad_bugs,
             p_old_bugs.bugs_for_source as old_bugs,
@@ -256,7 +261,7 @@ class UDD {
             INNER JOIN (
                 SELECT COUNT(DISTINCT as1.source) as nbr_packages_maint_email, as1.maintainer_email
                 FROM all_sources as1
-                WHERE as1.distribution = 'debian'
+                WHERE as1.distribution = 'debian' AND as1.extra_source_only IS NULL
                 AND (as1.release = 'sid' OR as1.release = 'bookworm')
                 GROUP BY as1.maintainer_email
             ) as pkg_cnt_maint ON pkg_cnt_maint.maintainer_email = all_sources.maintainer_email
@@ -270,7 +275,7 @@ class UDD {
             LEFT JOIN (
                 SELECT COUNT(*) as release_count, as2.source
                 FROM all_sources as2
-                WHERE as2.distribution = 'debian'
+                WHERE as2.distribution = 'debian' AND as2.extra_source_only IS NULL
                 AND as2.release != 'sid'
                 GROUP BY as2.source
             ) as p_other_suites ON p_other_suites.source = all_sources.source
@@ -278,7 +283,7 @@ class UDD {
             LEFT JOIN (
                 SELECT COUNT(*) as is_in_testing, as2.source
                 FROM all_sources as2
-                WHERE as2.distribution = 'debian'
+                WHERE as2.distribution = 'debian' AND as2.extra_source_only IS NULL
                 AND as2.release = 'bookworm'
                 GROUP BY as2.source
             ) as p_testing ON p_testing.source = all_sources.source
@@ -286,7 +291,7 @@ class UDD {
             LEFT JOIN (
                 SELECT COUNT(*) as is_in_experimental, as2.source
                 FROM all_sources as2
-                WHERE as2.distribution = 'debian'
+                WHERE as2.distribution = 'debian' AND as2.extra_source_only IS NULL
                 AND as2.release = 'experimental'
                 GROUP BY as2.source
             ) as p_experimental ON p_experimental.source = all_sources.source
@@ -334,11 +339,12 @@ class UDD {
                 FROM popcon_src ppcs
             ) as popcon_src ON popcon_src.source = all_sources.source
 
-            WHERE distribution = 'debian' AND (release = 'sid' OR release = 'bookworm' OR release = 'experimental')
+            WHERE distribution = 'debian' AND extra_source_only IS NULL AND (release = 'sid' OR release = 'bookworm' OR release = 'experimental')
             -- Filter packages without a recent last_upload
             AND uhl.last_upload < :last_upload
             -- Standards version are recent
             AND all_sources.standards_version NOT ILIKE :standards_version
+            ORDER BY all_sources.source ASC, all_sources.version DESC
         ) as data
         --WHERE (
 
@@ -375,7 +381,7 @@ class UDD {
 
     public function getSourceInfo(string $package, string $release): array|false {
         $sql = <<<'SQL'
-            SELECT * FROM sources WHERE source = ? AND distribution = 'debian' AND release = ?
+            SELECT * FROM sources WHERE source = ? AND distribution = 'debian' AND extra_source_only IS NULL AND release = ?
         SQL;
 
         $sth = $this->conn->prepare($sql);

@@ -1,6 +1,7 @@
 {
     "packages": [
         {
+            "autobuild": null,
             "bad_bugs": 3,
             "bin": "angband-audio",
             "bugs": 3,
@@ -24,12 +25,14 @@
             "section": "non-free/misc",
             "source": "angband-audio",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "auto6to4",
             "bugs": 1,
@@ -53,12 +56,14 @@
             "section": "net",
             "source": "auto6to4",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "https://anonscm.debian.org/cgit/collab-maint/auto6to4.git",
             "vcs_url": "git://anonscm.debian.org/collab-maint/auto6to4.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 4,
             "bin": "drbdlinks",
             "bugs": 4,
@@ -82,12 +87,14 @@
             "section": "admin",
             "source": "drbdlinks",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 12,
             "bin": "dtc-common, dtc-dos-firewall, dtc-postfix-dovecot, dtc-core, dtc-cyrus, dtc-postfix-courier, dtc-stats-daemon, dtc-toaster, dtc-autodeploy",
             "bugs": 17,
@@ -111,12 +118,14 @@
             "section": "admin",
             "source": "dtc",
             "standards_version": "3.9.2",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://git.gplhost.com/gitweb/?p=dtc.git",
             "vcs_url": "http://git.gplhost.com/dtc.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "libfinance-yahooquote-perl",
             "bugs": 2,
@@ -140,12 +149,14 @@
             "section": "interpreters",
             "source": "finance-yahooquote",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 3,
             "bin": "git-notifier",
             "bugs": 4,
@@ -169,12 +180,14 @@
             "section": "misc",
             "source": "git-notifier",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "https://anonscm.debian.org/cgit/collab-maint/git-notifier.git",
             "vcs_url": "git://anonscm.debian.org/collab-maint/git-notifier.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 3,
             "bin": "latrace",
             "bugs": 5,
@@ -198,12 +211,14 @@
             "section": "utils",
             "source": "latrace",
             "standards_version": "3.9.1",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": 1001571
         },
         {
+            "autobuild": null,
             "bad_bugs": 4,
             "bin": "libapache2-mod-auth-radius",
             "bugs": 5,
@@ -227,12 +242,14 @@
             "section": "httpd",
             "source": "libapache-mod-auth-radius",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": "Fabio M. Di Nitto <fabbione@fabbione.net>",
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "libinnodb-dev, libinnodb-dbg, libinnodb3",
             "bugs": 3,
@@ -256,12 +273,14 @@
             "section": "libs",
             "source": "libinnodb",
             "standards_version": "3.8.4",
+            "testsuite": null,
             "uploaders": "Stewart Smith <stewart@flamingspork.com>",
             "vcs_browser": "http://bazaar.launchpad.net/~drizzle-developers/pkg-libinnodb/trunk/files",
             "vcs_url": "http://bazaar.launchpad.net/~drizzle-developers/pkg-libinnodb/trunk",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "libmonitoring-availability-perl",
             "bugs": 1,
@@ -285,12 +304,14 @@
             "section": "perl",
             "source": "libmonitoring-availability-perl",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 6,
             "bin": "libodb-2.4, libodb-dev",
             "bugs": 6,
@@ -314,12 +335,14 @@
             "section": "misc",
             "source": "libodb",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": null,
             "bin": "libodb-boost-2.4, libodb-boost-dev",
             "bugs": 1,
@@ -343,12 +366,14 @@
             "section": "misc",
             "source": "libodb-boost",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": null,
             "bin": "libodb-pgsql-2.4, libodb-pgsql-dev",
             "bugs": null,
@@ -372,12 +397,14 @@
             "section": "misc",
             "source": "libodb-pgsql",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": null,
             "bin": "libodb-sqlite-2.4, libodb-sqlite-dev",
             "bugs": null,
@@ -401,12 +428,14 @@
             "section": "misc",
             "source": "libodb-sqlite",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "libpthread-workqueue-dev, libpthread-workqueue0",
             "bugs": 1,
@@ -430,12 +459,14 @@
             "section": "libs",
             "source": "libpthread-workqueue",
             "standards_version": "3.9.5.0",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": "git://github.com/mheily/debian-packages.git -b libpthread_workqueue",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 3,
             "bin": "libsnmp-multi-perl",
             "bugs": 4,
@@ -459,12 +490,14 @@
             "section": "perl",
             "source": "libsnmp-multi-perl",
             "standards_version": "3.7.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": null,
             "bin": "libtaverna2-server-java",
             "bugs": null,
@@ -488,12 +521,14 @@
             "section": "misc",
             "source": "libtaverna2-server-java",
             "standards_version": "3.9.5",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://anonscm.debian.org/viewvc/pkg-java/trunk/libtaverna2-server-java",
             "vcs_url": "svn://anonscm.debian.org/pkg-java/trunk/libtaverna2-server-java",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "mixer.app",
             "bugs": 1,
@@ -503,7 +538,7 @@
             "last_ci_date": null,
             "last_signed_upload_maint": "2022-08-20 16:35:53+00",
             "last_upload": "2012-03-11 12:17:54+00",
-            "last_upload_maint": "2023-02-04 13:19:04+00",
+            "last_upload_maint": "2023-02-10 07:21:26+00",
             "maintainer_email": "ametzler@debian.org",
             "nbr_packages_maint_email": 10,
             "old_bugs": 1,
@@ -517,12 +552,14 @@
             "section": "gnustep",
             "source": "mixer.app",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 3,
             "bin": "mrtg-rrd",
             "bugs": 5,
@@ -546,12 +583,14 @@
             "section": "web",
             "source": "mrtg-rrd",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://anonscm.debian.org/viewvc/collab-maint/deb-maint/mrtg-rrd",
             "vcs_url": "svn://svn.debian.org/svn/collab-maint/deb-maint/mrtg-rrd",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "msp430-libc",
             "bugs": 3,
@@ -575,12 +614,14 @@
             "section": "devel",
             "source": "msp430-libc",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "mutextrace",
             "bugs": 3,
@@ -604,12 +645,14 @@
             "section": "devel",
             "source": "mutextrace",
             "standards_version": "3.9.4",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 13,
             "bin": "libmyodbc",
             "bugs": 18,
@@ -633,12 +676,14 @@
             "section": "libs",
             "source": "myodbc",
             "standards_version": "3.9.2",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://anonscm.debian.org/loggerhead/users/vorlon/myodbc/trunk/",
             "vcs_url": "nosmart+http://bzr.debian.org/bzr/users/vorlon/myodbc/trunk/",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "navi2ch",
             "bugs": 4,
@@ -662,12 +707,14 @@
             "section": "lisp",
             "source": "navi2ch",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "libpam-pgsql",
             "bugs": 3,
@@ -691,12 +738,14 @@
             "section": "admin",
             "source": "pam-pgsql",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://anonscm.debian.org/cgit/collab-maint/pam-pgsql.git",
             "vcs_url": "git://anonscm.debian.org/collab-maint/pam-pgsql.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "pstack",
             "bugs": 2,
@@ -720,12 +769,14 @@
             "section": "devel",
             "source": "pstack",
             "standards_version": "3.9.2",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://git.debian.org/?p=collab-maint/pstack.git;a=summary",
             "vcs_url": "git://git.debian.org/collab-maint/pstack.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "qmenu",
             "bugs": 6,
@@ -749,12 +800,14 @@
             "section": "misc",
             "source": "qmenu",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": "Stefano Teodorani <s.teodorani@gmail.com>",
             "vcs_browser": "https://github.com/teopost/qmenu",
             "vcs_url": "https://github.com/teopost/qmenu.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "scheme2c, scheme2c-doc",
             "bugs": 2,
@@ -778,12 +831,14 @@
             "section": "lisp",
             "source": "scheme2c",
             "standards_version": "3.9.5",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://anonscm.debian.org/gitweb/?p=collab-maint/scheme2c.git",
             "vcs_url": "git://anonscm.debian.org/collab-maint/scheme2c.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 3,
             "bin": "smbc",
             "bugs": 4,
@@ -807,12 +862,14 @@
             "section": "net",
             "source": "smbc",
             "standards_version": "3.9.5",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "smtm",
             "bugs": 2,
@@ -836,12 +893,14 @@
             "section": "misc",
             "source": "smtm",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "smtpprox, libmsdw-smtp-perl",
             "bugs": 1,
@@ -865,12 +924,14 @@
             "section": "misc",
             "source": "smtpprox",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "https://github.com/jnorell/smtpprox",
             "vcs_url": "https://github.com/jnorell/smtpprox.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": null,
             "bin": "smtpprox-loopprevent",
             "bugs": null,
@@ -894,12 +955,14 @@
             "section": "misc",
             "source": "smtpprox-loopprevent",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "https://github.com/jnorell/smtpprox-loopprevent",
             "vcs_url": "https://github.com/jnorell/smtpprox-loopprevent.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "libsnmpkit-dev, libsnmpkit2c2a",
             "bugs": 2,
@@ -923,12 +986,14 @@
             "section": "libs",
             "source": "snmpkit",
             "standards_version": "3.9.2.0",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "spd",
             "bugs": 1,
@@ -952,12 +1017,14 @@
             "section": "science",
             "source": "spd",
             "standards_version": "3.9.2",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "tinyhoneypot",
             "bugs": 3,
@@ -981,12 +1048,14 @@
             "section": "admin",
             "source": "thp",
             "standards_version": "3.6.0.1",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": null,
             "bin": "tinysvm, libtinysvm-dev, libtinysvm1-dbg, libtinysvm1",
             "bugs": null,
@@ -1010,12 +1079,14 @@
             "section": "misc",
             "source": "tinysvm",
             "standards_version": "3.9.4",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://anonscm.debian.org/gitweb/?p=collab-maint/tinysvm.git",
             "vcs_url": "git://anonscm.debian.org/collab-maint/tinysvm.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 5,
             "bin": "libtowitoko-dev, libtowitoko2",
             "bugs": 11,
@@ -1039,12 +1110,14 @@
             "section": "misc",
             "source": "towitoko",
             "standards_version": "3.8.2",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": null,
             "bin": "vish",
             "bugs": null,
@@ -1068,12 +1141,14 @@
             "section": "misc",
             "source": "vish",
             "standards_version": "3.9.3",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": null,
             "vcs_url": null,
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "linuxvnc",
             "bugs": 1,
@@ -1097,12 +1172,14 @@
             "section": "misc",
             "source": "vncterm",
             "standards_version": "3.9.6",
+            "testsuite": null,
             "uploaders": null,
             "vcs_browser": "http://anonscm.debian.org/cgit/collab-maint/vncterm.git",
             "vcs_url": "git://anonscm.debian.org/collab-maint/vncterm.git",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 2,
             "bin": "xmms2-scrobbler",
             "bugs": 4,
@@ -1126,12 +1203,14 @@
             "section": "sound",
             "source": "xmms2-scrobbler",
             "standards_version": "3.9.4",
+            "testsuite": null,
             "uploaders": "Anders Waldenborg <anders@0x63.nu>, Benjamin Drung <bdrung@debian.org>",
             "vcs_browser": "http://anonscm.debian.org/gitweb/?p=pkg-xmms2/xmms2-scrobbler.git",
             "vcs_url": "git://anonscm.debian.org/pkg-xmms2/xmms2-scrobbler",
             "wnpp_o": null
         },
         {
+            "autobuild": null,
             "bad_bugs": 3,
             "bin": "yap",
             "bugs": 4,
@@ -1155,12 +1234,14 @@
             "section": "devel",
             "source": "yap",
             "standards_version": "3.9.6",
+            "testsuite": "autopkgtest",
             "uploaders": null,
             "vcs_browser": "https://anonscm.debian.org/cgit/collab-maint/yap.git;a=summary",
             "vcs_url": "git://anonscm.debian.org/collab-maint/yap.git",
             "wnpp_o": 766585
         },
         {
+            "autobuild": null,
             "bad_bugs": 1,
             "bin": "zeroc-ice-manual",
             "bugs": 1,
@@ -1184,6 +1265,7 @@
             "section": "non-free/doc",
             "source": "zeroc-ice-manual",
             "standards_version": "3.9.4",
+            "testsuite": null,
             "uploaders": "Cleto Mart\u00edn <cleto@debian.org>",
             "vcs_browser": null,
             "vcs_url": null,

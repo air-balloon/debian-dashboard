@@ -7063,20 +7063,6 @@
             "popcon_nofiles": 6,
             "popcon_source": "goiardi"
         },
-        "golang-1.11": {
-            "popcon_installs": 873,
-            "popcon_votes": 52,
-            "popcon_recent": 3,
-            "popcon_nofiles": 673,
-            "popcon_source": "golang-1.11"
-        },
-        "golang-1.12": {
-            "popcon_installs": null,
-            "popcon_votes": null,
-            "popcon_recent": null,
-            "popcon_nofiles": null,
-            "popcon_source": null
-        },
         "golang-bitbucket-pkg-inflect": {
             "popcon_installs": 5,
             "popcon_votes": 0,
@@ -7441,13 +7427,6 @@
             "popcon_nofiles": 1,
             "popcon_source": "golang-github-dghubble-sling"
         },
-        "golang-github-dgrijalva-jwt-go-v3": {
-            "popcon_installs": 16,
-            "popcon_votes": 0,
-            "popcon_recent": 0,
-            "popcon_nofiles": 16,
-            "popcon_source": "golang-github-dgrijalva-jwt-go-v3"
-        },
         "golang-github-dgryski-go-bits": {
             "popcon_installs": 9,
             "popcon_votes": 0,
@@ -7804,13 +7783,6 @@
             "popcon_recent": 0,
             "popcon_nofiles": 6,
             "popcon_source": "golang-github-hashicorp-scada-client"
-        },
-        "golang-github-hashicorp-uuid": {
-            "popcon_installs": 4,
-            "popcon_votes": 0,
-            "popcon_recent": 0,
-            "popcon_nofiles": 4,
-            "popcon_source": "golang-github-hashicorp-uuid"
         },
         "golang-github-hawkular-hawkular-client-go": {
             "popcon_installs": 6,
@@ -9135,13 +9107,6 @@
             "popcon_nofiles": null,
             "popcon_source": null
         },
-        "golang-golang-x-net-dev": {
-            "popcon_installs": 342,
-            "popcon_votes": 10,
-            "popcon_recent": 41,
-            "popcon_nofiles": 118,
-            "popcon_source": "golang-golang-x-net-dev"
-        },
         "golang-gomemcache": {
             "popcon_installs": 36,
             "popcon_votes": 0,
@@ -9365,13 +9330,6 @@
             "popcon_recent": 0,
             "popcon_nofiles": 6,
             "popcon_source": "golang-sorcix-irc-dev"
-        },
-        "golang-x-text": {
-            "popcon_installs": 349,
-            "popcon_votes": 10,
-            "popcon_recent": 41,
-            "popcon_nofiles": 125,
-            "popcon_source": "golang-x-text"
         },
         "goocanvas-2.0": {
             "popcon_installs": 4164,
@@ -11500,13 +11458,6 @@
             "popcon_recent": 0,
             "popcon_nofiles": 14,
             "popcon_source": "jqapi"
-        },
-        "jquery": {
-            "popcon_installs": 107224,
-            "popcon_votes": 24529,
-            "popcon_recent": 5142,
-            "popcon_nofiles": 45199,
-            "popcon_source": "jquery"
         },
         "jquery-colorbox": {
             "popcon_installs": 167,
@@ -14132,13 +14083,6 @@
             "popcon_recent": 1,
             "popcon_nofiles": 6,
             "popcon_source": "libibatis-java"
-        },
-        "libibtk": {
-            "popcon_installs": 10,
-            "popcon_votes": 0,
-            "popcon_recent": 0,
-            "popcon_nofiles": 3,
-            "popcon_source": "libibtk"
         },
         "libicns": {
             "popcon_installs": 1435,
@@ -27167,13 +27111,6 @@
             "popcon_nofiles": 4,
             "popcon_source": "rust-derive-new"
         },
-        "rust-diesel-derives": {
-            "popcon_installs": 4,
-            "popcon_votes": 0,
-            "popcon_recent": 0,
-            "popcon_nofiles": 4,
-            "popcon_source": "rust-diesel-derives"
-        },
         "rust-diff": {
             "popcon_installs": 6,
             "popcon_votes": 0,
@@ -27593,13 +27530,6 @@
             "popcon_recent": 1,
             "popcon_nofiles": 16,
             "popcon_source": "rust-memmap"
-        },
-        "rust-migrations-internals": {
-            "popcon_installs": 1,
-            "popcon_votes": 0,
-            "popcon_recent": 0,
-            "popcon_nofiles": 1,
-            "popcon_source": "rust-migrations-internals"
         },
         "rust-mio-extras": {
             "popcon_installs": 9,
@@ -28622,13 +28552,6 @@
             "popcon_recent": 2,
             "popcon_nofiles": 0,
             "popcon_source": "set-crontab-perl"
-        },
-        "setcd": {
-            "popcon_installs": 201,
-            "popcon_votes": 26,
-            "popcon_recent": 2,
-            "popcon_nofiles": 0,
-            "popcon_source": "setcd"
         },
         "setop": {
             "popcon_installs": 9,
