@@ -120,95 +120,103 @@
             <table class="table table-hover" id="packages">
                 <thead>
                     <tr>
-                        <th scope="col">URL</th>
+                        <th scope="col">Package</th>
+                        <th scope="col">Testing</th>
                         <th scope="col">Score</th>
-                        <th scope="col">Section</th>
-                        <th scope="col">In testing ?</th>
-                        <th scope="col">In releases count</th>
                         <th scope="col">Bugs</th>
-                        <th scope="col">Bad bugs</th>
-                        <th scope="col">Old bugs</th>
-                        <th scope="col">Popcon installs</th>
-                        <th scope="col">Popcon votes</th>
-                        <th scope="col">Popcon recent</th>
-                        <th scope="col">Popcon nofiles</th>
-                        <th scope="col">Popcon source</th>
-                        <th scope="col">Last CI date</th>
+                        <th scope="col">Popcons</th>
                         <th scope="col">Last Upload</th>
-                        <th scope="col">WNPP (:0) ?</th>
-                        <th scope="col">In team maintained ?</th>
                         <th scope="col">Total maintainer packages</th>
                         <th scope="col">Standards-version</th>
                         <th scope="col">Maintainer e-mail</th>
-                        <th scope="col">Last maintainer upload</th>
-                        <th scope="col">Last maintainer signed upload</th>
+                        <th scope="col">Last maintainer upload/signed upload</th>
                         <th scope="col">Uploaders</th>
                         <th scope="col">Vcs-Url</th>
                         <th scope="col">Vcs-Browse</th>
-                        <th scope="col">Binaries</th>
                     </tr>
                 </thead>
                 <tbody>
                     {{ range $.Site.Data.uddWebPhp.packages }}
                     <tr>
-                        <th scope="row"><a href="https://tracker.debian.org/pkg/{{ .source }}" target="_blank">{{ .source }}</a>
+                        <th scope="row">{{ .section }}/<a title="{{ .bin }}" href="https://tracker.debian.org/pkg/{{ .source }}" target="_blank">{{ .source }}</a>
+                            ({{ .release_count }})
+                            {{ if .wnpp_o }}
+                                <span title="{{ .wnpp_o }}" class="text-info">[O]</span>
+                            {{ end }}
+                            {{ if eq .is_team_maintained true }}
+                                <span title="{{ .maintainer_email }}" class="text-info">[T]</span>
+                            {{ else if eq .is_team_maintained false }}
+                                <span title="{{ .maintainer_email }}" class="text-warning">[<del>team</del>]</span>
+                            {{ end }}
+                            {{ if eq .is_in_testing false }}
+                                <span title="Not in testing" class="text-danger">[<del>sid</del>]</span>
+                            {{ end }}
                         </th>
+                        <td>
+                            {{ if eq .autobuild "yes" }}
+                                <span title="{{ .autobuild }}" class="text-success">[AB]</span>
+                            {{ end }}
+                            {{ if .last_ci_date }}
+                                <span title="{{ .last_ci_date }}" class="text-success">[CI]</span>
+                            {{ else }}
+                                <span class="text-danger">[<del>CI</dev>]</span>
+                            {{ end }}
+                            {{ if .testsuite }}
+                                <span title="{{ .testsuite }}" class="text-success">[A-8]</span>
+                            {{ else }}
+                                <span class="text-danger">[<del>A-8</dev>]</span>
+                            {{ end }}
+                        </td>
                         <td>{{ .score }}</td>
-                        <td>{{ .section }}</td>
-                        <td>{{ .is_in_testing }}</td>
-                        <td>{{ .release_count }}</td>
-                        <td>{{ .bugs }}</td>
-                        <td>{{ .bad_bugs }}</td>
-                        <td>{{ .old_bugs }}</td>
-                        <td>{{ .popcon_installs }}</td>
-                        <td>{{ .popcon_votes }}</td>
-                        <td>{{ .popcon_recent }}</td>
-                        <td>{{ .popcon_nofiles }}</td>
-                        <td>{{ .popcon_source }}</td>
-                        <td>{{ .last_ci_date }}</td>
+                        <td>{{ .bugs }}/B:{{ .bad_bugs }}/O:{{ .old_bugs }}</td>
+                        <td>
+                            {{ if gt .popcon_installs 300 }}
+                                <span title="{{ .popcon_installs }}" class="text-success">[I]</span>
+                            {{ else if gt .popcon_installs 100 }}
+                                <span title="{{ .popcon_installs }}" class="text-info">[I]</span>
+                            {{ else if gt .popcon_installs 50 }}
+                                <span title="{{ .popcon_installs }}" class="text-warning">[I]</span>
+                            {{  else if lt .popcon_installs 50 }}
+                                <span title="{{ .popcon_installs }}" class="text-danger">[I]</span>
+                            {{ end }}
+                            {{ if gt .popcon_votes 300 }}
+                                <span title="{{ .popcon_votes }}" class="text-success">[V]</span>
+                            {{ else if gt .popcon_votes 100 }}
+                                <span title="{{ .popcon_votes }}" class="text-info">[V]</span>
+                            {{ else if gt .popcon_votes 50 }}
+                                <span title="{{ .popcon_votes }}" class="text-warning">[V]</span>
+                            {{  else if lt .popcon_votes 50 }}
+                                <span title="{{ .popcon_votes }}" class="text-danger">[V]</span>
+                            {{ end }}
+                            <span title="{{ .popcon_recent }}">[R]</span>
+                            <span title="{{ .popcon_nofiles }}">[NF]</span>
+                        </td>
                         <td>{{ .last_upload }}</td>
-                        <td>{{ .wnpp_o }}</td>
-                        <td>{{ .is_team_maintained }}</td>
                         <td>{{ .nbr_packages_maint_email }}</td>
                         <td>{{ .standards_version }}</td>
                         <td>{{ .maintainer_email }}</td>
-                        <td>{{ .last_upload_maint }}</td>
-                        <td>{{ .last_signed_upload_maint }}</td>
+                        <td>{{ .last_upload_maint }}/{{ .last_signed_upload_maint }}</td>
                         <td>{{ .uploaders }}</td>
                         <td>{{ .vcs_url }}</td>
                         <td>{{ .vcs_browser }}</td>
-                        <td>{{ .bin }}</td>
                     </tr>
                     {{ end }}
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th scope="col">URL</th>
+                        <th scope="col">Package</th>
+                        <th scope="col">Testing</th>
                         <th scope="col">Score</th>
-                        <th scope="col">Section</th>
-                        <th scope="col">In testing ?</th>
-                        <th scope="col">In releases count</th>
                         <th scope="col">Bugs</th>
-                        <th scope="col">Bad bugs</th>
-                        <th scope="col">Old bugs</th>
-                        <th scope="col">Popcon installs</th>
-                        <th scope="col">Popcon votes</th>
-                        <th scope="col">Popcon recent</th>
-                        <th scope="col">Popcon nofiles</th>
-                        <th scope="col">Popcon source</th>
-                        <th scope="col">Last CI date</th>
+                        <th scope="col">Popcons</th>
                         <th scope="col">Last Upload</th>
-                        <th scope="col">WNPP (:0) ?</th>
-                        <th scope="col">In team maintained ?</th>
                         <th scope="col">Total maintainer packages</th>
                         <th scope="col">Standards-version</th>
                         <th scope="col">Maintainer e-mail</th>
-                        <th scope="col">Last maintainer upload</th>
-                        <th scope="col">Last maintainer signed upload</th>
+                        <th scope="col">Last maintainer upload/signed upload</th>
                         <th scope="col">Uploaders</th>
                         <th scope="col">Vcs-Url</th>
                         <th scope="col">Vcs-Browse</th>
-                        <th scope="col">Binaries</th>
                     </tr>
                 </tfoot>
             </table>
