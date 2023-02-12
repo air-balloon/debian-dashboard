@@ -20265,13 +20265,6 @@
             "popcon_nofiles": 0,
             "popcon_source": "nusoap"
         },
-        "nutcracker": {
-            "popcon_installs": 10,
-            "popcon_votes": 9,
-            "popcon_recent": 0,
-            "popcon_nofiles": 0,
-            "popcon_source": "nutcracker"
-        },
         "nuttcp": {
             "popcon_installs": 213,
             "popcon_votes": 26,
@@ -23989,13 +23982,6 @@
             "popcon_nofiles": 1,
             "popcon_source": "reaver"
         },
-        "recode": {
-            "popcon_installs": 16494,
-            "popcon_votes": 2306,
-            "popcon_recent": 884,
-            "popcon_nofiles": 1710,
-            "popcon_source": "recode"
-        },
         "redeclipse": {
             "popcon_installs": 271,
             "popcon_votes": 20,
@@ -26872,13 +26858,6 @@
             "popcon_recent": 16,
             "popcon_nofiles": 0,
             "popcon_source": "ruby-xdg"
-        },
-        "ruby-xmlhash": {
-            "popcon_installs": 8,
-            "popcon_votes": 3,
-            "popcon_recent": 0,
-            "popcon_nofiles": 0,
-            "popcon_source": "ruby-xmlhash"
         },
         "ruby-xpath": {
             "popcon_installs": 317,
