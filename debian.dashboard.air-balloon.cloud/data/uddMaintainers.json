@@ -552,8 +552,8 @@
         },
         "c.schoenert@t-online.de": {
             "nbr_packages_maint_email": 6,
-            "last_upload_maint": "2023-02-11 08:35:08+00",
-            "last_signed_upload_maint": "2023-02-09 16:34:07+00"
+            "last_upload_maint": "2023-02-13 17:34:05+00",
+            "last_signed_upload_maint": "2023-02-13 17:34:05+00"
         },
         "calculus@rezozer.net": {
             "nbr_packages_maint_email": 5,
@@ -572,7 +572,7 @@
         },
         "camm@debian.org": {
             "nbr_packages_maint_email": 11,
-            "last_upload_maint": "2023-02-13 11:20:41+00",
+            "last_upload_maint": "2023-02-13 18:21:25+00",
             "last_signed_upload_maint": "2022-08-11 17:34:25+00"
         },
         "camrdale@gmail.com": {
@@ -1047,7 +1047,7 @@
         },
         "debian@jbfavre.org": {
             "nbr_packages_maint_email": 1,
-            "last_upload_maint": "2023-01-30 17:23:33+00",
+            "last_upload_maint": "2023-02-13 14:41:28+00",
             "last_signed_upload_maint": null
         },
         "debian@jff.email": {
@@ -1577,7 +1577,7 @@
         },
         "georgesk@debian.org": {
             "nbr_packages_maint_email": 82,
-            "last_upload_maint": "2023-02-13 12:04:04+00",
+            "last_upload_maint": "2023-02-13 15:04:33+00",
             "last_signed_upload_maint": "2022-07-25 17:34:05+00"
         },
         "gfa@zumbi.com.ar": {
@@ -1717,7 +1717,7 @@
         },
         "hans@eds.org": {
             "nbr_packages_maint_email": 5,
-            "last_upload_maint": "2023-02-13 11:51:25+00",
+            "last_upload_maint": "2023-02-13 14:34:25+00",
             "last_signed_upload_maint": null
         },
         "hans@knorrie.org": {
@@ -2317,7 +2317,7 @@
         },
         "lamby@debian.org": {
             "nbr_packages_maint_email": 11,
-            "last_upload_maint": "2023-02-10 19:20:24+00",
+            "last_upload_maint": "2023-02-13 16:50:52+00",
             "last_signed_upload_maint": null
         },
         "lawrencc@debian.org": {
@@ -3212,7 +3212,7 @@
         },
         "pere@debian.org": {
             "nbr_packages_maint_email": 13,
-            "last_upload_maint": "2023-02-13 06:51:34+00",
+            "last_upload_maint": "2023-02-13 18:05:30+00",
             "last_signed_upload_maint": null
         },
         "pgrosu@gmail.com": {
@@ -3867,7 +3867,7 @@
         },
         "roland@debian.org": {
             "nbr_packages_maint_email": 10,
-            "last_upload_maint": "2023-02-05 10:05:33+00",
+            "last_upload_maint": "2023-02-13 16:36:22+00",
             "last_signed_upload_maint": null
         },
         "roman@tarantool.org": {

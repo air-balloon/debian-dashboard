@@ -4280,9 +4280,9 @@
         },
         {
             "autobuild": null,
-            "bad_bugs": null,
+            "bad_bugs": 1,
             "bin": "libjthread-dev, libjthread1.3.1, libjthread-dbg, libjthread-doc",
-            "bugs": null,
+            "bugs": 1,
             "is_in_experimental": false,
             "is_in_testing": true,
             "is_team_maintained": false,
