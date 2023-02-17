@@ -167,6 +167,9 @@ foreach ($excusesYaml['sources'] as $item) {
     var_dump($item);
 }
 
+$dashboardData = array_unique($dashboardData, SORT_REGULAR);
+$dashboardData = array_values($dashboardData);
+
 echo 'Saving ...' . PHP_EOL;
 $data = json_encode($dashboardData, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/packageExcuses.json', $data);
