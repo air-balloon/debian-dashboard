@@ -170,6 +170,10 @@ foreach ($excusesYaml['sources'] as $item) {
 $dashboardData = array_unique($dashboardData, SORT_REGULAR);
 $dashboardData = array_values($dashboardData);
 
+usort($dashboardData, static function($a, $b): bool {
+    return $a['source'] > $b['source'];
+});
+
 echo 'Saving ...' . PHP_EOL;
 $data = json_encode($dashboardData, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 file_put_contents(__DIR__ . '/debian.dashboard.air-balloon.cloud/data/packageExcuses.json', $data);
