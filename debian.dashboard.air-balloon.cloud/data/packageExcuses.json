@@ -3,13 +3,15 @@
         "state": "WILL_MIGRATE",
         "source": "a2jmidid",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "aac-tactics",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-aac-tactics (8.17.0-1+b1 to 8.17.0-1+b2)"
     },
     {
         "state": "IS_WAITING",
@@ -94,7 +96,8 @@
         "state": "WILL_MIGRATE",
         "source": "alien-arena",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "MISSING_TESTS",
@@ -161,7 +164,8 @@
         "state": "WILL_MIGRATE",
         "source": "apache-directory-server",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -265,7 +269,8 @@
         "state": "WILL_MIGRATE",
         "source": "autoimport",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -380,7 +385,8 @@
         "state": "WILL_MIGRATE",
         "source": "beanbag-docutils",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -435,7 +441,8 @@
         "state": "WILL_MIGRATE",
         "source": "bin-prot",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libbin-prot-ocaml (1:0.15.0-1 to 1:0.15.0-1+b1)\nUpdated binary: libbin-prot-ocaml-dev (1:0.15.0-1 to 1:0.15.0-1+b1)"
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -447,7 +454,8 @@
         "state": "WILL_MIGRATE",
         "source": "bind9",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -490,7 +498,8 @@
         "state": "WILL_MIGRATE",
         "source": "bluez-alsa",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -520,7 +529,8 @@
         "state": "WILL_MIGRATE",
         "source": "bowtie2",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: bowtie2 (2.5.0-3+b1 to 2.5.0-3+b2)"
     },
     {
         "state": "IS_WAITING",
@@ -611,13 +621,15 @@
         "state": "WILL_MIGRATE",
         "source": "busybox",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: busybox (1:1.35.0-4+b1 to 1:1.35.0-4+b2)\nUpdated binary: busybox-static (1:1.35.0-4+b1 to 1:1.35.0-4+b2)\nUpdated binary: busybox-udeb (1:1.35.0-4+b1 to 1:1.35.0-4+b2)\nUpdated binary: udhcpc (1:1.35.0-4+b1 to 1:1.35.0-4+b2)\nUpdated binary: udhcpd (1:1.35.0-4+b1 to 1:1.35.0-4+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "bwa",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: bwa (0.7.17-7+b1 to 0.7.17-7+b2)\nUpdated binary: libbwa-dev (0.7.17-7+b1 to 0.7.17-7+b2)"
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -701,7 +713,8 @@
         "state": "WILL_MIGRATE",
         "source": "cdebootstrap",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: cdebootstrap (0.7.8+b10 to 0.7.8+b11)\nUpdated binary: cdebootstrap-static (0.7.8+b10 to 0.7.8+b11)"
     },
     {
         "state": "IS_WAITING",
@@ -713,7 +726,8 @@
         "state": "WILL_MIGRATE",
         "source": "ceph",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -773,7 +787,8 @@
         "state": "WILL_MIGRATE",
         "source": "cheetah",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "TESTS_FAIL",
@@ -864,7 +879,8 @@
         "state": "WILL_MIGRATE",
         "source": "composer",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -912,193 +928,225 @@
         "state": "WILL_MIGRATE",
         "source": "coq",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: coq (8.16.1+dfsg-1+b1 to 8.16.1+dfsg-1+b2)\nUpdated binary: coqide (8.16.1+dfsg-1+b1 to 8.16.1+dfsg-1+b2)\nUpdated binary: libcoq-core-ocaml (8.16.1+dfsg-1+b1 to 8.16.1+dfsg-1+b2)\nUpdated binary: libcoq-core-ocaml-dev (8.16.1+dfsg-1+b1 to 8.16.1+dfsg-1+b2)\nUpdated binary: libcoq-stdlib (8.16.1+dfsg-1+b1 to 8.16.1+dfsg-1+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-bignums",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-bignums (8.17.0-2 to 8.17.0-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-corn",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-corn (8.16.0-2 to 8.16.0-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-deriving",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-deriving (0.1.0-2 to 0.1.0-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-dpdgraph",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: coq-dpdgraph-tools (1.0+8.16-2 to 1.0+8.16-2+b1)\nUpdated binary: libcoq-dpdgraph (1.0+8.16-2 to 1.0+8.16-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-elpi",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-elpi (1.16.0-2 to 1.16.0-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-equations",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-equations (1.3-8.16-2 to 1.3-8.16-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-ext-lib",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-ext-lib (0.11.7-2 to 0.11.7-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-extructures",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-extructures (0.3.1-3 to 0.3.1-3+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-gappa",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-gappa (1.5.2-5 to 1.5.2-5+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-hammer",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-hammer (1.3.2+8.16-2 to 1.3.2+8.16-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-hierarchy-builder",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: coq-hierarchy-builder (1.4.0-2+b5 to 1.4.0-2+b6)\nUpdated binary: libcoq-hierarchy-builder (1.4.0-2+b5 to 1.4.0-2+b6)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-hott",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-hott (8.16-2 to 8.16-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-interval",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-interval (4.6.1-2 to 4.6.1-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-iris",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-iris (4.0.0-3 to 4.0.0-3+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-libhyps",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-libhyps (2.0.6-2 to 2.0.6-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-math-classes",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-math-classes (8.15.0-4 to 8.15.0-4+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-menhirlib",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-menhirlib (20220210+ds-4 to 20220210+ds-4+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-mtac2",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mtac2 (1.4+8.16-2 to 1.4+8.16-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-quickchick",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-quickchick (1.6.4-3 to 1.6.4-3+b1)\nUpdated binary: quickchick (1.6.4-3 to 1.6.4-3+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-record-update",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-record-update (0.3.1-2 to 0.3.1-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-reduction-effects",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-reduction-effects (0.1.4-3 to 0.1.4-3+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-reglang",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-reglang (1.1.3-2 to 1.1.3-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-relation-algebra",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-relation-algebra (1.7.8-2 to 1.7.8-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-simple-io",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-simple-io (1.8.0-2 to 1.8.0-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-stdpp",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-stdpp (1.8.0-3 to 1.8.0-3+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-unicoq",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-unicoq (1.6-8.16-2 to 1.6-8.16-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coq-unimath",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-unimath (20220816-2 to 20220816-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coqeal",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-coqeal (1.1.1-3 to 1.1.1-3+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coqprime",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: coqprime-tools (8.15-2 to 8.15-2+b1)\nUpdated binary: libcoq-coqprime (8.15-2 to 8.15-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "coquelicot",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-coquelicot (3.2.0-8 to 3.2.0-8+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "cpmtools",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "TESTS_FAIL",
@@ -1203,7 +1251,8 @@
         "state": "WILL_MIGRATE",
         "source": "dbconfig-common",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -1247,19 +1296,22 @@
         "state": "WILL_MIGRATE",
         "source": "debian-edu-config",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "debian-edu-router",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "debian-history",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -1467,7 +1519,8 @@
         "state": "WILL_MIGRATE",
         "source": "dolfin",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -1478,7 +1531,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "dpkg",
-        "extra": "[botch/0.24-1] armel:RUNNING\n[dgit/10.6] ppc64el:RUNNING\n[gsequencer/4.4.3-1] amd64:RUNNING, arm64:RUNNING, armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING\n[libreoffice] amd64:RUNNING, arm64:RUNNING, armhf:RUNNING-ALWAYSFAIL\n[lintian/2.116.3] i386:RUNNING\n[llvm-toolchain-13/1:13.0.1-11] arm64:REGRESSION\n[mmdebstrap/1.3.1-3] armel:RUNNING, armhf:RUNNING, ppc64el:RUNNING\n[roundcube/1.6.1+dfsg-1] ppc64el:RUNNING\n[simde/0.7.4~rc2-2] ppc64el:RUNNING\n[slt/0.0.git20140301-6] ppc64el:RUNNING\n[software-properties/0.99.30-4] ppc64el:RUNNING-ALWAYSFAIL\n[ssed/3.62-8] ppc64el:RUNNING\n[stl-manual/3.30-17] ppc64el:RUNNING\n[suricata/1:6.0.10-1] ppc64el:RUNNING\n[ubuntu-dev-tools/0.192] ppc64el:RUNNING\n[uim/1:1.8.8-9.2] ppc64el:RUNNING\n[unburden-home-dir/0.4.2] ppc64el:RUNNING\n[util-linux/2.38.1-5] ppc64el:RUNNING\n",
+        "extra": "[libreoffice/4:7.4.5-2] arm64:RUNNING, armhf:RUNNING-ALWAYSFAIL\n[llvm-toolchain-13/1:13.0.1-11] arm64:REGRESSION\n[mmdebstrap/1.3.1-3] armhf:RUNNING, ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -1525,9 +1578,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "duktape",
-        "extra": "[edbrowse/3.7.7-5] ppc64el:RUNNING\n[janus/1.1.2-1] ppc64el:RUNNING\n[policykit-1/122-3] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -1603,7 +1655,8 @@
         "state": "WILL_MIGRATE",
         "source": "eliom",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: eliom (9.4.0-2+b7 to 9.4.0-2+b8)\nUpdated binary: libeliom-ocaml-dev (9.4.0-2+b7 to 9.4.0-2+b8)"
     },
     {
         "state": "IS_WAITING",
@@ -1615,7 +1668,8 @@
         "state": "WILL_MIGRATE",
         "source": "elpi",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: elpi (1.16.8-1+b1 to 1.16.8-1+b2)\nUpdated binary: libelpi-ocaml (1.16.8-1+b1 to 1.16.8-1+b2)\nUpdated binary: libelpi-ocaml-dev (1.16.8-1+b1 to 1.16.8-1+b2)"
     },
     {
         "state": "IS_WAITING",
@@ -1730,7 +1784,8 @@
         "state": "WILL_MIGRATE",
         "source": "faenza-icon-theme",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "MISSING_BUILD",
@@ -1821,7 +1876,8 @@
         "state": "WILL_MIGRATE",
         "source": "findlib",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libfindlib-ocaml (1.9.6-1 to 1.9.6-1+b1)\nUpdated binary: libfindlib-ocaml-dev (1.9.6-1 to 1.9.6-1+b1)\nUpdated binary: ocaml-findlib (1.9.6-1 to 1.9.6-1+b1)"
     },
     {
         "state": "IS_WAITING",
@@ -1887,7 +1943,8 @@
         "state": "WILL_MIGRATE",
         "source": "flocq",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-flocq (4.1.0-3 to 4.1.0-3+b1)"
     },
     {
         "state": "IS_WAITING",
@@ -1917,7 +1974,8 @@
         "state": "WILL_MIGRATE",
         "source": "frama-c",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: frama-c-base (20220511-manganese-3+b2 to 20220511-manganese-3+b3)"
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -2041,7 +2099,8 @@
         "state": "WILL_MIGRATE",
         "source": "gcc-11",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": "old binaries left on <a href=\"https://buildd.debian.org/status/logs.php?arch=armhf&pkg=gcc-11&ver=11.3.0-12\" target=\"_blank\">armhf</a>: libtsan0 (from <a href=\"https://buildd.debian.org/status/logs.php?arch=armhf&pkg=gcc-11&ver=11.2.0-17\" target=\"_blank\">11.2.0-17</a>) (but ignoring cruft, so nevermind)\nold binaries left on <a href=\"https://buildd.debian.org/status/logs.php?arch=i386&pkg=gcc-11&ver=11.3.0-12\" target=\"_blank\">i386</a>: libtsan0 (from <a href=\"https://buildd.debian.org/status/logs.php?arch=i386&pkg=gcc-11&ver=11.2.0-17\" target=\"_blank\">11.2.0-17</a>) (but ignoring cruft, so nevermind)\nold binaries left on <a href=\"https://buildd.debian.org/status/logs.php?arch=mipsel&pkg=gcc-11&ver=11.3.0-12\" target=\"_blank\">mipsel</a>: libtsan0 (from <a href=\"https://buildd.debian.org/status/logs.php?arch=mipsel&pkg=gcc-11&ver=11.2.0-17\" target=\"_blank\">11.2.0-17</a>) (but ignoring cruft, so nevermind)\nold binaries left on <a href=\"https://buildd.debian.org/status/logs.php?arch=s390x&pkg=gcc-11&ver=11.3.0-12\" target=\"_blank\">s390x</a>: libtsan0 (from <a href=\"https://buildd.debian.org/status/logs.php?arch=s390x&pkg=gcc-11&ver=11.2.0-17\" target=\"_blank\">11.2.0-17</a>) (but ignoring cruft, so nevermind)"
     },
     {
         "state": "IS_WAITING",
@@ -2144,7 +2203,8 @@
         "state": "WILL_MIGRATE",
         "source": "git",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -2207,7 +2267,8 @@
         "state": "WILL_MIGRATE",
         "source": "gnome-backgrounds",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -2219,19 +2280,22 @@
         "state": "WILL_MIGRATE",
         "source": "gnome-desktop",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "gnome-firmware",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "gnome-mastermind",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -2243,7 +2307,8 @@
         "state": "WILL_MIGRATE",
         "source": "gnome-shell",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -2288,9 +2353,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "gnome-shell-pomodoro",
-        "extra": "[gnome-shell-pomodoro/0.22.1-1] ppc64el:RUNNING, s390x:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -2298,7 +2362,8 @@
         "state": "WILL_MIGRATE",
         "source": "gnome-terminal",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -2485,7 +2550,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "golang-github-pion-datachannel",
-        "extra": "[golang-github-pion-datachannel/1.5.5-1] ppc64el:RUNNING\n[golang-github-pion-webrtc.v3/3.1.41-4] amd64:REGRESSION, arm64:REGRESSION, armel:REGRESSION, armhf:REGRESSION, i386:REGRESSION, ppc64el:RUNNING, s390x:RUNNING-REFERENCE\n",
+        "extra": "[golang-github-pion-webrtc.v3/3.1.41-4] amd64:REGRESSION, arm64:REGRESSION, armhf:REGRESSION, i386:REGRESSION, ppc64el:REGRESSION, s390x:REGRESSION\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -2645,7 +2710,8 @@
         "state": "WILL_MIGRATE",
         "source": "gourmand",
         "currentAge": 20,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -2712,7 +2778,8 @@
         "state": "WILL_MIGRATE",
         "source": "gromacs",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -2918,12 +2985,12 @@
         "state": "WILL_MIGRATE",
         "source": "home-assistant-bluetooth",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "httpdirfs-fuse",
-        "extra": "[httpdirfs-fuse/1.2.5-1] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -3023,13 +3090,15 @@
         "state": "WILL_MIGRATE",
         "source": "inn2",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "installation-guide",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -3071,7 +3140,8 @@
         "state": "WILL_MIGRATE",
         "source": "jaraco.text",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -3094,7 +3164,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "jinja2",
-        "extra": "[plastex/2.1-3] amd64:REGRESSION, arm64:REGRESSION, armel:REGRESSION, armhf:REGRESSION, i386:REGRESSION, ppc64el:REGRESSION, s390x:REGRESSION\n[snakemake/7.21.0-1] ppc64el:REGRESSION\n[sphinx/5.3.0-3] armhf:REGRESSION\n",
+        "extra": "[plastex/2.1-3] amd64:REGRESSION, arm64:REGRESSION, armel:REGRESSION, armhf:REGRESSION, i386:REGRESSION, ppc64el:REGRESSION, s390x:REGRESSION\n[snakemake/7.21.0-1] ppc64el:REGRESSION\n",
         "currentAge": 1,
         "requiredAge": 10
     },
@@ -3105,9 +3175,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "jove",
-        "extra": "[imediff/2.6-1] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -3115,7 +3184,8 @@
         "state": "WILL_MIGRATE",
         "source": "js-of-ocaml",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: js-of-ocaml (4.0.0-2+b5 to 4.0.0-2+b6)\nUpdated binary: libjs-of-ocaml (4.0.0-2+b5 to 4.0.0-2+b6)\nUpdated binary: libjs-of-ocaml-dev (4.0.0-2+b5 to 4.0.0-2+b6)"
     },
     {
         "state": "IS_WAITING",
@@ -3332,7 +3402,8 @@
         "state": "WILL_MIGRATE",
         "source": "lambda-term",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: liblambda-term-ocaml (3.2.0-1+b4 to 3.2.0-1+b5)\nUpdated binary: liblambda-term-ocaml-dev (3.2.0-1+b4 to 3.2.0-1+b5)"
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -3386,13 +3457,15 @@
         "state": "WILL_MIGRATE",
         "source": "libapache2-mod-auth-openidc",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "libapache2-mod-oauth2",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -4084,19 +4157,29 @@
         "state": "WILL_MIGRATE",
         "source": "lwt",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: liblwt-ocaml (5.6.1-1 to 5.6.1-1+b1)\nUpdated binary: liblwt-ocaml-dev (5.6.1-1 to 5.6.1-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "lwt-log",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: liblwt-log-ocaml (1.1.2-1+b1 to 1.1.2-1+b2)\nUpdated binary: liblwt-log-ocaml-dev (1.1.2-1+b1 to 1.1.2-1+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "lwt-ssl",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: liblwt-ssl-ocaml (1:1.1.3-2+b13 to 1:1.1.3-2+b14)\nUpdated binary: liblwt-ssl-ocaml-dev (1:1.1.3-2+b13 to 1:1.1.3-2+b14)"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "lwt-ssl",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "Updated binary: liblwt-ssl-ocaml (1:1.1.3-2+b14 to 1:1.1.3-2+b15)\nUpdated binary: liblwt-ssl-ocaml-dev (1:1.1.3-2+b14 to 1:1.1.3-2+b15)"
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -4156,49 +4239,57 @@
         "state": "WILL_MIGRATE",
         "source": "mathcomp-abel",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-abel (1.2.1-1+b2 to 1.2.1-1+b3)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "mathcomp-algebra-tactics",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-algebra-tactics (1.0.0-8+b5 to 1.0.0-8+b6)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "mathcomp-analysis",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-analysis (0.6.0-2 to 0.6.0-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "mathcomp-bigenough",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-bigenough (1.0.1-8+b3 to 1.0.1-8+b4)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "mathcomp-finmap",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-finmap (1.5.2-1+b3 to 1.5.2-1+b4)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "mathcomp-multinomials",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-multinomials (1.5.5-8+b4 to 1.5.5-8+b5)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "mathcomp-real-closed",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-real-closed (1.1.3-1+b3 to 1.1.3-1+b4)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "mathcomp-zify",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp-zify (1.2.0+1.12+8.13-6+b3 to 1.2.0+1.12+8.13-6+b4)"
     },
     {
         "state": "IS_WAITING",
@@ -4240,7 +4331,8 @@
         "state": "WILL_MIGRATE",
         "source": "mes",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_BLOCKED_BY_ANOTHER_ITEM",
@@ -4315,7 +4407,8 @@
         "state": "WILL_MIGRATE",
         "source": "mksh",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "MISSING_BUILD",
@@ -4327,7 +4420,8 @@
         "state": "WILL_MIGRATE",
         "source": "mlpost",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libmlpost-ocaml-dev (0.9-2+b1 to 0.9-2+b2)\nUpdated binary: mlpost (0.9-2+b1 to 0.9-2+b2)"
     },
     {
         "state": "MISSING_BUILD",
@@ -4369,13 +4463,15 @@
         "state": "WILL_MIGRATE",
         "source": "morbig",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libmorbig-ocaml-dev (0.10.4-6 to 0.10.4-6+b1)\nUpdated binary: morbig (0.10.4-6 to 0.10.4-6+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "morsmall",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libmorsmall-ocaml-dev (0.3.0-4+b6 to 0.3.0-4+b7)"
     },
     {
         "state": "MISSING_BUILD",
@@ -4387,7 +4483,8 @@
         "state": "WILL_MIGRATE",
         "source": "mozjs102",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "MISSING_BUILD",
@@ -4461,7 +4558,8 @@
         "state": "WILL_MIGRATE",
         "source": "nagstamon",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -4500,9 +4598,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "netdiscover",
-        "extra": "[forensics-extra/2.43] ppc64el:RUNNING\n[netdiscover/0.10-3] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -4540,7 +4637,8 @@
         "state": "WILL_MIGRATE",
         "source": "nextcloud-desktop",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -4644,12 +4742,19 @@
         "state": "WILL_MIGRATE",
         "source": "nproc",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libnproc-ocaml-dev (0.5.1-3+b10 to 0.5.1-3+b11)"
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "WILL_MIGRATE",
+        "source": "nproc",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "Updated binary: libnproc-ocaml-dev (0.5.1-3+b11 to 0.5.1-3+b12)"
+    },
+    {
+        "state": "IS_WAITING",
         "source": "numberstation",
-        "extra": "[numberstation/1.3.0-1] ppc64el:RUNNING, s390x:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 10
     },
@@ -4657,13 +4762,15 @@
         "state": "WILL_MIGRATE",
         "source": "numix-icon-theme",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "nurpawiki",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: nurpawiki (1.2.4-2+b9 to 1.2.4-2+b10)"
     },
     {
         "state": "TESTS_FAIL",
@@ -4742,7 +4849,8 @@
         "state": "WILL_MIGRATE",
         "source": "oasis",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: liboasis-ocaml (0.4.11-2+b3 to 0.4.11-2+b4)\nUpdated binary: liboasis-ocaml-dev (0.4.11-2+b3 to 0.4.11-2+b4)\nUpdated binary: oasis (0.4.11-2+b3 to 0.4.11-2+b4)"
     },
     {
         "state": "MISSING_BUILD",
@@ -4814,7 +4922,8 @@
         "state": "WILL_MIGRATE",
         "source": "obus",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libobus-ocaml (1.2.4-1+b2 to 1.2.4-1+b3)\nUpdated binary: libobus-ocaml-bin (1.2.4-1+b2 to 1.2.4-1+b3)\nUpdated binary: libobus-ocaml-dev (1.2.4-1+b2 to 1.2.4-1+b3)"
     },
     {
         "state": "TESTS_FAIL",
@@ -4827,67 +4936,78 @@
         "state": "WILL_MIGRATE",
         "source": "ocaml-asn1-combinators",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libasn1-combinators-ocaml (0.2.6-2+b7 to 0.2.6-2+b8)\nUpdated binary: libasn1-combinators-ocaml-dev (0.2.6-2+b7 to 0.2.6-2+b8)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-bitstring",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libbitstring-ocaml (4.1.0-1+b2 to 4.1.0-1+b3)\nUpdated binary: libbitstring-ocaml-dev (4.1.0-1+b2 to 4.1.0-1+b3)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-ca-certs",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libca-certs-ocaml (0.2.3-1+b1 to 0.2.3-1+b2)\nUpdated binary: libca-certs-ocaml-dev (0.2.3-1+b1 to 0.2.3-1+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-cohttp",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcohttp-lwt-jsoo-ocaml (4.0.0-3+b4 to 4.0.0-3+b5)\nUpdated binary: libcohttp-lwt-jsoo-ocaml-dev (4.0.0-3+b4 to 4.0.0-3+b5)\nUpdated binary: libcohttp-lwt-ocaml (4.0.0-3+b4 to 4.0.0-3+b5)\nUpdated binary: libcohttp-lwt-ocaml-dev (4.0.0-3+b4 to 4.0.0-3+b5)\nUpdated binary: libcohttp-lwt-unix-ocaml (4.0.0-3+b4 to 4.0.0-3+b5)\nUpdated binary: libcohttp-lwt-unix-ocaml-dev (4.0.0-3+b4 to 4.0.0-3+b5)\nUpdated binary: libcohttp-ocaml (4.0.0-3+b4 to 4.0.0-3+b5)\nUpdated binary: libcohttp-ocaml-dev (4.0.0-3+b4 to 4.0.0-3+b5)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-conduit",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libconduit-lwt-ocaml (4.0.2-3+b9 to 4.0.2-3+b10)\nUpdated binary: libconduit-lwt-ocaml-dev (4.0.2-3+b9 to 4.0.2-3+b10)\nUpdated binary: libconduit-ocaml (4.0.2-3+b9 to 4.0.2-3+b10)\nUpdated binary: libconduit-ocaml-dev (4.0.2-3+b9 to 4.0.2-3+b10)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-cstruct",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcstruct-ocaml (6.1.1-1 to 6.1.1-1+b1)\nUpdated binary: libcstruct-ocaml-dev (6.1.1-1 to 6.1.1-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-eqaf",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libeqaf-ocaml (0.9-1+b1 to 0.9-1+b2)\nUpdated binary: libeqaf-ocaml-dev (0.9-1+b1 to 0.9-1+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-hex",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libhex-ocaml (1.5.0-1 to 1.5.0-1+b1)\nUpdated binary: libhex-ocaml-dev (1.5.0-1 to 1.5.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-inotify",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libinotify-ocaml (2.4.1-3 to 2.4.1-3+b1)\nUpdated binary: libinotify-ocaml-dev (2.4.1-3 to 2.4.1-3+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-ipaddr",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libipaddr-ocaml (5.3.1-1 to 5.3.1-1+b1)\nUpdated binary: libipaddr-ocaml-dev (5.3.1-1 to 5.3.1-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-logs",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: liblogs-ocaml (0.7.0-2+b11 to 0.7.0-2+b12)\nUpdated binary: liblogs-ocaml-dev (0.7.0-2+b11 to 0.7.0-2+b12)"
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -4899,55 +5019,78 @@
         "state": "WILL_MIGRATE",
         "source": "ocaml-mirage-crypto",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libmirage-crypto-ocaml (0.10.7-1+b2 to 0.10.7-1+b3)\nUpdated binary: libmirage-crypto-ocaml-dev (0.10.7-1+b2 to 0.10.7-1+b3)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-pbkdf",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libpbkdf-ocaml (1.2.0-1+b9 to 1.2.0-1+b10)\nUpdated binary: libpbkdf-ocaml-dev (1.2.0-1+b9 to 1.2.0-1+b10)"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ocaml-pbkdf",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "Updated binary: libpbkdf-ocaml (1.2.0-1+b8 to 1.2.0-1+b9)\nUpdated binary: libpbkdf-ocaml-dev (1.2.0-1+b8 to 1.2.0-1+b9)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-sedlex",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libsedlex-ocaml (3.0-1 to 3.0-1+b1)\nUpdated binary: libsedlex-ocaml-dev (3.0-1 to 3.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-usb",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libusb-ocaml (1.3.1-4+b10 to 1.3.1-4+b11)\nUpdated binary: libusb-ocaml-dev (1.3.1-4+b10 to 1.3.1-4+b11)"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ocaml-usb",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "Updated binary: libusb-ocaml (1.3.1-4+b11 to 1.3.1-4+b12)\nUpdated binary: libusb-ocaml-dev (1.3.1-4+b11 to 1.3.1-4+b12)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-visitors",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-visitors-ocaml-dev (20210608-1+b1 to 20210608-1+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocaml-x509",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libx509-ocaml (0.16.2-1+b1 to 0.16.2-1+b2)\nUpdated binary: libx509-ocaml-dev (0.16.2-1+b1 to 0.16.2-1+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocp-indent",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libocp-indent-ocaml (1.8.2-2+b1 to 1.8.2-2+b2)\nUpdated binary: libocp-indent-ocaml-dev (1.8.2-2+b1 to 1.8.2-2+b2)\nUpdated binary: ocp-indent (1.8.2-2+b1 to 1.8.2-2+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocsigenserver",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libocsigenserver-ocaml (5.0.1-1+b11 to 5.0.1-1+b12)\nUpdated binary: libocsigenserver-ocaml-dev (5.0.1-1+b11 to 5.0.1-1+b12)\nUpdated binary: ocsigenserver (5.0.1-1+b11 to 5.0.1-1+b12)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ocsipersist",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libocsipersist-lib-ocaml (1.1.0-1+b7 to 1.1.0-1+b8)\nUpdated binary: libocsipersist-lib-ocaml-dev (1.1.0-1+b7 to 1.1.0-1+b8)\nUpdated binary: libocsipersist-ocaml (1.1.0-1+b7 to 1.1.0-1+b8)\nUpdated binary: libocsipersist-ocaml-dev (1.1.0-1+b7 to 1.1.0-1+b8)\nUpdated binary: libocsipersist-pgsql-ocaml (1.1.0-1+b7 to 1.1.0-1+b8)\nUpdated binary: libocsipersist-pgsql-ocaml-dev (1.1.0-1+b7 to 1.1.0-1+b8)\nUpdated binary: libocsipersist-sqlite-ocaml (1.1.0-1+b7 to 1.1.0-1+b8)\nUpdated binary: libocsipersist-sqlite-ocaml-dev (1.1.0-1+b7 to 1.1.0-1+b8)"
     },
     {
         "state": "TESTS_FAIL",
@@ -4978,7 +5121,8 @@
         "state": "WILL_MIGRATE",
         "source": "ocurl",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "MISSING_BUILD",
@@ -5101,9 +5245,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "optuna",
-        "extra": "[optuna/3.1.0-4] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -5153,7 +5296,8 @@
         "state": "WILL_MIGRATE",
         "source": "ott",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-ott (0.32+ds-3 to 0.32+ds-3+b1)\nUpdated binary: ott-tools (0.32+ds-3 to 0.32+ds-3+b1)"
     },
     {
         "state": "IS_WAITING",
@@ -5206,7 +5350,7 @@
     {
         "state": "TESTS_FAIL",
         "source": "pappl",
-        "extra": "[pappl/1.3.1-2] armhf:REGRESSION, s390x:RUNNING\n",
+        "extra": "[pappl/1.3.1-2] armhf:REGRESSION\n",
         "currentAge": 1,
         "requiredAge": 10
     },
@@ -5214,7 +5358,8 @@
         "state": "WILL_MIGRATE",
         "source": "paramcoq",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-paramcoq (1.1.3+coq8.16-3 to 1.1.3+coq8.16-3+b1)"
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -5292,7 +5437,8 @@
         "state": "WILL_MIGRATE",
         "source": "perlimports",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -5347,7 +5493,8 @@
         "state": "WILL_MIGRATE",
         "source": "pgocaml",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libpgocaml-ocaml (4.3.0-1+b7 to 4.3.0-1+b8)\nUpdated binary: libpgocaml-ocaml-dev (4.3.0-1+b7 to 4.3.0-1+b8)"
     },
     {
         "state": "IS_WAITING",
@@ -5379,25 +5526,29 @@
         "state": "WILL_MIGRATE",
         "source": "php-horde-exception",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "php-horde-kolab-format",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "php-horde-kolab-session",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "php-league-commonmark",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "TESTS_FAIL",
@@ -5630,79 +5781,99 @@
         "state": "WILL_MIGRATE",
         "source": "ppx-bin-prot",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-bin-prot-ocaml (0.15.0-1 to 0.15.0-1+b1)\nUpdated binary: libppx-bin-prot-ocaml-dev (0.15.0-1 to 0.15.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-compare",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-compare-ocaml (0.15.0-1 to 0.15.0-1+b1)\nUpdated binary: libppx-compare-ocaml-dev (0.15.0-1 to 0.15.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-custom-printf",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-custom-printf-ocaml (0.15.0-1 to 0.15.0-1+b1)\nUpdated binary: libppx-custom-printf-ocaml-dev (0.15.0-1 to 0.15.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-deriving",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-deriving-ocaml (5.2.1-1+b2 to 5.2.1-1+b3)\nUpdated binary: libppx-deriving-ocaml-dev (5.2.1-1+b2 to 5.2.1-1+b3)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-deriving-yojson",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-deriving-yojson-ocaml-dev (3.7.0-1 to 3.7.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-fields-conv",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-fields-conv-ocaml (0.15.0-1 to 0.15.0-1+b1)\nUpdated binary: libppx-fields-conv-ocaml-dev (0.15.0-1 to 0.15.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-hash",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-hash-ocaml (0.15.0-2+b2 to 0.15.0-2+b3)\nUpdated binary: libppx-hash-ocaml-dev (0.15.0-2+b2 to 0.15.0-2+b3)"
+    },
+    {
+        "state": "WILL_MIGRATE",
+        "source": "ppx-hash",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-hash-ocaml (0.15.0-2+b1 to 0.15.0-2+b2)\nUpdated binary: libppx-hash-ocaml-dev (0.15.0-2+b1 to 0.15.0-2+b2)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-here",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-here-ocaml (0.15.0-1 to 0.15.0-1+b1)\nUpdated binary: libppx-here-ocaml-dev (0.15.0-1 to 0.15.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-import",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-import-ocaml (1.10.0-1 to 1.10.0-1+b1)\nUpdated binary: libppx-import-ocaml-dev (1.10.0-1 to 1.10.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-optcomp",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-optcomp-ocaml (1:0.15.0-1+b2 to 1:0.15.0-1+b3)\nUpdated binary: libppx-optcomp-ocaml-dev (1:0.15.0-1+b2 to 1:0.15.0-1+b3)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-sexp-conv",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-sexp-conv-ocaml (1:0.15.1+really0.15.1-2 to 1:0.15.1+really0.15.1-2+b1)\nUpdated binary: libppx-sexp-conv-ocaml-dev (1:0.15.1+really0.15.1-2 to 1:0.15.1+really0.15.1-2+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppx-variants-conv",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppx-variants-conv-ocaml (0.15.0-1 to 0.15.0-1+b1)\nUpdated binary: libppx-variants-conv-ocaml-dev (0.15.0-1 to 0.15.0-1+b1)"
     },
     {
         "state": "WILL_MIGRATE",
         "source": "ppxlib",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libppxlib-ocaml-dev (0.27.0-2 to 0.27.0-2+b1)"
     },
     {
         "state": "IS_WAITING",
@@ -5788,13 +5959,15 @@
         "state": "WILL_MIGRATE",
         "source": "puppet-module-designate",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "puppet-module-horizon",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -5865,7 +6038,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "pymatgen",
-        "extra": "[pymatgen/2022.11.7+dfsg1-10] amd64:RUNNING-ALWAYSFAIL, armel:RUNNING, ppc64el:RUNNING\n[python-emmet-core/0.36.9-2] ppc64el:RUNNING\n[python-mp-api/0.27.5-2] ppc64el:RUNNING\n",
+        "extra": "[pymatgen/2022.11.7+dfsg1-10] amd64:RUNNING-ALWAYSFAIL, ppc64el:RUNNING\n",
         "currentAge": 1,
         "requiredAge": 10
     },
@@ -5936,7 +6109,8 @@
         "state": "WILL_MIGRATE",
         "source": "python-aiohttp",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "MISSING_TESTS",
@@ -5955,7 +6129,8 @@
         "state": "WILL_MIGRATE",
         "source": "python-btrfs",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "TESTS_FAIL",
@@ -6019,7 +6194,8 @@
         "state": "WILL_MIGRATE",
         "source": "python-fingerprints",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -6122,7 +6298,8 @@
         "state": "WILL_MIGRATE",
         "source": "python-recipe-scrapers",
         "currentAge": 12,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -6216,11 +6393,11 @@
         "requiredAge": 10
     },
     {
-        "state": "TESTS_FAIL",
+        "state": "WILL_MIGRATE",
         "source": "python3-defaults",
-        "extra": "[accountsservice/22.08.8-5] armhf:OLD_PASS\n[lintian-brush/0.146] ppc64el:OLD_PASS, s390x:OLD_PASS\n[python-oslo.db/12.1.0-2] s390x:REGRESSION\n[upstream-ontologist/0.1.30-2] ppc64el:OLD_PASS\n",
         "currentAge": 11,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -6254,9 +6431,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "qca2",
-        "extra": "[dianara/1.4.4-1] ppc64el:RUNNING\n[kwallet-kf5/5.103.0-1] ppc64el:RUNNING\n[qca2/2.3.5-2] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -6270,7 +6446,8 @@
         "state": "WILL_MIGRATE",
         "source": "qemu-web-desktop",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -6412,9 +6589,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "r-cran-ggalluvial",
-        "extra": "[r-bioc-mutationalpatterns/3.8.1+dfsg-1] ppc64el:RUNNING\n[r-cran-ggalluvial/0.12.5-2] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -6536,7 +6712,8 @@
         "state": "WILL_MIGRATE",
         "source": "recoll",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "TESTS_FAIL",
@@ -6556,7 +6733,8 @@
         "state": "WILL_MIGRATE",
         "source": "refstack-client",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -6571,9 +6749,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "request-tracker4",
-        "extra": "[rt-extension-repeatticket/1.11-1] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -6596,9 +6773,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "rgxg",
-        "extra": "[rgxg/0.1.2-5] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -6808,7 +6984,8 @@
         "state": "WILL_MIGRATE",
         "source": "ruby-oj",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -6826,7 +7003,8 @@
         "state": "WILL_MIGRATE",
         "source": "ruby-puppetserver-ca-cli",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -7153,7 +7331,8 @@
         "state": "WILL_MIGRATE",
         "source": "sane-backends",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -7183,7 +7362,8 @@
         "state": "WILL_MIGRATE",
         "source": "scanmem",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "MISSING_BUILD",
@@ -7388,7 +7568,8 @@
         "state": "WILL_MIGRATE",
         "source": "skrooge",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -7493,9 +7674,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "sphinxbase",
-        "extra": "[ffmpeg/7:5.1.2-2] ppc64el:RUNNING\n[gnustep-gui/0.29.0-2] ppc64el:RUNNING\n[parlatype/3.1-2] ppc64el:RUNNING\n[pocketsphinx-python/1:0.1.15-3] ppc64el:RUNNING\n[pocketsphinx/0.8+5prealpha+1-15] ppc64el:RUNNING\n[sphinxbase/0.8+5prealpha+1-16] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -7503,7 +7683,8 @@
         "state": "WILL_MIGRATE",
         "source": "spirv-tools",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -7564,7 +7745,8 @@
         "state": "WILL_MIGRATE",
         "source": "ssreflect",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libcoq-mathcomp (1.15.0-1+b3 to 1.15.0-1+b4)\nUpdated binary: libcoq-mathcomp-algebra (1.15.0-1+b3 to 1.15.0-1+b4)\nUpdated binary: libcoq-mathcomp-character (1.15.0-1+b3 to 1.15.0-1+b4)\nUpdated binary: libcoq-mathcomp-field (1.15.0-1+b3 to 1.15.0-1+b4)\nUpdated binary: libcoq-mathcomp-fingroup (1.15.0-1+b3 to 1.15.0-1+b4)\nUpdated binary: libcoq-mathcomp-solvable (1.15.0-1+b3 to 1.15.0-1+b4)\nUpdated binary: libcoq-mathcomp-ssreflect (1.15.0-1+b3 to 1.15.0-1+b4)"
     },
     {
         "state": "IS_WAITING",
@@ -7576,19 +7758,22 @@
         "state": "WILL_MIGRATE",
         "source": "statsmodels",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "stockfish",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "stress-ng",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -7625,7 +7810,8 @@
         "state": "WILL_MIGRATE",
         "source": "syncplay",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -7692,13 +7878,15 @@
         "state": "WILL_MIGRATE",
         "source": "texlive-base",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "WILL_MIGRATE",
         "source": "texlive-extra",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",
@@ -7746,7 +7934,8 @@
         "state": "WILL_MIGRATE",
         "source": "time-decode",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -7848,7 +8037,7 @@
     {
         "state": "MISSING_TESTS",
         "source": "traceroute",
-        "extra": "[libnet-traceroute-perl/1.15-3] ppc64el:RUNNING\n[mmdebstrap/1.3.1-3] arm64:RUNNING, armel:RUNNING, armhf:RUNNING, i386:RUNNING, ppc64el:RUNNING\n",
+        "extra": "[mmdebstrap/1.3.1-3] armhf:RUNNING, ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -7898,7 +8087,8 @@
         "state": "WILL_MIGRATE",
         "source": "uacme",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -7907,9 +8097,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "ubuntu-dev-tools",
-        "extra": "[ubuntu-dev-tools/0.193] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -7965,7 +8154,8 @@
         "state": "WILL_MIGRATE",
         "source": "utop",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "Updated binary: libutop-ocaml (2.9.0-1+b9 to 2.9.0-1+b10)\nUpdated binary: libutop-ocaml-dev (2.9.0-1+b9 to 2.9.0-1+b10)\nUpdated binary: utop (2.9.0-1+b9 to 2.9.0-1+b10)"
     },
     {
         "state": "IS_WAITING",
@@ -8063,7 +8253,8 @@
         "state": "WILL_MIGRATE",
         "source": "voms",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -8081,7 +8272,8 @@
         "state": "WILL_MIGRATE",
         "source": "vte2.91",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -8156,9 +8348,8 @@
         "requiredAge": 10
     },
     {
-        "state": "MISSING_TESTS",
+        "state": "IS_WAITING",
         "source": "winetricks",
-        "extra": "[protontricks/1.10.1-1] ppc64el:RUNNING\n",
         "currentAge": 0,
         "requiredAge": 10
     },
@@ -8233,7 +8424,8 @@
         "state": "WILL_MIGRATE",
         "source": "xdoctest",
         "currentAge": 10,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": null
     },
     {
         "state": "IS_WAITING",

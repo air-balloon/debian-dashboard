@@ -39,11 +39,19 @@ foreach ($excusesYaml['sources'] as $item) {
 
     if ($item['migration-policy-verdict'] === 'PASS' && $item['is-candidate']) {
         echo 'Will migrate: ' . $item['source'] . PHP_EOL;
+        $infos = [];
+        foreach ($item['detailed-info'] ?? [] as $info) {
+            if (str_contains($info, 'Checking build-dependency')) {
+                continue;
+            }
+            $infos[] = $info;
+        }
         $dashboardData[] = [
             'state' => 'WILL_MIGRATE',
             'source' => $item['source'],
             'currentAge' => $currentAge,
             'requiredAge' => $requiredAge,
+            'extra' => $infos !== [] ? implode(PHP_EOL, $infos) : null,
         ];
         continue;
     }
