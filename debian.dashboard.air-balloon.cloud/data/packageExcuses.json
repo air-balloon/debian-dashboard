@@ -29,7 +29,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "acmetool",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "acmetool/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "acmetool",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "acmetool/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -54,7 +111,50 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "aerc",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "aerc/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aerc",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aerc/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aerc",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aerc/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aerc",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aerc/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aerc",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aerc/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aerc",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aerc/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aerc",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aerc/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "MISSING_BUILD",
@@ -66,7 +166,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "age",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "age/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "age",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "age/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -90,7 +247,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "alertmanager-irc-relay",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "alertmanager-irc-relay",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "alertmanager-irc-relay/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "WILL_MIGRATE",
@@ -122,13 +336,127 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "amazon-ecr-credential-helper",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/amd64 has Built-Using on golang-1.19\namazon-ecr-credential-helper/amd64 has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/arm64 has Built-Using on golang-1.19\namazon-ecr-credential-helper/arm64 has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/armel has Built-Using on golang-1.19\namazon-ecr-credential-helper/armel has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/armhf has Built-Using on golang-1.19\namazon-ecr-credential-helper/armhf has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/i386 has Built-Using on golang-1.19\namazon-ecr-credential-helper/i386 has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/mips64el has Built-Using on golang-1.19\namazon-ecr-credential-helper/mips64el has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/mipsel has Built-Using on golang-1.19\namazon-ecr-credential-helper/mipsel has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/ppc64el has Built-Using on golang-1.19\namazon-ecr-credential-helper/ppc64el has Built-Using on golang-github-aws-aws-sdk-go-v2"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amazon-ecr-credential-helper",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amazon-ecr-credential-helper/s390x has Built-Using on golang-1.19\namazon-ecr-credential-helper/s390x has Built-Using on golang-github-aws-aws-sdk-go-v2"
     },
     {
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "amfora",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "amfora/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "amfora",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "amfora/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -140,7 +468,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "android-platform-build-kati",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "kati/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "android-platform-build-kati",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "kati/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "REJECTED_NEEDS_APPROVAL",
@@ -177,7 +562,43 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "apitrace",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "apitrace-tracers/amd64 has Built-Using on snappy"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "apitrace",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "apitrace-tracers/arm64 has Built-Using on snappy"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "apitrace",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "apitrace-tracers/armhf has Built-Using on snappy"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "apitrace",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "apitrace-tracers/i386 has Built-Using on snappy"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "apitrace",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "apitrace-tracers/ppc64el has Built-Using on snappy"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "apitrace",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "apitrace-tracers/s390x has Built-Using on snappy"
     },
     {
         "state": "IS_WAITING",
@@ -189,7 +610,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "aptly",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "aptly/amd64 has Built-Using on golang-1.19\naptly-api/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/arm64 has Built-Using on golang-1.19\naptly-api/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/armel has Built-Using on golang-1.19\naptly-api/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/armhf has Built-Using on golang-1.19\naptly-api/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/i386 has Built-Using on golang-1.19\naptly-api/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/mips64el has Built-Using on golang-1.19\naptly-api/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/mipsel has Built-Using on golang-1.19\naptly-api/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/ppc64el has Built-Using on golang-1.19\naptly-api/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aptly",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aptly/s390x has Built-Using on golang-1.19\naptly-api/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -201,7 +679,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "arduino-builder",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "arduino-builder/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "arduino-builder",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "arduino-builder/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -294,7 +829,50 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "aws-nuke",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "aws-nuke/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aws-nuke",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aws-nuke/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aws-nuke",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aws-nuke/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aws-nuke",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aws-nuke/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aws-nuke",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aws-nuke/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aws-nuke",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aws-nuke/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "aws-nuke",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "aws-nuke/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -318,7 +896,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "badger",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "badger/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "badger",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "badger/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -330,13 +965,127 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "balboa",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "balboa/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balboa",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balboa/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "balloon",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "balloon/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "balloon",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "balloon/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -429,7 +1178,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "bettercap",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "bettercap/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bettercap",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bettercap/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "UNSAT_DEPENDS",
@@ -511,7 +1317,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "bombadillo",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "bombadillo/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/ppc64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "bombadillo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "bombadillo/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -579,7 +1442,50 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "browserpass",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "webext-browserpass/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "browserpass",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "webext-browserpass/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "browserpass",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "webext-browserpass/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "browserpass",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "webext-browserpass/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "browserpass",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "webext-browserpass/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "browserpass",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "webext-browserpass/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "browserpass",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "webext-browserpass/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -615,7 +1521,50 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "burrow",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "burrow/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "burrow",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "burrow/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "burrow",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "burrow/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "burrow",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "burrow/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "burrow",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "burrow/mips64el has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "burrow",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "burrow/mipsel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "burrow",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "burrow/s390x has Built-Using on golang-1.19"
     },
     {
         "state": "WILL_MIGRATE",
@@ -653,7 +1602,36 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "c2go",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "c2go/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "c2go",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "c2go/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "c2go",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "c2go/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "c2go",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "c2go/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "c2go",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "c2go/mips64el has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -665,7 +1643,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "caddy",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "caddy/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "caddy",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "caddy/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "caddy",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "caddy/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "caddy",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "caddy/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -689,7 +1689,36 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "canid",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "canid/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "canid",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "canid/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "canid",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "canid/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "canid",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "canid/i386 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "canid",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "canid/mips64el has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -739,7 +1768,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "certinfo",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "certinfo/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "certinfo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "certinfo/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "certinfo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "certinfo/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "certinfo",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "certinfo/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -757,7 +1808,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "cfrpki",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "octorpki/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cfrpki",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "octorpki/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cfrpki",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "octorpki/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cfrpki",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "octorpki/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "MISSING_BUILD",
@@ -775,7 +1848,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "chasquid",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "chasquid/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "chasquid",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "chasquid/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "chasquid",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "chasquid/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "chasquid",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "chasquid/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -813,7 +1908,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "clipman",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "clipman/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "clipman",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "clipman/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "clipman",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "clipman/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "clipman",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "clipman/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "MISSING_BUILD",
@@ -843,7 +1960,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "cloudsql-proxy",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "cloudsql-proxy/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cloudsql-proxy",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "cloudsql-proxy/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cloudsql-proxy",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "cloudsql-proxy/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cloudsql-proxy",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "cloudsql-proxy/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -855,7 +1994,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "cobra-cli",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "cobra-cli/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cobra-cli",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "cobra-cli/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cobra-cli",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "cobra-cli/armhf has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "cobra-cli",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "cobra-cli/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -916,7 +2077,15 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "containerd",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "containerd/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "containerd",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "containerd/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -1177,7 +2346,29 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "crowdsec",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "crowdsec/amd64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "crowdsec",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "crowdsec/arm64 has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "crowdsec",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "crowdsec/armel has Built-Using on golang-1.19"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "crowdsec",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "crowdsec/i386 has Built-Using on golang-1.19"
     },
     {
         "state": "MISSING_TESTS",
@@ -1342,7 +2533,8 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "deck",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "deck/arm64 has Built-Using on golang-1.19"
     },
     {
         "state": "IS_WAITING",
@@ -2154,7 +3346,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "gdb-avr",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "gdb-avr/amd64 has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/arm64 has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/armel has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/armhf has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/i386 has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/mips64el has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/mipsel has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/ppc64el has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-avr",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-avr/s390x has Built-Using on gdb"
     },
     {
         "state": "IS_WAITING",
@@ -2172,7 +3421,64 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "gdb-mingw-w64",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/amd64 has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/arm64 has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/armel has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/armhf has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/i386 has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/mips64el has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/mipsel has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/ppc64el has Built-Using on gdb"
+    },
+    {
+        "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
+        "source": "gdb-mingw-w64",
+        "currentAge": null,
+        "requiredAge": null,
+        "extra": "gdb-mingw-w64/s390x has Built-Using on gdb"
     },
     {
         "state": "IS_WAITING",
@@ -2972,7 +4278,8 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "hipsparse",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "New binary: libhipsparse-dev (5.3.3+dfsg-1)\nNew binary: libhipsparse0 (5.3.3+dfsg-1)"
     },
     {
         "state": "TESTS_FAIL",
@@ -4036,7 +5343,8 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "linux",
         "currentAge": 11,
-        "requiredAge": 10
+        "requiredAge": 10,
+        "extra": "Checking build-dependency (indep) on amd64"
     },
     {
         "state": "IS_WAITING",
@@ -6831,13 +8139,15 @@
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "rocrand",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "New binary: libhiprand-dev (5.3.3-1)\nNew binary: libhiprand1 (5.3.3-1)\nNew binary: librocrand-dev (5.3.3-1)\nNew binary: librocrand1 (5.3.3-1)"
     },
     {
         "state": "REJECTED_WAITING_FOR_ANOTHER_ITEM",
         "source": "rocsparse",
         "currentAge": null,
-        "requiredAge": null
+        "requiredAge": null,
+        "extra": "New binary: librocsparse-dev (5.3.0+dfsg-2)\nNew binary: librocsparse0 (5.3.0+dfsg-2)"
     },
     {
         "state": "IS_WAITING",

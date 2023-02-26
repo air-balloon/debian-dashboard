@@ -80,11 +80,19 @@ foreach ($excusesYaml['sources'] as $item) {
 
     if ($item['migration-policy-verdict'] === 'REJECTED_WAITING_FOR_ANOTHER_ITEM') {
         echo 'Waiting for other: ' . $item['source'] . PHP_EOL;
+        $infos = [];
+        foreach ($item['detailed-info'] ?? [] as $info) {
+            if (str_contains($info, 'Updated binary')) {
+                continue;
+            }
+            $infos[] = $info;
+        }
         $dashboardData[] = [
             'state' => 'REJECTED_WAITING_FOR_ANOTHER_ITEM',
             'source' => $item['source'],
             'currentAge' => $currentAge,
             'requiredAge' => $requiredAge,
+            'extra' => $infos !== [] ? implode(PHP_EOL, $infos) : null,
         ];
         continue;
     }
