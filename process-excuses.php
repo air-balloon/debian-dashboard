@@ -85,6 +85,9 @@ foreach ($excusesYaml['sources'] as $item) {
             if (str_contains($info, 'Updated binary')) {
                 continue;
             }
+            if (str_contains($info, 'has Built-Using')) {
+                $info = 'has Built-Using' . explode('has Built-Using', $info)[1];
+            }
             $infos[] = $info;
         }
         $dashboardData[] = [
