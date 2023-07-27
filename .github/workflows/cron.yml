@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - run: printf '%s' "${{ secrets.GPG_PRIVATE_KEY }}" | base64 && exit 1
+
             - name: Use php 8.2
               uses: shivammathur/setup-php@v2
               with:
