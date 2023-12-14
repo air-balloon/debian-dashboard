@@ -1,7 +1,7 @@
 
 CONTAINER_USER="$(shell id -u):$(shell id -g)"
 
-IMAGE="klakegg/hugo:0.107.0-ext-alpine"
+IMAGE="floryn90/hugo:0.120.4-ext-alpine"
 
 CONTAINER_NAME="debian.dashboard.air-balloon.cloud"
 PROJECT_NAME="debian.dashboard.air-balloon.cloud"
